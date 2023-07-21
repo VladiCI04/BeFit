@@ -1,0 +1,1825 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BeFit.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BeFit.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source1\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Source\\Source1\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\Source\\Source2\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Source\\Source2\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source2\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Source\\Source2\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Source\\Source2\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Source\\Source2\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Source\\Source2\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Source\\Source2\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Source\\Source2\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\animated.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\core.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\icons.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\larger.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\list.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\path.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\less\\variables.less",
+      "PackagePath": "staticwebassets\\Source\\Source2\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source2\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\Source\\Source2\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\.gitignore",
+      "PackagePath": "staticwebassets\\Source\\Source3\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\.jshintrc",
+      "PackagePath": "staticwebassets\\Source\\Source3\\.jshintrc"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\.travis.yml",
+      "PackagePath": "staticwebassets\\Source\\Source3\\.travis.yml"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\Gruntfile.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\Gruntfile.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\LICENSE",
+      "PackagePath": "staticwebassets\\Source\\Source3"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\README.md",
+      "PackagePath": "staticwebassets\\Source\\Source3\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\bower.json",
+      "PackagePath": "staticwebassets\\Source\\Source3\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\composer.json",
+      "PackagePath": "staticwebassets\\Source\\Source3\\composer.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\dist\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\dist\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\dist\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\dist\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\dist\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\Source\\Source3\\dist\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\libs\\jquery-loader.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\libs\\jquery-loader.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\libs\\qunit\\qunit.css",
+      "PackagePath": "staticwebassets\\Source\\Source3\\libs\\qunit\\qunit.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\libs\\qunit\\qunit.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\libs\\qunit\\qunit.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\magnific-popup.jquery.json",
+      "PackagePath": "staticwebassets\\Source\\Source3\\magnific-popup.jquery.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\package.json",
+      "PackagePath": "staticwebassets\\Source\\Source3\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\css\\_settings.scss",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\css\\_settings.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\css\\main.scss",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\css\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\ajax.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\ajax.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\core.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\core.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\gallery.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\gallery.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\iframe.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\iframe.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\image.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\image.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\inline.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\inline.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\retina.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\retina.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\src\\js\\zoom.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\src\\js\\zoom.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\_includes\\analytics.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\_includes\\analytics.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\_includes\\build-tool.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\_includes\\build-tool.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\_includes\\examples.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\_includes\\examples.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\_includes\\logo.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\_includes\\logo.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\_includes\\signup.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\_includes\\signup.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\_layouts\\default.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\_layouts\\default.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\documentation.md",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\documentation.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\index.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\site-assets\\ajax\\test-ajax-2.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\site-assets\\ajax\\test-ajax-2.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\site-assets\\ajax\\test-ajax.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\site-assets\\ajax\\test-ajax.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\site-assets\\site.css",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\site-assets\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\third-party-libs\\jquery.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\third-party-libs\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\third-party-libs\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\third-party-libs\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\third-party-libs\\uglify.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\third-party-libs\\uglify.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\third-party-libs\\zepto.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\third-party-libs\\zepto.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\third-party-libs\\zepto.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\third-party-libs\\zepto.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source3\\website\\wordpress.html",
+      "PackagePath": "staticwebassets\\Source\\Source3\\website\\wordpress.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\.gitattributes",
+      "PackagePath": "staticwebassets\\Source\\Source4\\.gitattributes"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\.gitignore",
+      "PackagePath": "staticwebassets\\Source\\Source4\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\.travis.yml",
+      "PackagePath": "staticwebassets\\Source\\Source4\\.travis.yml"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\CONTRIBUTING.md",
+      "PackagePath": "staticwebassets\\Source\\Source4\\CONTRIBUTING.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\Gruntfile.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\Gruntfile.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\ISSUE_TEMPLATE.md",
+      "PackagePath": "staticwebassets\\Source\\Source4\\ISSUE_TEMPLATE.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\LICENSE",
+      "PackagePath": "staticwebassets\\Source\\Source4"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\README.md",
+      "PackagePath": "staticwebassets\\Source\\Source4\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\ROADMAP.md",
+      "PackagePath": "staticwebassets\\Source\\Source4\\ROADMAP.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\_config.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\_config.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\bower.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\LICENSE",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\README.md",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\dist\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\dist\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\css\\docs.theme.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\css\\docs.theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\bird_blue_32.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\bird_blue_32.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\download.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\feature-drag.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\feature-drag.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\feature-modern.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\feature-modern.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\feature-module.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\feature-module.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\feature-options.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\feature-options.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\feature-responsive.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\feature-responsive.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\feature-zombie.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\feature-zombie.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\owl-logo.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\owl-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\img\\twitter_25.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\img\\twitter_25.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\js\\foundation.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\js\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\README.md",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\vendors\\foundation.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\vendors\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\vendors\\highlight.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\vendors\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\vendors\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\vendors\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\vendors\\jquery.min.map",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\vendors\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\assets\\vendors\\jquery.mousewheel.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\assets\\vendors\\jquery.mousewheel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\animate.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\animate.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\autoheight.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\autoheight.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\autoplay.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\autoplay.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\autowidth.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\autowidth.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\basic.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\basic.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\center.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\center.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\demos.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\demos.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\events.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\events.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\lazyLoad.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\lazyLoad.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\merge.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\merge.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\mousewheel.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\mousewheel.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\responsive.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\responsive.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\rtl.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\rtl.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\stagepadding.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\stagepadding.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\test.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\test.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\urlhashnav.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\urlhashnav.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\demos\\video.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\demos\\video.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\api-classes.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\api-classes.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\api-events.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\api-events.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\api-options.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\api-options.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\dev-buildin-plugins.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\dev-buildin-plugins.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\dev-external.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\dev-external.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\dev-plugin-api.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\dev-plugin-api.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\dev-styles.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\dev-styles.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\started-faq.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\started-faq.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\started-installation.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\started-installation.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\started-welcome.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\started-welcome.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\support-changelog.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\support-changelog.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\support-contact.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\support-contact.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\docs\\support-contributing.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\docs\\support-contributing.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs\\index.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\bird_blue_32.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\bird_blue_32.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\download.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\feature-drag.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\feature-drag.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\feature-modern.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\feature-modern.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\feature-module.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\feature-module.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\feature-options.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\feature-options.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\feature-responsive.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\feature-responsive.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\feature-zombie.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\feature-zombie.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\owl-logo.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\owl-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\img\\twitter_25.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\img\\twitter_25.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\js\\foundation.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\js\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\scss\\_settings.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\scss\\_settings.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\scss\\custom.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\scss\\custom.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\scss\\demos.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\scss\\demos.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\scss\\docs.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\scss\\docs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\scss\\docs.theme.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\scss\\docs.theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\scss\\highlight.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\scss\\highlight.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\vendors\\foundation.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\vendors\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\vendors\\highlight.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\vendors\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\vendors\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\vendors\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\vendors\\jquery.min.map",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\vendors\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\assets\\vendors\\jquery.mousewheel.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\assets\\vendors\\jquery.mousewheel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\data\\classes.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\data\\classes.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\data\\events.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\data\\events.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\data\\features.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\data\\features.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\data\\options.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\data\\options.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\helpers\\modulo.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\helpers\\modulo.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\helpers\\test.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\helpers\\test.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\layouts\\demos.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\layouts\\demos.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\layouts\\docs.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\layouts\\docs.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\layouts\\home.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\layouts\\home.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\animate.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\animate.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\autoheight.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\autoheight.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\autoplay.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\autoplay.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\autowidth.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\autowidth.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\basic.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\basic.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\center.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\center.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\demos.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\demos.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\events.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\events.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\lazyLoad.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\lazyLoad.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\merge.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\merge.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\mousewheel.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\mousewheel.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\responsive.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\responsive.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\rtl.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\rtl.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\stagepadding.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\stagepadding.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\test.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\test.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\urlhashnav.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\urlhashnav.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\demos\\video.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\demos\\video.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\api-classes.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\api-classes.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\api-events.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\api-events.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\api-options.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\api-options.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-buildin-plugins.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-buildin-plugins.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-external.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-external.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-plugin-api.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-plugin-api.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-styles.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\dev-styles.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\started-faq.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\started-faq.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\started-installation.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\started-installation.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\started-welcome.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\started-welcome.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\support-changelog.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\support-changelog.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\support-contact.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\support-contact.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\docs\\support-contributing.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\docs\\support-contributing.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\pages\\index.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\pages\\index.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\footer.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\footer.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\head.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\head.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\header.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\header.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\home-carousel.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\home-carousel.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\home-features.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\home-features.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\home-hero.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\home-hero.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\home-teaser-text.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\home-teaser-text.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\javascripts.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\javascripts.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\releated-docs.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\releated-docs.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\sidenav-docs.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\sidenav-docs.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\title.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\title.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\docs_src\\templates\\partials\\vendors.hbs",
+      "PackagePath": "staticwebassets\\Source\\Source4\\docs_src\\templates\\partials\\vendors.hbs"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\package-lock.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\package-lock.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\package.json",
+      "PackagePath": "staticwebassets\\Source\\Source4\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\img\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\img\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\img\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\img\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\.jscsrc",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\.jscsrc"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\.jshintrc",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\.jshintrc"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.animate.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.animate.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.autoheight.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.autoheight.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.autoplay.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.autoplay.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.autorefresh.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.autorefresh.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.hash.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.hash.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.lazyload.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.lazyload.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.navigation.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.navigation.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.support.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.support.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.support.modernizr.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.support.modernizr.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\js\\owl.video.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\js\\owl.video.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_animate.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_animate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_autoheight.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_autoheight.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_lazyload.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_lazyload.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_theme.default.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_theme.default.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_theme.green.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_theme.green.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_theme.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\_video.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\_video.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\owl.carousel.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\owl.carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\owl.theme.default.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\owl.theme.default.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\src\\scss\\owl.theme.green.scss",
+      "PackagePath": "staticwebassets\\Source\\Source4\\src\\scss\\owl.theme.green.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\test\\index.html",
+      "PackagePath": "staticwebassets\\Source\\Source4\\test\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\test\\unit\\autoplay.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\test\\unit\\autoplay.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source4\\test\\unit\\core.js",
+      "PackagePath": "staticwebassets\\Source\\Source4\\test\\unit\\core.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source5\\style.scss",
+      "PackagePath": "staticwebassets\\Source\\Source5\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\.gitattributes",
+      "PackagePath": "staticwebassets\\Source\\Source6\\.gitattributes"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\.gitignore",
+      "PackagePath": "staticwebassets\\Source\\Source6\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\MIT-LICENSE.txt",
+      "PackagePath": "staticwebassets\\Source\\Source6\\MIT-LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\README.md",
+      "PackagePath": "staticwebassets\\Source\\Source6\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\bower.json",
+      "PackagePath": "staticwebassets\\Source\\Source6\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\demo\\index.html",
+      "PackagePath": "staticwebassets\\Source\\Source6\\demo\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\demo\\style.css",
+      "PackagePath": "staticwebassets\\Source\\Source6\\demo\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\dist\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\Source\\Source6\\dist\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\dist\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\Source\\Source6\\dist\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\dist\\slicknav.css",
+      "PackagePath": "staticwebassets\\Source\\Source6\\dist\\slicknav.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\dist\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\Source\\Source6\\dist\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\gulpfile.js",
+      "PackagePath": "staticwebassets\\Source\\Source6\\gulpfile.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\Source\\Source6\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\package.json",
+      "PackagePath": "staticwebassets\\Source\\Source6\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\scss\\core.scss",
+      "PackagePath": "staticwebassets\\Source\\Source6\\scss\\core.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\scss\\slicknav.scss",
+      "PackagePath": "staticwebassets\\Source\\Source6\\scss\\slicknav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\Source\\Source6\\scss\\theme.scss",
+      "PackagePath": "staticwebassets\\Source\\Source6\\scss\\theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\about-pic.jpg",
+      "PackagePath": "staticwebassets\\img\\about-pic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\about-signature.png",
+      "PackagePath": "staticwebassets\\img\\about-signature.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\award.jpg",
+      "PackagePath": "staticwebassets\\img\\award.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\banner-person.png",
+      "PackagePath": "staticwebassets\\img\\banner-person.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\bd-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\bd-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\bd-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\bd-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-detail-hero.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-detail-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\blog\\blog-posted.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-posted.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\breadcrumb\\classes-breadcrumb.jpg",
+      "PackagePath": "staticwebassets\\img\\breadcrumb\\classes-breadcrumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-1.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-2.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-3.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-4.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-5.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-6.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-7.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-8.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\classes\\classes-9.jpg",
+      "PackagePath": "staticwebassets\\img\\classes\\classes-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\footer-banner\\footer-banner-1.jpg",
+      "PackagePath": "staticwebassets\\img\\footer-banner\\footer-banner-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\footer-banner\\footer-banner-2.jpg",
+      "PackagePath": "staticwebassets\\img\\footer-banner\\footer-banner-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\footer-signup.jpg",
+      "PackagePath": "staticwebassets\\img\\footer-signup.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\gallery\\gallery-7.jpg",
+      "PackagePath": "staticwebassets\\img\\gallery\\gallery-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\icon\\icon-1.png",
+      "PackagePath": "staticwebassets\\img\\icon\\icon-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\icon\\icon-2.png",
+      "PackagePath": "staticwebassets\\img\\icon\\icon-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\icon\\icon-3.png",
+      "PackagePath": "staticwebassets\\img\\icon\\icon-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\icon\\location.png",
+      "PackagePath": "staticwebassets\\img\\icon\\location.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\logo1.png",
+      "PackagePath": "staticwebassets\\img\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\play.png",
+      "PackagePath": "staticwebassets\\img\\play.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\register-pic.jpg",
+      "PackagePath": "staticwebassets\\img\\register-pic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\services\\service-icon-1.png",
+      "PackagePath": "staticwebassets\\img\\services\\service-icon-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\services\\service-icon-2.png",
+      "PackagePath": "staticwebassets\\img\\services\\service-icon-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\services\\service-icon-3.png",
+      "PackagePath": "staticwebassets\\img\\services\\service-icon-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\services\\service-icon-4.png",
+      "PackagePath": "staticwebassets\\img\\services\\service-icon-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\services\\service-pic.jpg",
+      "PackagePath": "staticwebassets\\img\\services\\service-pic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\testimonial\\quote-left.png",
+      "PackagePath": "staticwebassets\\img\\testimonial\\quote-left.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\testimonial\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\testimonial\\testimonial-bg.png",
+      "PackagePath": "staticwebassets\\img\\testimonial\\testimonial-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\trainer\\about-trainer-1.jpg",
+      "PackagePath": "staticwebassets\\img\\trainer\\about-trainer-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\trainer\\about-trainer-2.jpg",
+      "PackagePath": "staticwebassets\\img\\trainer\\about-trainer-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\trainer\\about-trainer-3.jpg",
+      "PackagePath": "staticwebassets\\img\\trainer\\about-trainer-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\trainer\\trainer-1.jpg",
+      "PackagePath": "staticwebassets\\img\\trainer\\trainer-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\trainer\\trainer-2.jpg",
+      "PackagePath": "staticwebassets\\img\\trainer\\trainer-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\img\\trainer\\trainer-3.jpg",
+      "PackagePath": "staticwebassets\\img\\trainer\\trainer-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\masonry.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\masonry.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BeFit.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BeFit.props",
+      "PackagePath": "build\\BeFit.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BeFit.props",
+      "PackagePath": "buildMultiTargeting\\BeFit.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BeFit.props",
+      "PackagePath": "buildTransitive\\BeFit.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
