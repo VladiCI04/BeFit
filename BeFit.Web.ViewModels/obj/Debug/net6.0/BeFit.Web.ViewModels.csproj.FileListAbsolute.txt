@@ -13,3 +13,5 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\bin\Debug\net6.0\BeFit.Common.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\bin\Debug\net6.0\BeFit.Common.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.csproj.CopyComplete
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\bin\Debug\net6.0\BeFit.Data.Models.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\bin\Debug\net6.0\BeFit.Data.Models.pdb

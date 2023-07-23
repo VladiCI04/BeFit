@@ -11,5 +11,7 @@ namespace BeFit.Services.Data.Interfaces
         Task<bool> HasEventsByUserIdAsync(string userId);
 
         Task Create(string userId, BecomeCoachFormModel model);
+
+        Task<string> GetCoachIdByUserIdAsync(string userId);
     }
 }

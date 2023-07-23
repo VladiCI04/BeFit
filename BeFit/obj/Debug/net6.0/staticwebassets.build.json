@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9BQUYj3WJYe4iqwYIE/VYuTq8xDxZxTGBtNwSynTMrk=",
+  "Hash": "1PoH2XqrbwhqFBJzJJdqYQVtyy0jjFqaAorPKskjf2w=",
   "Source": "BeFit",
   "BasePath": "_content/BeFit",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\jquery-override.js",
+      "SourceId": "BeFit",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\",
+      "BasePath": "_content/BeFit",
+      "RelativePath": "js/jquery-override.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-override.js"
     },
     {
       "Identity": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\site.js",

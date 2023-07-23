@@ -316,6 +316,9 @@
             "projectReferences": {
               "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Common\\BeFit.Common.csproj": {
                 "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Common\\BeFit.Common.csproj"
+              },
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
               }
             }
           }

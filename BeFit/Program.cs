@@ -3,6 +3,7 @@ using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using BeFit.Web.Infrastructure.Extensions;
+using BeFit.Web.Infrastructure.ModelBinders;
 
 namespace BeFit
 {
@@ -35,7 +36,12 @@ namespace BeFit
 
             builder.Services.AddApplicationServices(typeof(IEventService));
 
-            builder.Services.AddControllersWithViews();
+            builder.Services
+                .AddControllersWithViews()
+                .AddMvcOptions(options =>
+                {
+                    options.ModelBinderProviders.Insert(0, new DecimalModelBinderProvider());
+                });
 
             WebApplication app = builder.Build();
 

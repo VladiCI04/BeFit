@@ -1,4 +1,5 @@
-﻿using BeFit.Web.ViewModels.EventCategory;
+﻿using BeFit.Data.Models;
+using BeFit.Web.ViewModels.EventCategory;
 using System.ComponentModel.DataAnnotations;
 using static BeFit.Common.EntityValidationConstants.Event;
 
@@ -41,5 +42,7 @@ namespace BeFit.Web.ViewModels.Event
         [Display(Name = "Category")]
         public int EventCategoryId { get; set; }
         public IEnumerable<EventSelectCategoryFormModel> EventCategories { get; set; } = new List<EventSelectCategoryFormModel>();
-    }
+
+		public ICollection<ApplicationUser> Clients { get; set; } = new List<ApplicationUser>();
+	}
 }

@@ -28,5 +28,14 @@ namespace BeFit.Services.Data
 
             return allEventCategories;
         }
-    }
+
+		public async Task<bool> ExistsByIdAsync(int id)
+		{
+            bool result = await this.dbContext
+                .EventCategories
+                .AnyAsync(c => c.Id == id);
+
+            return result;
+		}
+	}
 }

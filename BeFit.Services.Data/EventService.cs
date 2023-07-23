@@ -1,5 +1,7 @@
 ﻿using BeFit.Data;
+using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
+using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Home;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,5 +30,26 @@ namespace BeFit.Services.Data
 
             return allEvents;
         }
-    }
+
+		public async Task CreateAsync(EventFormModel formModel, string coachId)
+		{
+            Event newEvent = new Event()
+            {
+                Title = formModel.Title,
+                Address = formModel.Address,
+                Description = formModel.Description,
+                ImageUrl = formModel.ImageUrl,
+                Tax = formModel.Tax,
+                CreatedOn = formModel.CreatedOn,
+                Start = formModel.Start,
+                End = formModel.End,
+                CoachId = Guid.Parse(coachId),
+                EventCategoryId = formModel.EventCategoryId,
+                Clients = formModel.Clients
+            };
+
+            await this.dbContext.Events.AddAsync(newEvent);
+            await this.dbContext.SaveChangesAsync();
+		}
+	}
 }

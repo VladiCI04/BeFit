@@ -88,3 +88,13 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\BeFit.Services.Data.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\BeFit.Web.Infrastructure.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\BeFit.Web.Infrastructure.pdb
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

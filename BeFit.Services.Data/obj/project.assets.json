@@ -864,7 +864,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BeFit.Common": "1.0.0"
+          "BeFit.Common": "1.0.0",
+          "BeFit.Data.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BeFit.Web.ViewModels.dll": {}
