@@ -3,6 +3,7 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
+<ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
     <li>
@@ -19,6 +20,11 @@
 }
 else
 {
-    <a class="primary-btn signup-btn" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    <a class="primary-btn signup-btn" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
 }
+</ul>

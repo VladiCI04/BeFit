@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using BeFit.Web.ViewModels.CoachCategory;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using static BeFit.Common.EntityValidationConstants.Coach;
 
@@ -41,5 +42,9 @@ namespace BeFit.Web.ViewModels.Coach
 		[Description]
 		[Display(Name = "Description")]
 		public string? Description { get; set; }
+
+		[Display(Name = "Category")]
+		public int CoachCategoryId { get; set; }
+		public IEnumerable<CoachSelectCategoryFormModel> CoachCategories { get; set; } = new List<CoachSelectCategoryFormModel>();
 	}
 }

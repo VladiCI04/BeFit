@@ -7,15 +7,15 @@
 
 @if (TempData.ContainsKey(WarningMessage))
 {
-	<script>toastr.error('@TempData[WarningMessage]');</script>
+	<script>toastr.warning('@TempData[WarningMessage]');</script>
 }
 
 @if (TempData.ContainsKey(InformationMessage))
 {
-	<script>toastr.error('@TempData[InformationMessage]');</script>
+	<script>toastr.info('@TempData[InformationMessage]');</script>
 }
 
 @if (TempData.ContainsKey(SuccessMessage))
 {
-	<script>toastr.error('@TempData[SuccessMessage]');</script>
+	<script>toastr.success('@TempData[SuccessMessage]');</script>
 }

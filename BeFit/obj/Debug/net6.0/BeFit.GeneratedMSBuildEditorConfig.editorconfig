@@ -24,12 +24,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hcQmVjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Views/Event/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Views/Shared/_EventFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FdmVudEZvcm1QYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Views/Shared/_LoginPartial.cshtml]

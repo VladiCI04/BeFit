@@ -22,6 +22,21 @@ namespace BeFit.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ApplicationUserEvent", b =>
+                {
+                    b.Property<Guid>("ClientsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("EventsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ClientsId", "EventsId");
+
+                    b.HasIndex("EventsId");
+
+                    b.ToTable("ApplicationUserEvent");
+                });
+
             modelBuilder.Entity("BeFit.Data.Models.ApplicationUser", b =>
                 {
                     b.Property<Guid>("Id")
@@ -41,9 +56,6 @@ namespace BeFit.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<Guid?>("EventId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -80,8 +92,6 @@ namespace BeFit.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EventId");
-
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -102,7 +112,7 @@ namespace BeFit.Data.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CoachCategoryId")
+                    b.Property<int>("CoachCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -178,9 +188,6 @@ namespace BeFit.Data.Migrations
                     b.Property<Guid>("CoachId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CoachId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
@@ -213,8 +220,6 @@ namespace BeFit.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CoachId");
-
-                    b.HasIndex("CoachId1");
 
                     b.HasIndex("EventCategoryId");
 
@@ -389,18 +394,28 @@ namespace BeFit.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("BeFit.Data.Models.ApplicationUser", b =>
+            modelBuilder.Entity("ApplicationUserEvent", b =>
                 {
+                    b.HasOne("BeFit.Data.Models.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("ClientsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BeFit.Data.Models.Event", null)
-                        .WithMany("Clients")
-                        .HasForeignKey("EventId");
+                        .WithMany()
+                        .HasForeignKey("EventsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BeFit.Data.Models.Coach", b =>
                 {
-                    b.HasOne("BeFit.Data.Models.CoachCategory", null)
+                    b.HasOne("BeFit.Data.Models.CoachCategory", "CoachCategory")
                         .WithMany("Coaches")
-                        .HasForeignKey("CoachCategoryId");
+                        .HasForeignKey("CoachCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("BeFit.Data.Models.ApplicationUser", "User")
                         .WithMany()
@@ -408,21 +423,17 @@ namespace BeFit.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("CoachCategory");
+
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("BeFit.Data.Models.Event", b =>
                 {
-                    b.HasOne("BeFit.Data.Models.ApplicationUser", "Coach")
+                    b.HasOne("BeFit.Data.Models.Coach", "Coach")
                         .WithMany("Events")
                         .HasForeignKey("CoachId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("BeFit.Data.Models.Coach", null)
-                        .WithMany("Events")
-                        .HasForeignKey("CoachId1")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BeFit.Data.Models.EventCategory", "EventCategory")
@@ -506,11 +517,6 @@ namespace BeFit.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("BeFit.Data.Models.ApplicationUser", b =>
-                {
-                    b.Navigation("Events");
-                });
-
             modelBuilder.Entity("BeFit.Data.Models.Coach", b =>
                 {
                     b.Navigation("Events");
@@ -523,8 +529,6 @@ namespace BeFit.Data.Migrations
 
             modelBuilder.Entity("BeFit.Data.Models.Event", b =>
                 {
-                    b.Navigation("Clients");
-
                     b.Navigation("EventClients");
                 });
 

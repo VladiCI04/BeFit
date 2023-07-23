@@ -34,7 +34,7 @@ namespace BeFit.Data.Models
         [Required]
         [ForeignKey(nameof(Coach))]
         public Guid CoachId { get; set; }
-        public ApplicationUser Coach { get; set; } = null!;
+        public Coach Coach { get; set; } = null!;
 
         [Required]
         public DateTime CreatedOn { get; set; }

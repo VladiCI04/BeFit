@@ -39,7 +39,12 @@ namespace BeFit.Data.Models
         [MaxLength(CoachDescriptionMaxLength)]
         public string? Description { get; set; }
 
-        [ForeignKey(nameof(User))]
+		[Required]
+		[ForeignKey(nameof(CoachCategory))]
+		public int CoachCategoryId { get; set; }
+		public CoachCategory CoachCategory { get; set; } = null!;
+
+		[ForeignKey(nameof(User))]
         public Guid UserId { get; set; }
         public virtual ApplicationUser User { get; set; } = null!;
 
