@@ -1,6 +1,8 @@
-﻿using BeFit.Services.Data.Interfaces;
+﻿using BeFit.Data.Models;
+using BeFit.Services.Data.Interfaces;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Coach;
+using BeFit.Web.ViewModels.Event;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static BeFit.Common.NotificationMessagesConstants;
@@ -11,10 +13,12 @@ namespace BeFit.Controllers
     public class CoachController : Controller
     {
         private readonly ICoachService coachService;
+		private readonly ICoachCategoryService coachCategoryService;
 
-        public CoachController(ICoachService coachService)
+		public CoachController(ICoachService coachService, ICoachCategoryService coachCategoryService)
         {
             this.coachService = coachService;
+            this.coachCategoryService = coachCategoryService;
         }
 
         [HttpGet]
@@ -30,7 +34,12 @@ namespace BeFit.Controllers
                 return this.RedirectToAction("Index", "Home");
             }
 
-            return this.View();
+			BecomeCoachFormModel formModel = new BecomeCoachFormModel()
+			{
+				CoachCategories = await this.coachCategoryService.AllCoachCategoriesAsync()
+			};
+
+			return this.View(formModel);
         }
 
         [HttpPost]

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\jquery-override.js",
+      "PackagePath": "staticwebassets\\js\\jquery-override.js"
+    },
+    {
       "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -9,6 +9,10 @@ namespace BeFit.Data.Configurations
         public void Configure(EntityTypeBuilder<Event> builder)
         {
             builder
+                .Property(e => e.CreatedOn)
+                .HasDefaultValueSql("GETDATE()");
+
+            builder
                 .HasOne(e => e.EventCategory)
                 .WithMany(c => c.Events)
                 .HasForeignKey(e => e.EventCategoryId)

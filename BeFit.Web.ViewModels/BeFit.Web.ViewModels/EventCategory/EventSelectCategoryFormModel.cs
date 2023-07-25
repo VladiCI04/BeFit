@@ -1,4 +1,4 @@
-﻿namespace BeFit.Web.ViewModels.Category
+﻿namespace BeFit.Web.ViewModels.EventCategory
 {
     public class EventSelectCategoryFormModel
     {

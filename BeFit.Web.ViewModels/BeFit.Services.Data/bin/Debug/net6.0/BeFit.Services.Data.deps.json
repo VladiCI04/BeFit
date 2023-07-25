@@ -11,6 +11,7 @@
           "BeFit.Common": "1.0.0",
           "BeFit.Data": "1.0.0",
           "BeFit.Data.Models": "1.0.0",
+          "BeFit.Services.Data.Models": "1.0.0",
           "BeFit.Web.ViewModels": "1.0.0"
         },
         "runtime": {
@@ -547,9 +548,18 @@
           "BeFit.Data.Models.dll": {}
         }
       },
+      "BeFit.Services.Data.Models/1.0.0": {
+        "dependencies": {
+          "BeFit.Web.ViewModels": "1.0.0"
+        },
+        "runtime": {
+          "BeFit.Services.Data.Models.dll": {}
+        }
+      },
       "BeFit.Web.ViewModels/1.0.0": {
         "dependencies": {
-          "BeFit.Common": "1.0.0"
+          "BeFit.Common": "1.0.0",
+          "BeFit.Data.Models": "1.0.0"
         },
         "runtime": {
           "BeFit.Web.ViewModels.dll": {}
@@ -889,6 +899,11 @@
       "sha512": ""
     },
     "BeFit.Data.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BeFit.Services.Data.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

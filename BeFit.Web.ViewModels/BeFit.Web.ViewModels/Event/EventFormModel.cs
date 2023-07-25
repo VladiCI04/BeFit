@@ -1,4 +1,5 @@
-﻿using BeFit.Web.ViewModels.Category;
+﻿using BeFit.Data.Models;
+using BeFit.Web.ViewModels.EventCategory;
 using System.ComponentModel.DataAnnotations;
 using static BeFit.Common.EntityValidationConstants.Event;
 
@@ -22,14 +23,12 @@ namespace BeFit.Web.ViewModels.Event
         public string Address { get; set; } = null!;
 
         [Required]
+        [Display(Name = "Image Link")]
         public string ImageUrl { get; set; } = null!;
 
         [Required]
         [Range(EventTaxMin, EventTaxMax)]
         public double Tax { get; set; }
-
-        [Required]
-        public string CoachName { get; set; } = null!;
 
         [Required]
         public DateTime CreatedOn { get; set; }
@@ -40,7 +39,10 @@ namespace BeFit.Web.ViewModels.Event
         [Required]
         public DateTime End { get; set; }
 
+        [Display(Name = "Category")]
         public int EventCategoryId { get; set; }
-        public IEnumerable<EventSelectCategoryFormModel> EventsCategories { get; set; } = new List<EventSelectCategoryFormModel>();
-    }
+        public IEnumerable<EventSelectCategoryFormModel> EventCategories { get; set; } = new List<EventSelectCategoryFormModel>();
+
+		public ICollection<ApplicationUser> Clients { get; set; } = new List<ApplicationUser>();
+	}
 }

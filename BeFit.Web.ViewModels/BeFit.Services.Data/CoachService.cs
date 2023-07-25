@@ -65,5 +65,20 @@ namespace BeFit.Services.Data
 			await this.dbContext.Coaches.AddAsync(newCoach);
 			await this.dbContext.SaveChangesAsync();
 		}
+
+		public async Task<string> GetCoachIdByUserIdAsync(string userId)
+		{
+			Coach? coach = await this.dbContext
+				.Coaches
+				.FirstOrDefaultAsync(c => c.UserId.ToString() == userId);
+			if (coach == null)
+			{
+				return null;
+			}
+			else
+			{
+				return coach.Id.ToString();
+			}
+		}
 	}
 }

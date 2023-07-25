@@ -112,7 +112,7 @@ namespace BeFit.Data.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CoachCategoryId")
+                    b.Property<int>("CoachCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -189,7 +189,9 @@ namespace BeFit.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -411,15 +413,19 @@ namespace BeFit.Data.Migrations
 
             modelBuilder.Entity("BeFit.Data.Models.Coach", b =>
                 {
-                    b.HasOne("BeFit.Data.Models.CoachCategory", null)
+                    b.HasOne("BeFit.Data.Models.CoachCategory", "CoachCategory")
                         .WithMany("Coaches")
-                        .HasForeignKey("CoachCategoryId");
+                        .HasForeignKey("CoachCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("BeFit.Data.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("CoachCategory");
 
                     b.Navigation("User");
                 });

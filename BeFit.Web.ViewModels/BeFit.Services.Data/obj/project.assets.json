@@ -860,11 +860,25 @@
           "bin/placeholder/BeFit.Data.Models.dll": {}
         }
       },
+      "BeFit.Services.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BeFit.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BeFit.Services.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BeFit.Services.Data.Models.dll": {}
+        }
+      },
       "BeFit.Web.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BeFit.Common": "1.0.0"
+          "BeFit.Common": "1.0.0",
+          "BeFit.Data.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BeFit.Web.ViewModels.dll": {}
@@ -2144,6 +2158,11 @@
       "path": "../BeFit.Data.Models/BeFit.Data.Models.csproj",
       "msbuildProject": "../BeFit.Data.Models/BeFit.Data.Models.csproj"
     },
+    "BeFit.Services.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../BeFit.Services.Data.Models/BeFit.Services.Data.Models.csproj",
+      "msbuildProject": "../BeFit.Services.Data.Models/BeFit.Services.Data.Models.csproj"
+    },
     "BeFit.Web.ViewModels/1.0.0": {
       "type": "project",
       "path": "../BeFit.Web.ViewModels/BeFit.Web.ViewModels.csproj",
@@ -2155,6 +2174,7 @@
       "BeFit.Common >= 1.0.0",
       "BeFit.Data >= 1.0.0",
       "BeFit.Data.Models >= 1.0.0",
+      "BeFit.Services.Data.Models >= 1.0.0",
       "BeFit.Web.ViewModels >= 1.0.0"
     ]
   },
@@ -2198,6 +2218,9 @@
             },
             "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data\\BeFit.Data.csproj": {
               "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data\\BeFit.Data.csproj"
+            },
+            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj"
             },
             "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
               "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
