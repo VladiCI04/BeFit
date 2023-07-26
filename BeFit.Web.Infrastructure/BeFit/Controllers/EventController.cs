@@ -95,5 +95,28 @@ namespace BeFit.Controllers
 
             return this.RedirectToAction("All", "Event");
 		}
+
+        [HttpGet]
+        public async Task<IActionResult> Mine()
+        {
+            List<EventAllViewModel> myEvents = new List<EventAllViewModel>();
+
+            string userId = this.User.GetId()!;
+            bool isUserCoach = await this.coachService
+                .CoachExistsByUserIdAsync(userId);
+
+            if (isUserCoach)
+            {
+                string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
+
+                myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
+            }
+            else
+            {
+                myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
+            }
+
+            return this.View(myEvents);
+        }
     }
 }
