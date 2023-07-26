@@ -8,7 +8,7 @@ namespace BeFit.Services.Data.Interfaces
     {
         Task<IEnumerable<IndexViewModel>> AllEventsAsync();
 
-        Task CreateAsync(EventFormModel formModel, string coachId);
+        Task<string> CreateAndReturnIdAsync(EventFormModel formModel, string coachId);
 
         Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel);
 
@@ -21,5 +21,9 @@ namespace BeFit.Services.Data.Interfaces
         Task<EventDetailsViewModel?> GetDetailsByIdAsync(string eventId);
 
         Task<EventFormModel> GetEventForEditByIdAsync(string eventId);
+
+        Task<bool> IsCoachWithIdOwnerOfEventWithIdAsync(string eventId, string coachId);
+
+        Task EditEventByIdAndFormModel(string eventId, EventFormModel formModel);
     }
 }

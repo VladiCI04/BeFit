@@ -47,12 +47,19 @@ namespace BeFit.Controllers
                 return this.RedirectToAction("Become", "Coach");
             }
 
-            EventFormModel formModel = new EventFormModel()
+            try
             {
-                EventCategories = await this.eventCategoryService.AllEventCategoriesAsync()
-            };
+				EventFormModel formModel = new EventFormModel()
+				{
+					EventCategories = await this.eventCategoryService.AllEventCategoriesAsync()
+				};
 
-            return View(formModel);
+				return View(formModel);
+			}
+            catch (Exception)
+            {
+                return this.GeneralError();
+			}
         }
 
         [HttpGet]
@@ -61,6 +68,7 @@ namespace BeFit.Controllers
         {
             bool eventExists = await this.eventService
                 .ExestsByIdAsync(id);
+
             if (!eventExists)
             {
                 this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
@@ -68,19 +76,123 @@ namespace BeFit.Controllers
                 return this.RedirectToAction("All", "Event");
             }
 
-            EventDetailsViewModel viewModel = await this.eventService
-                .GetDetailsByIdAsync(id);
+            try
+            {
+				EventDetailsViewModel viewModel = await this.eventService
+					.GetDetailsByIdAsync(id);
 
-            return View(viewModel);
+				return View(viewModel);
+			}
+            catch (Exception)
+            {
+				return this.GeneralError();
+			}
         }
 
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
+            bool eventExists = await this.eventService
+                .ExestsByIdAsync(id);
 
+            if (!eventExists)
+            {
+                this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+                return this.RedirectToAction("All", "Event");
+            }
+
+            bool isUserCoach = await this.coachService
+                .CoachExistsByUserIdAsync(this.User.GetId()!);
+
+            if (!isUserCoach)
+            {
+                this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
+
+                return this.RedirectToAction("Become", "Coach");
+            }
+
+            string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+            bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
+
+            if (!isCoachOwner)
+            {
+                this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
+
+                return this.RedirectToAction("Mine", "Event");
+            }
+
+            try
+            {
+				EventFormModel formModel = await this.eventService.GetEventForEditByIdAsync(id);
+
+				formModel.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+				return this.View(formModel);
+			}
+            catch (Exception)
+            {
+				return this.GeneralError();
+			}
         }
 
-        [HttpPost]
+		[HttpPost]
+		public async Task<IActionResult> Edit(string id, EventFormModel model)
+		{
+            if (!this.ModelState.IsValid)
+            {
+                model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+                return this.View(model);
+            }
+
+			bool eventExists = await this.eventService
+				.ExestsByIdAsync(id);
+
+			if (!eventExists)
+			{
+				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+				return this.RedirectToAction("All", "Event");
+			}
+
+			bool isUserCoach = await this.coachService
+				.CoachExistsByUserIdAsync(this.User.GetId()!);
+
+			if (!isUserCoach)
+			{
+				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
+
+				return this.RedirectToAction("Become", "Coach");
+			}
+
+			string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
+
+			if (!isCoachOwner)
+			{
+				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
+
+				return this.RedirectToAction("Mine", "Event");
+			}
+
+            try
+            {
+                await this.eventService.EditEventByIdAndFormModel(id, model);
+            }
+            catch (Exception)
+            {
+                this.ModelState.AddModelError(string.Empty, "Unexpected error occured while trying to update the event. Please try again later or contact administrator!");
+
+                model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+                return this.View(model);
+            }
+
+            return this.RedirectToAction("Details", "Event", new { id });
+		}
+
+		[HttpPost]
         public async Task<IActionResult> Add(EventFormModel model)
         {
 			bool isCoach = await this.coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
@@ -107,8 +219,10 @@ namespace BeFit.Controllers
             try
             {
                 string coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
-                await this.eventService.CreateAsync(model, coachId); 
-            }
+                string eventId = await this.eventService.CreateAndReturnIdAsync(model, coachId);
+
+				return this.RedirectToAction("Details", "Event", new { id = eventId });
+			}
             catch (Exception)
             {
                 this.ModelState.AddModelError(string.Empty, "Unexpected error occured while trying to add your new event! Please try again later or contact administarator!");
@@ -117,8 +231,6 @@ namespace BeFit.Controllers
 
                 return this.View(model);
             }
-
-            return this.RedirectToAction("All", "Event");
 		}
 
         [HttpGet]
@@ -130,18 +242,33 @@ namespace BeFit.Controllers
             bool isUserCoach = await this.coachService
                 .CoachExistsByUserIdAsync(userId);
 
-            if (isUserCoach)
+            try
             {
-                string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
+				if (isUserCoach)
+				{
+					string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
 
-                myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
-            }
-            else
+					myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
+				}
+				else
+				{
+					myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
+				}
+
+				return this.View(myEvents);
+			}
+            catch (Exception)
             {
-                myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
-            }
 
-            return this.View(myEvents);
+				return this.GeneralError();
+			}
         }
+
+        private IActionResult GeneralError()
+        {
+			this.TempData[ErrorMessage] = "Unexpected error occured! Please try again later or contact administrator!";
+
+			return this.RedirectToAction("Index", "Home");
+		}
     }
 }

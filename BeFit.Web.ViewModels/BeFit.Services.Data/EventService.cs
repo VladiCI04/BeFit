@@ -1,4 +1,5 @@
 ﻿using BeFit.Data;
+using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
 using BeFit.Web.ViewModels.Event;
@@ -34,7 +35,7 @@ namespace BeFit.Services.Data
             return allEvents;
         }
 
-		public async Task CreateAsync(EventFormModel formModel, string coachId)
+		public async Task<string> CreateAndReturnIdAsync(EventFormModel formModel, string coachId)
 		{
             BeFit.Data.Models.Event newEvent = new BeFit.Data.Models.Event()
             {
@@ -53,11 +54,13 @@ namespace BeFit.Services.Data
 
             await this.dbContext.Events.AddAsync(newEvent);
             await this.dbContext.SaveChangesAsync();
+
+            return newEvent.Id.ToString();
 		}
 
 		public async Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel)
 		{
-            IQueryable<BeFit.Data.Models.Event> eventsQuery = this.dbContext
+            IQueryable<Event> eventsQuery = this.dbContext
                 .Events
                 .AsQueryable();
 
@@ -152,7 +155,7 @@ namespace BeFit.Services.Data
 
 		public async Task<EventDetailsViewModel> GetDetailsByIdAsync(string eventId)
 		{
-            BeFit.Data.Models.Event? even = await this.dbContext
+            Event? even = await this.dbContext
                 .Events
                 .Include(e => e.EventCategory)
                 .Include(e => e.Coach)
@@ -171,7 +174,7 @@ namespace BeFit.Services.Data
                 Category = even.EventCategory.Name,
                 Start = even.Start,
                 End = even.End,
-                Clients = (List<BeFit.Data.Models.ApplicationUser>)even.Clients,
+                Clients = (List<ApplicationUser>)even.Clients,
                 Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
                 {
                     Name = even.Coach.Name,
@@ -212,5 +215,34 @@ namespace BeFit.Services.Data
                 EventCategoryId = even.EventCategoryId
             };
         }
-    }
+
+        public async Task<bool> IsCoachWithIdOwnerOfEventWithIdAsync(string eventId, string coachId)
+        {
+            Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return even.CoachId.ToString() == coachId;
+        }
+
+		public async Task EditEventByIdAndFormModel(string eventId, EventFormModel formModel)
+		{
+			Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            even.Title = formModel.Title;
+            even.Address = formModel.Address;
+            even.Description = formModel.Description;
+            even.ImageUrl = formModel.ImageUrl;
+            even.Tax = formModel.Tax;
+            even.EventCategoryId = formModel.EventCategoryId;
+            even.Start = formModel.Start;   
+            even.End = formModel.End;
+
+            await this.dbContext.SaveChangesAsync();
+		}
+	}
 }
