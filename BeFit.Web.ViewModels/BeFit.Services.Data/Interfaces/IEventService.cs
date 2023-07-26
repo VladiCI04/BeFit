@@ -11,5 +11,15 @@ namespace BeFit.Services.Data.Interfaces
         Task CreateAsync(EventFormModel formModel, string coachId);
 
         Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel);
+
+        Task<IEnumerable<EventAllViewModel>> AllByCoachIdAsync(string coachId);
+
+        Task<IEnumerable<EventAllViewModel>> AllByUserIdAsync(string userId);
+
+        Task<bool> ExestsByIdAsync(string eventId);
+
+        Task<EventDetailsViewModel?> GetDetailsByIdAsync(string eventId);
+
+        Task<EventFormModel> GetEventForEditByIdAsync(string eventId);
     }
 }

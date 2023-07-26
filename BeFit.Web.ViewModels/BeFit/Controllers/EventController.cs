@@ -55,6 +55,31 @@ namespace BeFit.Controllers
             return View(formModel);
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Details(string id)
+        {
+            bool eventExists = await this.eventService
+                .ExestsByIdAsync(id);
+            if (!eventExists)
+            {
+                this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+                return this.RedirectToAction("All", "Event");
+            }
+
+            EventDetailsViewModel viewModel = await this.eventService
+                .GetDetailsByIdAsync(id);
+
+            return View(viewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+
+        }
+
         [HttpPost]
         public async Task<IActionResult> Add(EventFormModel model)
         {
@@ -95,5 +120,28 @@ namespace BeFit.Controllers
 
             return this.RedirectToAction("All", "Event");
 		}
+
+        [HttpGet]
+        public async Task<IActionResult> Mine()
+        {
+            List<EventAllViewModel> myEvents = new List<EventAllViewModel>();
+
+            string userId = this.User.GetId()!;
+            bool isUserCoach = await this.coachService
+                .CoachExistsByUserIdAsync(userId);
+
+            if (isUserCoach)
+            {
+                string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
+
+                myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
+            }
+            else
+            {
+                myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
+            }
+
+            return this.View(myEvents);
+        }
     }
 }

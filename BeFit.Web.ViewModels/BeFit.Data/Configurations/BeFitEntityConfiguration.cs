@@ -13,6 +13,10 @@ namespace BeFit.Data.Configurations
                 .HasDefaultValueSql("GETDATE()");
 
             builder
+                .Property(e => e.IsActive)
+                .HasDefaultValue(true);
+
+            builder
                 .HasOne(e => e.EventCategory)
                 .WithMany(c => c.Events)
                 .HasForeignKey(e => e.EventCategoryId)

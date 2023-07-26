@@ -39,6 +39,8 @@ namespace BeFit.Data.Models
         [Required]
         public DateTime CreatedOn { get; set; }
 
+        public bool IsActive { get; set; }
+
         [Required]
         public DateTime Start { get; set; }
 
