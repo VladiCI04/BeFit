@@ -1,11 +1,11 @@
 ﻿using BeFit.Data;
+using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Event.Enums;
 using BeFit.Web.ViewModels.Home;
 using Microsoft.EntityFrameworkCore;
-using static BeFit.Common.EntityValidationConstants;
 
 namespace BeFit.Services.Data
 {
@@ -58,7 +58,7 @@ namespace BeFit.Services.Data
 
 		public async Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel)
 		{
-            IQueryable<BeFit.Data.Models.Event> eventsQuery = this.dbContext
+            IQueryable<Event> eventsQuery = this.dbContext
                 .Events
                 .AsQueryable();
 
@@ -149,6 +149,98 @@ namespace BeFit.Services.Data
 				.ToArrayAsync();
 
 			return allUsersEvents;
+		}
+
+		public async Task<EventDetailsViewModel> GetDetailsByIdAsync(string eventId)
+		{
+            Event? even = await this.dbContext
+                .Events
+                .Include(e => e.EventCategory)
+                .Include(e => e.Coach)
+                .ThenInclude(e => e.User)
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return new EventDetailsViewModel
+            {
+                Id = even.Id.ToString(),
+                Title = even.Title,
+                Address = even.Address,
+                ImageUrl = even.ImageUrl,
+                Tax = even.Tax,
+                Description = even.Description,
+                Category = even.EventCategory.Name,
+                Start = even.Start,
+                End = even.End,
+                Clients = (List<ApplicationUser>)even.Clients,
+                Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
+                {
+                    Name = even.Coach.Name,
+                    Email = even.Coach.User.Email,
+                    PhoneNumber = even.Coach.PhoneNumber,
+                    Category = even.Coach.CoachCategoryId
+                }
+            };
+		}
+
+        public async Task<bool> ExestsByIdAsync(string eventId)
+        {
+            bool result = await this.dbContext
+                 .Events
+                 .Where(e => e.IsActive)
+                 .AnyAsync(e => e.Id.ToString() == eventId);
+
+            return result;
+        }
+
+        public async Task<EventFormModel> GetEventForEditByIdAsync(string eventId)
+        {
+            BeFit.Data.Models.Event? even = await this.dbContext
+                .Events
+                .Include(e => e.EventCategory)
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return new EventFormModel
+            {
+                Title = even.Title,
+                Address = even.Address,
+                Description = even.Description,
+                ImageUrl = even.ImageUrl,
+                Tax = even.Tax,
+                Start = even.Start,
+                End = even.End,
+                EventCategoryId = even.EventCategoryId
+            };
+        }
+
+        public async Task<bool> IsCoachWithIdOwnerOfEventWithIdAsync(string eventId, string coachId)
+        {
+            Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return even.CoachId.ToString() == coachId;
+        }
+
+		public async Task EditEventByIdAndFormModel(string eventId, EventFormModel formModel)
+		{
+			Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            even.Title = formModel.Title;
+            even.Address = formModel.Address;
+            even.Description = formModel.Description;
+            even.ImageUrl = formModel.ImageUrl;
+            even.Tax = formModel.Tax;
+            even.EventCategoryId = formModel.EventCategoryId;
+            even.Start = formModel.Start;   
+            even.End = formModel.End;
+
+            await this.dbContext.SaveChangesAsync();
 		}
 	}
 }

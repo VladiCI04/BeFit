@@ -47,15 +47,152 @@ namespace BeFit.Controllers
                 return this.RedirectToAction("Become", "Coach");
             }
 
-            EventFormModel formModel = new EventFormModel()
+            try
             {
-                EventCategories = await this.eventCategoryService.AllEventCategoriesAsync()
-            };
+				EventFormModel formModel = new EventFormModel()
+				{
+					EventCategories = await this.eventCategoryService.AllEventCategoriesAsync()
+				};
 
-            return View(formModel);
+				return View(formModel);
+			}
+            catch (Exception)
+            {
+                return this.GeneralError();
+			}
         }
 
-        [HttpPost]
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Details(string id)
+        {
+            bool eventExists = await this.eventService
+                .ExestsByIdAsync(id);
+
+            if (!eventExists)
+            {
+                this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+                return this.RedirectToAction("All", "Event");
+            }
+
+            try
+            {
+				EventDetailsViewModel viewModel = await this.eventService
+					.GetDetailsByIdAsync(id);
+
+				return View(viewModel);
+			}
+            catch (Exception)
+            {
+				return this.GeneralError();
+			}
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            bool eventExists = await this.eventService
+                .ExestsByIdAsync(id);
+
+            if (!eventExists)
+            {
+                this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+                return this.RedirectToAction("All", "Event");
+            }
+
+            bool isUserCoach = await this.coachService
+                .CoachExistsByUserIdAsync(this.User.GetId()!);
+
+            if (!isUserCoach)
+            {
+                this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
+
+                return this.RedirectToAction("Become", "Coach");
+            }
+
+            string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+            bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
+
+            if (!isCoachOwner)
+            {
+                this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
+
+                return this.RedirectToAction("Mine", "Event");
+            }
+
+            try
+            {
+				EventFormModel formModel = await this.eventService.GetEventForEditByIdAsync(id);
+
+				formModel.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+				return this.View(formModel);
+			}
+            catch (Exception)
+            {
+				return this.GeneralError();
+			}
+        }
+
+		[HttpPost]
+		public async Task<IActionResult> Edit(string id, EventFormModel model)
+		{
+            if (!this.ModelState.IsValid)
+            {
+                model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+                return this.View(model);
+            }
+
+			bool eventExists = await this.eventService
+				.ExestsByIdAsync(id);
+
+			if (!eventExists)
+			{
+				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+				return this.RedirectToAction("All", "Event");
+			}
+
+			bool isUserCoach = await this.coachService
+				.CoachExistsByUserIdAsync(this.User.GetId()!);
+
+			if (!isUserCoach)
+			{
+				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
+
+				return this.RedirectToAction("Become", "Coach");
+			}
+
+			string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
+
+			if (!isCoachOwner)
+			{
+				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
+
+				return this.RedirectToAction("Mine", "Event");
+			}
+
+            try
+            {
+                await this.eventService.EditEventByIdAndFormModel(id, model);
+            }
+            catch (Exception)
+            {
+                this.ModelState.AddModelError(string.Empty, "Unexpected error occured while trying to update the event. Please try again later or contact administrator!");
+
+                model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+                return this.View(model);
+            }
+
+            return this.RedirectToAction("Details", "Event", new { id });
+		}
+
+		[HttpPost]
         public async Task<IActionResult> Add(EventFormModel model)
         {
 			bool isCoach = await this.coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
@@ -105,18 +242,33 @@ namespace BeFit.Controllers
             bool isUserCoach = await this.coachService
                 .CoachExistsByUserIdAsync(userId);
 
-            if (isUserCoach)
+            try
             {
-                string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
+				if (isUserCoach)
+				{
+					string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
 
-                myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
-            }
-            else
+					myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
+				}
+				else
+				{
+					myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
+				}
+
+				return this.View(myEvents);
+			}
+            catch (Exception)
             {
-                myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
-            }
 
-            return this.View(myEvents);
+				return this.GeneralError();
+			}
         }
+
+        private IActionResult GeneralError()
+        {
+			this.TempData[ErrorMessage] = "Unexpected error occured! Please try again later or contact administrator!";
+
+			return this.RedirectToAction("Index", "Home");
+		}
     }
 }
