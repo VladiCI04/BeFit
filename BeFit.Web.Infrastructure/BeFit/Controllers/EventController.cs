@@ -62,7 +62,49 @@ namespace BeFit.Controllers
 			}
         }
 
-        [HttpGet]
+		[HttpPost]
+		public async Task<IActionResult> Add(EventFormModel model)
+		{
+			bool isCoach = await this.coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+			if (!isCoach)
+			{
+				this.TempData[ErrorMessage] = "You must become a coach in order to add new event!";
+
+				return this.RedirectToAction("Become", "Coach");
+			}
+
+			bool eventCategoryExists = await this.eventCategoryService.ExistsByIdAsync(model.EventCategoryId);
+			if (!eventCategoryExists)
+			{
+				this.ModelState.AddModelError(nameof(model.EventCategoryId), "Selected category does not exist!");
+			}
+
+			if (!this.ModelState.IsValid)
+			{
+				model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+				return this.View(model);
+			}
+
+			try
+			{
+				string coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+				string eventId = await this.eventService.CreateAndReturnIdAsync(model, coachId);
+
+                this.TempData[SuccessMessage] = "Event was added succesfully!";
+				return this.RedirectToAction("Details", "Event", new { id = eventId });
+			}
+			catch (Exception)
+			{
+				this.ModelState.AddModelError(string.Empty, "Unexpected error occured while trying to add your new event! Please try again later or contact administarator!");
+
+				model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
+
+				return this.View(model);
+			}
+		}
+
+		[HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> Details(string id)
         {
@@ -189,49 +231,9 @@ namespace BeFit.Controllers
                 return this.View(model);
             }
 
-            return this.RedirectToAction("Details", "Event", new { id });
-		}
-
-		[HttpPost]
-        public async Task<IActionResult> Add(EventFormModel model)
-        {
-			bool isCoach = await this.coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
-			if (!isCoach)
-			{
-				this.TempData[ErrorMessage] = "You must become a coach in order to add new event!";
-
-				return this.RedirectToAction("Become", "Coach");
-			}
-
-            bool eventCategoryExists = await this.eventCategoryService.ExistsByIdAsync(model.EventCategoryId);
-            if (!eventCategoryExists)
-            {
-                this.ModelState.AddModelError(nameof(model.EventCategoryId), "Selected category does not exist!");
-            }
-
-            if (!this.ModelState.IsValid)
-            {
-                model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
-
-                return this.View(model);
-            }
-
-            try
-            {
-                string coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
-                await this.eventService.CreateAsync(model, coachId); 
-            }
-            catch (Exception)
-            {
-                this.ModelState.AddModelError(string.Empty, "Unexpected error occured while trying to add your new event! Please try again later or contact administarator!");
-
-                model.EventCategories = await this.eventCategoryService.AllEventCategoriesAsync();
-
-                return this.View(model);
-            }
-
-            return this.RedirectToAction("All", "Event");
-		}
+			this.TempData[SuccessMessage] = "Event was edited succesfully!";
+			return this.RedirectToAction("Details", "Event", new { id });
+		}		
 
         [HttpGet]
         public async Task<IActionResult> Mine()

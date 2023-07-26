@@ -8,7 +8,7 @@ namespace BeFit.Services.Data.Interfaces
     {
         Task<IEnumerable<IndexViewModel>> AllEventsAsync();
 
-        Task CreateAsync(EventFormModel formModel, string coachId);
+        Task<string> CreateAndReturnIdAsync(EventFormModel formModel, string coachId);
 
         Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel);
 

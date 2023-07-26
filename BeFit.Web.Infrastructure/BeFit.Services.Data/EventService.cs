@@ -35,7 +35,7 @@ namespace BeFit.Services.Data
             return allEvents;
         }
 
-		public async Task CreateAsync(EventFormModel formModel, string coachId)
+		public async Task<string> CreateAndReturnIdAsync(EventFormModel formModel, string coachId)
 		{
             BeFit.Data.Models.Event newEvent = new BeFit.Data.Models.Event()
             {
@@ -54,6 +54,8 @@ namespace BeFit.Services.Data
 
             await this.dbContext.Events.AddAsync(newEvent);
             await this.dbContext.SaveChangesAsync();
+
+            return newEvent.Id.ToString();
 		}
 
 		public async Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel)
