@@ -71,6 +71,7 @@ namespace BeFit.Services.Data
 			Coach? coach = await this.dbContext
 				.Coaches
 				.FirstOrDefaultAsync(c => c.UserId.ToString() == userId);
+
 			if (coach == null)
 			{
 				return null;

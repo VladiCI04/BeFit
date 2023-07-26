@@ -1,15 +1,15 @@
 ﻿using BeFit.Data;
-using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Event.Enums;
 using BeFit.Web.ViewModels.Home;
 using Microsoft.EntityFrameworkCore;
+using static BeFit.Common.EntityValidationConstants;
 
 namespace BeFit.Services.Data
 {
-    public class EventService : IEventService
+	public class EventService : IEventService
     {
         private readonly BeFitDbContext dbContext;
 
@@ -37,7 +37,7 @@ namespace BeFit.Services.Data
 
 		public async Task CreateAsync(EventFormModel formModel, string coachId)
 		{
-            Event newEvent = new Event()
+            BeFit.Data.Models.Event newEvent = new BeFit.Data.Models.Event()
             {
                 Title = formModel.Title,
                 Address = formModel.Address,
@@ -58,7 +58,7 @@ namespace BeFit.Services.Data
 
 		public async Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel)
 		{
-            IQueryable<Event> eventsQuery = this.dbContext
+            IQueryable<BeFit.Data.Models.Event> eventsQuery = this.dbContext
                 .Events
                 .AsQueryable();
 
@@ -110,6 +110,81 @@ namespace BeFit.Services.Data
             {
                 TotalEventsCount = totalEvents,
                 Events = allEvents
+            };
+		}
+
+		public async Task<IEnumerable<EventAllViewModel>> AllByCoachIdAsync(string coachId)
+		{
+            IEnumerable<EventAllViewModel> allCoachEvents = await this.dbContext
+                .Events
+                .Where(e => e.IsActive && e.CoachId.ToString() == coachId)
+                .Select(e => new EventAllViewModel()
+                {
+                    Id = e.Id.ToString(),
+                    Title = e.Title,
+                    Address = e.Address,
+                    ImageUrl = e.ImageUrl,
+                    Tax = e.Tax,
+                    CoachName = e.Coach.Name
+                })
+                .ToArrayAsync();
+                   
+            return allCoachEvents;
+		}
+
+		public async Task<IEnumerable<EventAllViewModel>> AllByUserIdAsync(string userId)
+		{
+			IEnumerable<EventAllViewModel> allUsersEvents = await this.dbContext
+				.EventClients
+				.Where(ec => ec.Event.IsActive && ec.ClientId.ToString() == userId)
+				.Select(e => new EventAllViewModel()
+				{
+					Id = e.Event.Id.ToString(),
+					Title = e.Event.Title,
+					Address = e.Event.Address,
+					ImageUrl = e.Event.ImageUrl,
+					Tax = e.Event.Tax,
+					CoachName = e.Event.Coach.Name,
+				})
+				.ToArrayAsync();
+
+			return allUsersEvents;
+		}
+
+		public async Task<EventDetailsViewModel> GetDetailsByIdAsync(string eventId)
+		{
+            BeFit.Data.Models.Event? even = await this.dbContext
+                .Events
+                .Include(e => e.EventCategory)
+                .Include(e => e.Coach)
+                .ThenInclude(e => e.User)
+                .Where(e => e.IsActive)
+                .FirstOrDefaultAsync(e => e.Id.ToString() == eventId);
+
+            if (even == null)
+            {
+                return null;
+            }
+
+            return new EventDetailsViewModel
+            {
+                Id = even.Id.ToString(),
+                Title = even.Title,
+                Address = even.Address,
+                ImageUrl = even.ImageUrl,
+                Tax = even.Tax,
+                Description = even.Description,
+                Category = even.EventCategory.Name,
+                Start = even.Start,
+                End = even.End,
+                Clients = (List<BeFit.Data.Models.ApplicationUser>)even.Clients,
+                Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
+                {
+                    Name = even.Coach.Name,
+                    Email = even.Coach.User.Email,
+                    PhoneNumber = even.Coach.PhoneNumber,
+                    Category = even.Coach.CoachCategoryId
+                }
             };
 		}
 	}
