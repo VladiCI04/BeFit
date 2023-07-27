@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BeFit.Data.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BeFit.Web.ViewModels.Event
 {
@@ -17,6 +18,6 @@ namespace BeFit.Web.ViewModels.Event
 
 		public string CoachName { get; set; } = null!;
 
-        public bool IsClient { get; set; }
+		public ICollection<string> Clients { get; set; } = new List<string>();
     }
 }

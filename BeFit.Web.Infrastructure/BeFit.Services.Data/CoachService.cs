@@ -75,7 +75,7 @@ namespace BeFit.Services.Data
 
 			if (coach == null)
 			{
-				return null;
+				return null!;
 			}
 			else
 			{

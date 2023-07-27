@@ -24,7 +24,7 @@
 			<p>Joined Clients:</p>
 			@foreach(var clientName in Model.Clients)
 			{
-				<p>@clientName.UserName</p>
+				<p>@clientName</p>
 			}
 			<div class="form-inline">
 				@if (this.User.Identity?.IsAuthenticated ?? false)

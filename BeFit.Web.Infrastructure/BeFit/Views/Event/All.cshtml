@@ -69,7 +69,10 @@
 <div class="row">
 	@foreach (var even in Model.Events)
 	{
-		<partial name="_EventPartial" model="@even" />
+		if (!even.Clients.Contains(User.Identity!.Name!))
+		{
+			<partial name="_EventPartial" model="@even" />
+		}
 	}
 </div>
 

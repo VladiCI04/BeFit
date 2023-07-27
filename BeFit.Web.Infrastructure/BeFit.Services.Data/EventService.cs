@@ -5,7 +5,10 @@ using BeFit.Services.Data.Models.Events;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Event.Enums;
 using BeFit.Web.ViewModels.Home;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace BeFit.Services.Data
 {
@@ -153,7 +156,7 @@ namespace BeFit.Services.Data
 			return allUsersEvents;
 		}
 
-		public async Task<EventDetailsViewModel> GetDetailsByIdAsync(string eventId)
+		public async Task<EventDetailsViewModel?> GetDetailsByIdAsync(string eventId)
 		{
             Event? even = await this.dbContext
                 .Events
@@ -174,7 +177,7 @@ namespace BeFit.Services.Data
                 Category = even.EventCategory.Name,
                 Start = even.Start,
                 End = even.End,
-                Clients = (List<ApplicationUser>)even.Clients,
+                Clients = (List<string>)even.Clients,
                 Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
                 {
                     Name = even.Coach.Name,
@@ -270,6 +273,79 @@ namespace BeFit.Services.Data
             eventToDelete.IsActive = false;
 
             await this.dbContext.SaveChangesAsync();
+		}
+
+		public async Task AddEventToMineAsync(string userId, EventDetailsViewModel even, Event evn)
+		{
+			bool alreadyAdded = await dbContext
+                .EventClients
+				.AnyAsync(ec => ec.ClientId.ToString() == userId && ec.EventId.ToString() == even.Id);
+
+			if (!alreadyAdded)
+			{
+				EventClient userEvent = new EventClient
+				{
+					ClientId = Guid.Parse(userId),
+					EventId = Guid.Parse(even.Id)
+				};
+
+                ApplicationUser user = await dbContext
+                    .Users
+                    .FirstAsync(u => u.Id.ToString() == userId);
+
+                even.Clients.Add(user.UserName);
+
+                SqlConnection con = new SqlConnection("Server=DESKTOP-TOS6B50;Database=BeFit2023;Trusted_Connection=True;MultipleActiveResultSets=true");
+                SqlCommand cmd = new SqlCommand($"UPDATE Events SET ApplicationUserId = {@evn.Clients} WHERE Id = {@even.Id}", con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+				await dbContext.EventClients.AddAsync(userEvent);
+				await dbContext.SaveChangesAsync();
+			}
+		}
+
+		public async Task<EventDetailsViewModel?> GetEventDetailsByIdAsync(string id)
+		{
+		    return await dbContext
+               .Events
+			   .Where(e => e.Id.ToString() == id)
+			   .Select(e => new EventDetailsViewModel
+			   {
+				   Id = e.Id.ToString(),
+                   Title = e.Title,
+                   Address = e.Address,
+                   ImageUrl = e.ImageUrl,
+                   Tax = e.Tax, 
+                   CoachName = e.Coach.Name,
+                   Clients = (List<string>)e.Clients
+			   })
+			   .FirstOrDefaultAsync();
+		}
+
+		public async Task<Event> GetEventByIdAsync(string id)
+		{
+			return await dbContext
+			   .Events
+			   .Where(e => e.Id.ToString() == id)
+			   .Select(e => new Event
+			   {
+				   Clients = (List<string>)e.Clients
+			   })
+			   .FirstOrDefaultAsync();
+		}
+
+		public async Task RemoveEventFromMineAsync(string userId, EventDetailsViewModel even)
+		{
+			var userEvent = await dbContext.EventClients
+				.FirstOrDefaultAsync(ec => ec.ClientId.ToString() == userId && ec.EventId.ToString() == even.Id);
+
+			if (userEvent != null)
+			{
+				dbContext.EventClients.Remove(userEvent);
+				await dbContext.SaveChangesAsync();
+			}
 		}
 	}
 }

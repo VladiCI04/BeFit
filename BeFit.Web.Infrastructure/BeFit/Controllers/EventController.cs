@@ -1,4 +1,5 @@
-﻿using BeFit.Services.Data.Interfaces;
+﻿using BeFit.Data.Models;
+using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Event;
@@ -120,7 +121,7 @@ namespace BeFit.Controllers
 
             try
             {
-				EventDetailsViewModel viewModel = await this.eventService
+				EventDetailsViewModel? viewModel = await this.eventService
 					.GetDetailsByIdAsync(id);
 
 				return View(viewModel);
@@ -324,6 +325,41 @@ namespace BeFit.Controllers
 			{
 				return this.GeneralError();
 			}
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Join(string id)
+		{
+			EventDetailsViewModel? even = await eventService.GetEventDetailsByIdAsync(id);
+			var evn = await eventService.GetEventByIdAsync(id); 
+
+			if (even == null)
+			{
+				return RedirectToAction("All", "Event");
+			}
+
+			string userId = this.User.GetId()!;
+
+			await eventService.AddEventToMineAsync(userId, even, evn);
+
+			return RedirectToAction("Mine", "Event");
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Leave(string id)
+		{
+			EventDetailsViewModel? even = await eventService.GetEventDetailsByIdAsync(id);
+
+			if (even == null)
+			{
+				return RedirectToAction("All", "Event");
+			}
+
+			string userId = this.User.GetId()!;
+
+			await eventService.RemoveEventFromMineAsync(userId, even);
+
+			return RedirectToAction("All", "Event");
 		}
 
 		[HttpGet]

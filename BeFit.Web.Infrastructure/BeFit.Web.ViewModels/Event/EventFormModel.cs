@@ -43,6 +43,6 @@ namespace BeFit.Web.ViewModels.Event
         public int EventCategoryId { get; set; }
         public IEnumerable<EventSelectCategoryFormModel> EventCategories { get; set; } = new List<EventSelectCategoryFormModel>();
 
-		public ICollection<ApplicationUser> Clients { get; set; } = new List<ApplicationUser>();
+		public ICollection<string> Clients { get; set; } = new List<string>();
 	}
 }
