@@ -59,7 +59,8 @@ namespace BeFit.Services.Data
 				Weight = model.Weight,
 				PhoneNumber = model.PhoneNumber,
 				Email = model.Email,
-				Description = model.Description
+				Description = model.Description,
+				CoachCategoryId = model.CoachCategoryId
 			};
 
 			await this.dbContext.Coaches.AddAsync(newCoach);

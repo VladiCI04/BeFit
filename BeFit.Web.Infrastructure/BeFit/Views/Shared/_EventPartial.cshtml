@@ -18,7 +18,7 @@
 			{
 				<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
 				   class="btn btn-warning">Edit</a>
-				<a asp-controller="Event" asp-action="Delete" asp-routeid="@Model.Id"
+				<a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
 				   class="btn btn-danger">Delete</a>
 				<p></p>
 				@if (!(this.User.Identity.Name == Model.CoachName))

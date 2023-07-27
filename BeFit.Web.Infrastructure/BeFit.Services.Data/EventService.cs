@@ -185,7 +185,7 @@ namespace BeFit.Services.Data
             };
 		}
 
-        public async Task<bool> ExestsByIdAsync(string eventId)
+        public async Task<bool> ExistsByIdAsync(string eventId)
         {
             bool result = await this.dbContext
                  .Events
@@ -226,7 +226,7 @@ namespace BeFit.Services.Data
             return even.CoachId.ToString() == coachId;
         }
 
-		public async Task EditEventByIdAndFormModel(string eventId, EventFormModel formModel)
+		public async Task EditEventByIdAndFormModelAsync(string eventId, EventFormModel formModel)
 		{
 			Event even = await this.dbContext
                 .Events
@@ -241,6 +241,33 @@ namespace BeFit.Services.Data
             even.EventCategoryId = formModel.EventCategoryId;
             even.Start = formModel.Start;   
             even.End = formModel.End;
+
+            await this.dbContext.SaveChangesAsync();
+		}
+
+		public async Task<EventPreDeleteDetailsViewModel> GetEventForDeleteByIdAsync(string eventId)
+		{
+            Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return new EventPreDeleteDetailsViewModel
+            {
+                Title = even.Title,
+                Address = even.Address,
+                ImageUrl = even.ImageUrl
+            };
+		}
+
+		public async Task DeleteEventByIdAsync(string eventId)
+		{
+            Event eventToDelete = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            eventToDelete.IsActive = false;
 
             await this.dbContext.SaveChangesAsync();
 		}

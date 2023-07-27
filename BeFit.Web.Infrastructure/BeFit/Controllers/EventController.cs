@@ -109,7 +109,7 @@ namespace BeFit.Controllers
         public async Task<IActionResult> Details(string id)
         {
             bool eventExists = await this.eventService
-                .ExestsByIdAsync(id);
+                .ExistsByIdAsync(id);
 
             if (!eventExists)
             {
@@ -135,7 +135,7 @@ namespace BeFit.Controllers
         public async Task<IActionResult> Edit(string id)
         {
             bool eventExists = await this.eventService
-                .ExestsByIdAsync(id);
+                .ExistsByIdAsync(id);
 
             if (!eventExists)
             {
@@ -189,7 +189,7 @@ namespace BeFit.Controllers
             }
 
 			bool eventExists = await this.eventService
-				.ExestsByIdAsync(id);
+				.ExistsByIdAsync(id);
 
 			if (!eventExists)
 			{
@@ -220,7 +220,7 @@ namespace BeFit.Controllers
 
             try
             {
-                await this.eventService.EditEventByIdAndFormModel(id, model);
+                await this.eventService.EditEventByIdAndFormModelAsync(id, model);
             }
             catch (Exception)
             {
@@ -233,9 +233,100 @@ namespace BeFit.Controllers
 
 			this.TempData[SuccessMessage] = "Event was edited succesfully!";
 			return this.RedirectToAction("Details", "Event", new { id });
-		}		
+		}
 
         [HttpGet]
+        public async Task<IActionResult> Delete(string id)
+        {
+			bool eventExists = await this.eventService
+				.ExistsByIdAsync(id);
+
+			if (!eventExists)
+			{
+				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+				return this.RedirectToAction("All", "Event");
+			}
+
+			bool isUserCoach = await this.coachService
+				.CoachExistsByUserIdAsync(this.User.GetId()!);
+
+			if (!isUserCoach)
+			{
+				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
+
+				return this.RedirectToAction("Become", "Coach");
+			}
+
+			string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
+
+			if (!isCoachOwner)
+			{
+				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
+
+				return this.RedirectToAction("Mine", "Event");
+			}
+
+			try
+			{
+				EventPreDeleteDetailsViewModel viewModel = await this.eventService.GetEventForDeleteByIdAsync(id);
+
+				return this.View(viewModel);
+			}
+			catch (Exception)
+			{
+				return this.GeneralError();
+			}
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Delete(string id, EventPreDeleteDetailsViewModel model)
+		{
+			bool eventExists = await this.eventService
+			.ExistsByIdAsync(id);
+
+			if (!eventExists)
+			{
+				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
+
+				return this.RedirectToAction("All", "Event");
+			}
+
+			bool isUserCoach = await this.coachService
+				.CoachExistsByUserIdAsync(this.User.GetId()!);
+
+			if (!isUserCoach)
+			{
+				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
+
+				return this.RedirectToAction("Become", "Coach");
+			}
+
+			string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
+			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
+
+			if (!isCoachOwner)
+			{
+				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
+
+				return this.RedirectToAction("Mine", "Event");
+			}
+
+			try
+			{
+				await this.eventService.DeleteEventByIdAsync(id);
+				this.TempData[WarningMessage] = "The event was successfully deleted!";
+
+				return RedirectToAction("Mine", "Event");
+			}
+			catch (Exception)
+			{
+				return this.GeneralError();
+			}
+		}
+
+		[HttpGet]
         public async Task<IActionResult> Mine()
         {
             List<EventAllViewModel> myEvents = new List<EventAllViewModel>();

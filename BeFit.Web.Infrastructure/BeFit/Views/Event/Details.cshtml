@@ -29,9 +29,9 @@
 			<div class="form-inline">
 				@if (this.User.Identity?.IsAuthenticated ?? false)
 				{
-					<a class="btn btn-warning" asp-controller="Event" aspaction="Edit"
+					<a class="btn btn-warning" asp-controller="Event" asp-action="Edit"
 					   asp-route-id="@Model.Id">Edit</a>
-					<a class="ml-2 btn btn-danger" asp-controller="Event" aspaction="Delete"
+					<a class="ml-2 btn btn-danger" asp-controller="Event" asp-action="Delete"
 					   asp-route-id="@Model.Id">Delete</a>
 					<form class="ml-2" asp-controller="Event"
 						asp-action="Join" asp-route-id="@Model.Id"
