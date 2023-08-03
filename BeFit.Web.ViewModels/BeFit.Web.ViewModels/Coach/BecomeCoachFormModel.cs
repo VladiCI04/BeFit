@@ -7,36 +7,28 @@ namespace BeFit.Web.ViewModels.Coach
 {
 	public class BecomeCoachFormModel
 	{
-		[Required]
-		[MinLength(CoachNameMinLength)]
-		[MaxLength(CoachNameMaxLength)]
-		public string Name { get; set; } = null!;
-
 		[Range(CoachAgeMin, CoachAgeMax)]
+		[Display(Name = "Your Age")]
 		public int Age { get; set; }
 
 		[Required]
+		[Display(Name = "Your Gender")]
 		public string Gender { get; set; } = null!;
 
 		[Range(CoachHeightMin, CoachHeightMax)]
+		[Display(Name = "Height (in m)")]
 		public double Height { get; set; }
 
 		[Range(CoachWeightMin, CoachWeightMax)]
+		[Display(Name = "Weight (in kg)")]
 		public double Weight { get; set; }
 
 		[Required]
 		[MinLength(CoachPhoneNumberMinLength)]
 		[MaxLength(CoachPhoneNumberMaxLength)]
 		[Phone]
-		[Display(Name = "Phone")]
+		[Display(Name = "Your Phone")]
 		public string PhoneNumber { get; set; } = null!;
-
-		[Required]
-		[MinLength(CoachEmailMinLength)]
-		[MaxLength(CoachEmailMaxLength)]
-		[EmailAddress]
-		[Display(Name = "Email")]
-		public string Email { get; set; } = null!;
 
 		[MaxLength(CoachDescriptionMaxLength)]
 		[Description]

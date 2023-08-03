@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BeFit.Data.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BeFit.Web.ViewModels.Event
 {
@@ -16,7 +17,5 @@ namespace BeFit.Web.ViewModels.Event
 		public double Tax { get; set; }
 
 		public string CoachName { get; set; } = null!;
-
-        public bool IsClient { get; set; }
     }
 }

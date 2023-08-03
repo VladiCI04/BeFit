@@ -52,14 +52,13 @@ namespace BeFit.Services.Data
 			Coach newCoach = new Coach()
 			{
 				UserId = Guid.Parse(userId),
-				Name = model.Name,
 				Age = model.Age,
 				Gender = model.Gender,
 				Height = model.Height,
 				Weight = model.Weight,
 				PhoneNumber = model.PhoneNumber,
-				Email = model.Email,
-				Description = model.Description
+				Description = model.Description,
+				CoachCategoryId = model.CoachCategoryId
 			};
 
 			await this.dbContext.Coaches.AddAsync(newCoach);
@@ -74,7 +73,7 @@ namespace BeFit.Services.Data
 
 			if (coach == null)
 			{
-				return null;
+				return null!;
 			}
 			else
 			{
