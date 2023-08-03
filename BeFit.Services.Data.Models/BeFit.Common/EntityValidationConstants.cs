@@ -31,12 +31,8 @@
 
         public static class Coach
         {
-            // Name
-            public const int CoachNameMinLength = 1;
-            public const int CoachNameMaxLength = 30;
-
             // Age
-            public const int CoachAgeMin = 35;
+            public const int CoachAgeMin = 18;
             public const int CoachAgeMax = 70;
 
             // Height
@@ -50,10 +46,6 @@
             // PhoneNumber
             public const int CoachPhoneNumberMinLength = 7;
             public const int CoachPhoneNumberMaxLength = 15;
-
-            // Email
-            public const int CoachEmailMinLength = 5;
-            public const int CoachEmailMaxLength = 30;
 
             // Description
             public const int CoachDescriptionMaxLength = 1000;

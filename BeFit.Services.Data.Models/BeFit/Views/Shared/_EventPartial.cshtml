@@ -18,21 +18,16 @@
 			{
 				<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
 				   class="btn btn-warning">Edit</a>
-				<a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
-				   class="btn btn-danger">Delete</a>
+				<form asp-controller="Event" asp-action="Leave"
+					  asp-route-id="@Model.Id" method="post">
+					<input class="btn btn-primary" type="submit" value="Leave" />
+				</form>
 				<p></p>
 				@if (!(this.User.Identity.Name == Model.CoachName))
 				{
 					<form class="input-group-sm" asp-controller="Event"
-						  asp-action="Joined" asp-route-id="@Model.Id" method="post">
+						  asp-action="Join" asp-route-id="@Model.Id" method="post">
 						<input class="btn btn-primary" type="submit" value="Join" />
-					</form>
-				}
-				else
-				{
-					<form asp-controller="Event" asp-action="Leave"
-						  asp-route-id="@Model.Id" method="post">
-						<input class="btn btn-primary" type="submit" value="Leave" />
 					</form>
 				}
 			}
