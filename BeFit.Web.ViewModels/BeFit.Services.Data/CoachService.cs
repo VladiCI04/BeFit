@@ -80,5 +80,32 @@ namespace BeFit.Services.Data
 				return coach.Id.ToString();
 			}
 		}
+
+		public async Task<bool> HasEventWithIdAsync(string userId, string eventId)
+		{
+			Coach? coach = await this.dbContext
+				.Coaches
+				.Include(c => c.Events)
+				.FirstOrDefaultAsync(c => c.UserId.ToString() == userId);
+			if (coach == null)
+			{
+				return false;
+			}
+
+			eventId = eventId.ToLower();
+			bool result = coach.Events.Any(e => e.Id.ToString() == eventId);
+
+			return result;
+		}
+
+		public async Task<bool> HasUserThisEvent(string userId, string eventId)
+		{
+			eventId = eventId.ToLower();
+			bool result = await dbContext
+				.EventClients
+				.AnyAsync(ec => ec.ClientId.ToString() == userId && ec.EventId.ToString() == eventId);
+
+			return result;
+		}
 	}
 }

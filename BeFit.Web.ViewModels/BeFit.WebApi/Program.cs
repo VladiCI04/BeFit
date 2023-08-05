@@ -29,7 +29,7 @@ namespace BeFit.WebApi
 						.AllowAnyHeader()
 						.AllowAnyMethod();
 				});
-			});
+            });
 
 			WebApplication app = builder.Build();
 

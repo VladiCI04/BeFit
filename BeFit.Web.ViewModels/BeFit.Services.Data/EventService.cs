@@ -175,6 +175,7 @@ namespace BeFit.Services.Data
                 Category = even.EventCategory.Name,
                 Start = even.Start,
                 End = even.End,
+                Clients = this.dbContext.EventClients.ToList().Count(ec => ec.EventId == even.Id),
                 Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
                 {
                     Name = even.Coach.User.UserName,
@@ -269,11 +270,10 @@ namespace BeFit.Services.Data
 
             eventToDelete.IsActive = false;
 
-            this.dbContext.Events.Remove(eventToDelete);
             await this.dbContext.SaveChangesAsync();
 		}
 
-		public async Task AddEventToMineAsync(string userId, EventDetailsViewModel even)
+		public async Task<bool> AddEventToMineAsync(string userId, EventDetailsViewModel even)
 		{
 			bool alreadyAdded = await dbContext
                 .EventClients
@@ -287,9 +287,18 @@ namespace BeFit.Services.Data
 					EventId = Guid.Parse(even.Id)
 				};
 
+                even.Clients += 1;
+
 				await dbContext.EventClients.AddAsync(userEvent);
 				await dbContext.SaveChangesAsync();
+
+                return true;
 			}
+            else
+            {
+                even.Clients -= 1;
+                return false;
+            }
 		}
 
 		public async Task<EventDetailsViewModel?> GetEventDetailsByIdAsync(string id)
@@ -340,5 +349,23 @@ namespace BeFit.Services.Data
                 TotalCoaches = await this.dbContext.Coaches.CountAsync(),
             };
 		}
+
+        public async Task<bool> IsEventExpired(string eventId)
+        {
+            eventId = eventId.ToLower();
+            Event? even = await this.dbContext
+                .Events
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            if (even.End >= DateTime.Now)
+            {
+                return true;
+            }
+
+            even.IsActive = false;
+            await this.dbContext.SaveChangesAsync();
+
+            return false;
+        }
 	}
 }

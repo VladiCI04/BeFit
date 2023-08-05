@@ -16,5 +16,7 @@ namespace BeFit.Web.ViewModels.Event
 		public DateTime End { get; set; } 
 
 		public CoachInfoOnEventViewModel Coach { get; set; } = null!;
+
+		public int Clients { get; set; } = 0;
     }
 }

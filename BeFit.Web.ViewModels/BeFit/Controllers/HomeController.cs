@@ -1,7 +1,6 @@
 ﻿using BeFit.Services.Data.Interfaces;
 using BeFit.Web.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace BeFit.Controllers
 {

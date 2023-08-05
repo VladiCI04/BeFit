@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1PoH2XqrbwhqFBJzJJdqYQVtyy0jjFqaAorPKskjf2w=",
+  "Hash": "8s+ZjOu6HJfSWDrzH+81Jgko1t1A9VrsZxSS3+xgrt4=",
   "Source": "BeFit",
   "BasePath": "_content/BeFit",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BeFit.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\befit-logo.png",
+      "SourceId": "BeFit",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\",
+      "BasePath": "_content/BeFit",
+      "RelativePath": "befit-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\befit-logo.png"
     },
     {
       "Identity": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\site.css",

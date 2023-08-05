@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using BeFit.Web.ViewModels.Event.Enums;
 using static BeFit.Common.GeneralApplicationConstants;
 

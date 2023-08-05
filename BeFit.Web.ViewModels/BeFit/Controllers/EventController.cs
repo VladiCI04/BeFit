@@ -1,5 +1,4 @@
-﻿using BeFit.Data.Models;
-using BeFit.Services.Data.Interfaces;
+﻿using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Event;
@@ -261,7 +260,6 @@ namespace BeFit.Controllers
 
 			string coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
 			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId);
-
 			if (!isCoachOwner)
 			{
 				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
@@ -306,7 +304,6 @@ namespace BeFit.Controllers
 
 			string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
 			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
-
 			if (!isCoachOwner)
 			{
 				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
@@ -338,7 +335,7 @@ namespace BeFit.Controllers
 
 			string userId = this.User.GetId()!;
 
-			bool isUserCoach = await this.coachService
+            bool isUserCoach = await this.coachService
 				.CoachExistsByUserIdAsync(userId);
             if (isUserCoach)
             {
@@ -347,9 +344,17 @@ namespace BeFit.Controllers
 				return RedirectToAction("All", "Event");
 			}
 
-            await eventService.AddEventToMineAsync(userId, even);
-
-			return RedirectToAction("Mine", "Event");
+            bool alreadyAdded = await eventService.AddEventToMineAsync(userId, even);
+			if (alreadyAdded)
+			{
+				TempData[SuccessMessage] = "You join in this event successfully!";
+                return RedirectToAction("Mine", "Event");
+            }
+			else
+			{
+				TempData[WarningMessage] = "You already joined in this event!";
+                return RedirectToAction("All", "Event");
+            }			
 		}
 
 		[HttpPost]
@@ -395,7 +400,6 @@ namespace BeFit.Controllers
 			}
             catch (Exception)
             {
-
 				return this.GeneralError();
 			}
         }

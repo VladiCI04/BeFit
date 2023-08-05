@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BeFit.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\befit-logo.png",
+      "PackagePath": "staticwebassets\\befit-logo.png"
+    },
+    {
       "Id": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
