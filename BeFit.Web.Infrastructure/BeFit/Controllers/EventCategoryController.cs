@@ -1,7 +1,9 @@
 ﻿using BeFit.Services.Data.Interfaces;
+using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.EventCategory;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using static BeFit.Common.NotificationMessagesConstants;
 
 namespace BeFit.Controllers
 {
@@ -15,9 +17,30 @@ namespace BeFit.Controllers
                this.eventCategoryService = eventCategoryService;
         }
 
+        [HttpGet]
         public async Task<IActionResult> All()
         {
             IEnumerable<AllEventCategoriesViewModel> viewModel = await this.eventCategoryService.AllEventCategoriesForListAsync();
+
+            return this.View(viewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int id, string information)
+        {
+            bool eventCategoryExists = await this.eventCategoryService.ExistsByIdAsync(id);
+
+            if (!eventCategoryExists) 
+            { 
+                return NotFound();
+            }
+
+            EventCategoryDetailsViewModel viewModel = await this.eventCategoryService.GetDetailsByIdAsync(id);
+
+            if (!eventCategoryExists || viewModel.GetUrlInformation() != information)
+            {
+                return this.NotFound();
+            }
 
             return this.View(viewModel);
         }

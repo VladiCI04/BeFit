@@ -11,5 +11,7 @@ namespace BeFit.Services.Data.Interfaces
         Task<bool> ExistsByIdAsync(int id);
 
         Task<IEnumerable<string>> AllEventCategoryNamesAsync();
+
+        Task<EventCategoryDetailsViewModel> GetDetailsByIdAsync(int id);
     }
 }

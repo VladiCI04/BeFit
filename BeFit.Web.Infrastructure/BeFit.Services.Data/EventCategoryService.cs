@@ -1,4 +1,5 @@
 ﻿using BeFit.Data;
+using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using BeFit.Web.ViewModels.EventCategory;
 using Microsoft.EntityFrameworkCore;
@@ -62,5 +63,20 @@ namespace BeFit.Services.Data
 
             return allNames;
 		}
-    }
+
+		public async Task<EventCategoryDetailsViewModel> GetDetailsByIdAsync(int id)
+		{
+            EventCategory eventCategory = await this.dbContext
+                .EventCategories
+                .FirstAsync(ec => ec.Id == id);
+
+			EventCategoryDetailsViewModel viewModel = new EventCategoryDetailsViewModel()
+            {
+                Id = eventCategory.Id,
+                Name = eventCategory.Name
+            };
+
+            return viewModel;
+		}
+	}
 }
