@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.Infrastructure.ModelBinders;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 
 namespace BeFit
 {
