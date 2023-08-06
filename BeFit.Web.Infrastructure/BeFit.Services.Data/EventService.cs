@@ -2,13 +2,11 @@
 using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
+using BeFit.Services.Data.Models.Statistics;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Event.Enums;
 using BeFit.Web.ViewModels.Home;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace BeFit.Services.Data
 {
@@ -40,7 +38,7 @@ namespace BeFit.Services.Data
 
 		public async Task<string> CreateAndReturnIdAsync(EventFormModel formModel, string coachId)
 		{
-            BeFit.Data.Models.Event newEvent = new BeFit.Data.Models.Event()
+            Event newEvent = new Event()
             {
                 Title = formModel.Title,
                 Address = formModel.Address,
@@ -51,8 +49,7 @@ namespace BeFit.Services.Data
                 Start = formModel.Start,
                 End = formModel.End,
                 CoachId = Guid.Parse(coachId),
-                EventCategoryId = formModel.EventCategoryId,
-                Clients = formModel.Clients
+                EventCategoryId = formModel.EventCategoryId
             };
 
             await this.dbContext.Events.AddAsync(newEvent);
@@ -83,16 +80,17 @@ namespace BeFit.Services.Data
             }
 
             eventsQuery = queryModel.EventSorting switch
-            {
-                EventSorting.Newest => eventsQuery
-                    .OrderByDescending(e => e.CreatedOn),
-                EventSorting.Oldest => eventsQuery
-                    .OrderBy(e => e.CreatedOn),
-                EventSorting.TaxAscending => eventsQuery
-                    .OrderBy(e => e.Tax),
-                EventSorting.TaxDescending => eventsQuery
-                    .OrderByDescending(e => e.Tax)
-            };
+			{
+				EventSorting.Newest => eventsQuery
+					.OrderByDescending(e => e.CreatedOn),
+				EventSorting.Oldest => eventsQuery
+					.OrderBy(e => e.CreatedOn),
+				EventSorting.TaxAscending => eventsQuery
+					.OrderBy(e => e.Tax),
+				EventSorting.TaxDescending => eventsQuery
+					.OrderByDescending(e => e.Tax),
+				_ => throw new NotImplementedException()
+			};
 
             IEnumerable<EventAllViewModel> allEvents = await eventsQuery
                 .Where(e => e.IsActive)
@@ -105,7 +103,7 @@ namespace BeFit.Services.Data
                     Address = e.Address,
                     ImageUrl = e.ImageUrl,
                     Tax = e.Tax,
-                    CoachName = e.Coach.Name
+                    CoachName = e.Coach.User.UserName
                 })
                 .ToArrayAsync();
 
@@ -130,7 +128,7 @@ namespace BeFit.Services.Data
                     Address = e.Address,
                     ImageUrl = e.ImageUrl,
                     Tax = e.Tax,
-                    CoachName = e.Coach.Name
+                    CoachName = e.Coach.User.UserName
                 })
                 .ToArrayAsync();
                    
@@ -149,7 +147,7 @@ namespace BeFit.Services.Data
 					Address = e.Event.Address,
 					ImageUrl = e.Event.ImageUrl,
 					Tax = e.Event.Tax,
-					CoachName = e.Event.Coach.Name,
+					CoachName = e.Event.Coach.User.UserName,
 				})
 				.ToArrayAsync();
 
@@ -177,10 +175,10 @@ namespace BeFit.Services.Data
                 Category = even.EventCategory.Name,
                 Start = even.Start,
                 End = even.End,
-                Clients = (List<string>)even.Clients,
+                Clients = this.dbContext.EventClients.ToList().Count(ec => ec.EventId == even.Id),
                 Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
                 {
-                    Name = even.Coach.Name,
+                    Name = even.Coach.User.UserName,
                     Email = even.Coach.User.Email,
                     PhoneNumber = even.Coach.PhoneNumber,
                     Category = even.Coach.CoachCategoryId
@@ -200,7 +198,7 @@ namespace BeFit.Services.Data
 
         public async Task<EventFormModel> GetEventForEditByIdAsync(string eventId)
         {
-            BeFit.Data.Models.Event? even = await this.dbContext
+            Event? even = await this.dbContext
                 .Events
                 .Include(e => e.EventCategory)
                 .Where(e => e.IsActive)
@@ -275,7 +273,7 @@ namespace BeFit.Services.Data
             await this.dbContext.SaveChangesAsync();
 		}
 
-		public async Task AddEventToMineAsync(string userId, EventDetailsViewModel even, Event evn)
+		public async Task<bool> AddEventToMineAsync(string userId, EventDetailsViewModel even)
 		{
 			bool alreadyAdded = await dbContext
                 .EventClients
@@ -289,21 +287,18 @@ namespace BeFit.Services.Data
 					EventId = Guid.Parse(even.Id)
 				};
 
-                ApplicationUser user = await dbContext
-                    .Users
-                    .FirstAsync(u => u.Id.ToString() == userId);
-
-                even.Clients.Add(user.UserName);
-
-                SqlConnection con = new SqlConnection("Server=DESKTOP-TOS6B50;Database=BeFit2023;Trusted_Connection=True;MultipleActiveResultSets=true");
-                SqlCommand cmd = new SqlCommand($"UPDATE Events SET ApplicationUserId = {@evn.Clients} WHERE Id = {@even.Id}", con);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+                even.Clients += 1;
 
 				await dbContext.EventClients.AddAsync(userEvent);
 				await dbContext.SaveChangesAsync();
+
+                return true;
 			}
+            else
+            {
+                even.Clients -= 1;
+                return false;
+            }
 		}
 
 		public async Task<EventDetailsViewModel?> GetEventDetailsByIdAsync(string id)
@@ -318,22 +313,19 @@ namespace BeFit.Services.Data
                    Address = e.Address,
                    ImageUrl = e.ImageUrl,
                    Tax = e.Tax, 
-                   CoachName = e.Coach.Name,
-                   Clients = (List<string>)e.Clients
+                   CoachName = e.Coach.User.UserName
 			   })
 			   .FirstOrDefaultAsync();
 		}
 
 		public async Task<Event> GetEventByIdAsync(string id)
 		{
-			return await dbContext
+			Event even = await dbContext
 			   .Events
 			   .Where(e => e.Id.ToString() == id)
-			   .Select(e => new Event
-			   {
-				   Clients = (List<string>)e.Clients
-			   })
-			   .FirstOrDefaultAsync();
+			   .FirstAsync();
+
+            return even;
 		}
 
 		public async Task RemoveEventFromMineAsync(string userId, EventDetailsViewModel even)
@@ -347,5 +339,33 @@ namespace BeFit.Services.Data
 				await dbContext.SaveChangesAsync();
 			}
 		}
+
+		public async Task<StatisticsServiceModel> GetStatisticsAsync()
+		{
+            return new StatisticsServiceModel()
+            {
+                TotalEvents = await this.dbContext.Events.CountAsync(),
+                TotalClients = await this.dbContext.Users.CountAsync(),
+                TotalCoaches = await this.dbContext.Coaches.CountAsync(),
+            };
+		}
+
+        public async Task<bool> IsEventExpired(string eventId)
+        {
+            eventId = eventId.ToLower();
+            Event? even = await this.dbContext
+                .Events
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            if (even.End >= DateTime.Now)
+            {
+                return true;
+            }
+
+            even.IsActive = false;
+            await this.dbContext.SaveChangesAsync();
+
+            return false;
+        }
 	}
 }

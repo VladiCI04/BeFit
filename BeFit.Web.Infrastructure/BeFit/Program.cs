@@ -4,6 +4,7 @@ using BeFit.Services.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.Infrastructure.ModelBinders;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BeFit
 {
@@ -41,6 +42,7 @@ namespace BeFit
                 .AddMvcOptions(options =>
                 {
                     options.ModelBinderProviders.Insert(0, new DecimalModelBinderProvider());
+                    options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
                 });
 
             WebApplication app = builder.Build();
@@ -52,7 +54,8 @@ namespace BeFit
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Home/Error/500");
+                app.UseStatusCodePagesWithRedirects("/Home/Error?statusCode={0}");
                 app.UseHsts();
             }
 
@@ -64,8 +67,15 @@ namespace BeFit
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapDefaultControllerRoute();
-            app.MapRazorPages();
+            app.UseEndpoints(config =>
+            {
+                config.MapControllerRoute(
+                    name: "ProtectingUrlPattern",
+                    pattern: "/{controller}/{action}/{id}/{information}",
+                    defaults: new { Controller = "Category", Action = "Details" });
+                config.MapDefaultControllerRoute();
+                config.MapRazorPages();
+            });
 
             app.Run();
         }

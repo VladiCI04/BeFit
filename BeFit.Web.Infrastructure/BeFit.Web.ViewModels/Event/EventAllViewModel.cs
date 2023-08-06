@@ -17,7 +17,5 @@ namespace BeFit.Web.ViewModels.Event
 		public double Tax { get; set; }
 
 		public string CoachName { get; set; } = null!;
-
-		public ICollection<string> Clients { get; set; } = new List<string>();
     }
 }

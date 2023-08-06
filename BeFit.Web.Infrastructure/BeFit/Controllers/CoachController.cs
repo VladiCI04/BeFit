@@ -1,5 +1,4 @@
-﻿using BeFit.Data.Models;
-using BeFit.Services.Data.Interfaces;
+﻿using BeFit.Services.Data.Interfaces;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Coach;
 using BeFit.Web.ViewModels.Event;
@@ -24,7 +23,7 @@ namespace BeFit.Controllers
         [HttpGet]
         public async Task<IActionResult> Become()
         {
-            string? userId = this.User.GetId();
+            string userId = this.User.GetId()!;
             bool isAgent = await this.coachService.CoachExistsByUserIdAsync(userId);
 
             if (isAgent)
@@ -45,7 +44,7 @@ namespace BeFit.Controllers
         [HttpPost]
         public async Task<IActionResult> Become(BecomeCoachFormModel model)
         {
-			string? userId = this.User.GetId();
+			string userId = this.User.GetId()!;
 			bool isAgent = await this.coachService.CoachExistsByUserIdAsync(userId);
 
 			if (isAgent)

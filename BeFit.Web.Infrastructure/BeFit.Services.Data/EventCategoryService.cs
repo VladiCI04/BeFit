@@ -29,7 +29,22 @@ namespace BeFit.Services.Data
             return allEventCategories;
         }
 
-		public async Task<bool> ExistsByIdAsync(int id)
+        public async Task<IEnumerable<AllEventCategoriesViewModel>> AllEventCategoriesForListAsync()
+        {
+            IEnumerable<AllEventCategoriesViewModel> allEventCategories = await this.dbContext
+                .EventCategories
+                .AsNoTracking()
+                .Select(ec => new AllEventCategoriesViewModel()
+                {
+                    Id = ec.Id,
+                    Name = ec.Name
+                })
+                .ToArrayAsync();
+
+            return allEventCategories;
+        }
+
+        public async Task<bool> ExistsByIdAsync(int id)
 		{
             bool result = await this.dbContext
                 .EventCategories
@@ -47,5 +62,5 @@ namespace BeFit.Services.Data
 
             return allNames;
 		}
-	}
+    }
 }

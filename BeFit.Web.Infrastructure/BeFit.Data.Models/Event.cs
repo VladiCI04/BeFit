@@ -53,8 +53,5 @@ namespace BeFit.Data.Models
         public EventCategory EventCategory { get; set; } = null!;
 
         public ICollection<EventClient> EventClients { get; set; } = new List<EventClient>();
-
-        [NotMapped]
-        public ICollection<string> Clients { get; set; } = new List<string>();
     }
 }

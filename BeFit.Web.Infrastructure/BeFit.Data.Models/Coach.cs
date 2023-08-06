@@ -9,11 +9,6 @@ namespace BeFit.Data.Models
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
 
-        [Required]
-        [MinLength(CoachNameMinLength)]
-        [MaxLength(CoachNameMaxLength)]
-        public string Name { get; set; } = null!;
-
         [Range(CoachAgeMin, CoachAgeMax)]
         public int Age { get; set; }
 
@@ -30,11 +25,6 @@ namespace BeFit.Data.Models
         [MinLength(CoachPhoneNumberMinLength)]
         [MaxLength(CoachPhoneNumberMaxLength)]
         public string PhoneNumber { get; set; } = null!;
-
-        [Required]
-        [MinLength(CoachEmailMinLength)]
-        [MaxLength(CoachEmailMaxLength)]
-        public string Email { get; set; } = null!;
 
         [MaxLength(CoachDescriptionMaxLength)]
         public string? Description { get; set; }

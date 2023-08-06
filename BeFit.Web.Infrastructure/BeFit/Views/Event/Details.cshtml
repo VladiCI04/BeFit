@@ -1,7 +1,17 @@
-﻿@model EventDetailsViewModel
+﻿@using BeFit.Services.Data.Interfaces;
+@using BeFit.Web.Infrastructure.Extensions;
+@inject ICoachService coachService; 
+@{
+	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+	bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
+	bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
+}
+
+@model EventDetailsViewModel
 @{
 	ViewBag.Title = "Event Details";
 }
+
 <h2 class="text-center">@ViewBag.Title</h2>
 <hr />
 <div class="container" style="display:inline">
@@ -21,29 +31,38 @@
 			<p>Category: <b>@Model.Category</b></p>
 			<p>Start: <b>@Model.Start</b></p>
 			<p>End: <b>@Model.End</b></p>
-			<p>Joined Clients:</p>
-			@foreach(var clientName in Model.Clients)
-			{
-				<p>@clientName</p>
-			}
+			<p>Clients: @Model.Clients</p>	
 			<div class="form-inline">
 				@if (this.User.Identity?.IsAuthenticated ?? false)
 				{
-					<a class="btn btn-warning" asp-controller="Event" asp-action="Edit"
-					   asp-route-id="@Model.Id">Edit</a>
-					<a class="ml-2 btn btn-danger" asp-controller="Event" asp-action="Delete"
-					   asp-route-id="@Model.Id">Delete</a>
-					<form class="ml-2" asp-controller="Event"
-						asp-action="Join" asp-route-id="@Model.Id"
-						method="post">
-						<input class="btn btn-primary" type="submit"
-							value="Join" />
-					</form>
-					<form class="ml-2" asp-controller="Event" asp-action="Leave"
-						asp-route-id="@Model.Id" method="post">
-						<input class="btn btn-primary" type="submit"
-							value="Leave" />
-					</form>
+					@if (isUserCoach && isCoachOwnerOfEvent)
+					{
+						<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
+						   class="btn btn-warning">Edit</a>
+
+						<a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
+						class="btn btn-danger">Delete</a>
+					}
+
+					@if(!isUserCoach)
+					{
+						@if (!isEventAlreadyAdded)
+						{
+							<p></p>
+							<form asp-controller="Event"
+							asp-action="Join" asp-route-id="@Model.Id" method="post">
+								<input class="btn btn-primary" type="submit" value="Join" />
+							</form>
+						}
+						else
+						{
+							<p></p>
+							<form asp-controller="Event"
+							asp-action="Leave" asp-route-id="@Model.Id" method="post">
+								<input class="btn btn-primary" type="submit" value="Leave" />
+							</form>
+						}
+					}
 				}
 			</div>
 			<p></p>

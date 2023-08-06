@@ -1,7 +1,9 @@
 ﻿using BeFit.Data.Models;
 using BeFit.Services.Data.Models.Events;
+using BeFit.Services.Data.Models.Statistics;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Home;
+using System.Security.Claims;
 
 namespace BeFit.Services.Data.Interfaces
 {
@@ -31,12 +33,16 @@ namespace BeFit.Services.Data.Interfaces
 
         Task DeleteEventByIdAsync(string eventId);
 
-        Task AddEventToMineAsync(string userId, EventDetailsViewModel even, Event evn);
+        Task<bool> AddEventToMineAsync(string userId, EventDetailsViewModel even);
 
         Task<EventDetailsViewModel?> GetEventDetailsByIdAsync(string id);
 
         Task<Event> GetEventByIdAsync(string id);
 
         Task RemoveEventFromMineAsync(string userId, EventDetailsViewModel even);
+
+        Task<StatisticsServiceModel> GetStatisticsAsync();
+
+        Task<bool> IsEventExpired(string eventId);
 	}
 }
