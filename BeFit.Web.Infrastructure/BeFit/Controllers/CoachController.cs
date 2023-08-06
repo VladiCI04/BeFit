@@ -1,7 +1,6 @@
 ﻿using BeFit.Services.Data.Interfaces;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Coach;
-using BeFit.Web.ViewModels.Event;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static BeFit.Common.NotificationMessagesConstants;

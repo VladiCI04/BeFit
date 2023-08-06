@@ -4,12 +4,10 @@
 @{
 	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
 }
-@model EventCategoryDetailsViewModel
-
+@model CoachCategoryDetailsViewModel
 @{
-	ViewData["Title"] = "Event Category Details";
+	ViewData["Title"] = "Coach Category Details";
 }
-
 
 @if (isUserCoach)
 {

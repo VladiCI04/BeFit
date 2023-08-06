@@ -3,7 +3,6 @@ using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.EventCategory;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static BeFit.Common.NotificationMessagesConstants;
 
 namespace BeFit.Controllers
 {
@@ -37,7 +36,7 @@ namespace BeFit.Controllers
 
             EventCategoryDetailsViewModel viewModel = await this.eventCategoryService.GetDetailsByIdAsync(id);
 
-            if (!eventCategoryExists || viewModel.GetUrlInformation() != information)
+            if (viewModel.GetUrlInformationForEvent() != information)
             {
                 return this.NotFound();
             }
