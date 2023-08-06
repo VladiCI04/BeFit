@@ -1,4 +1,6 @@
-﻿namespace BeFit.Common
+﻿using System.Dynamic;
+
+namespace BeFit.Common
 {
     public static class EntityValidationConstants
     {
@@ -56,6 +58,15 @@
             // Name
             public const int CoachCategoryNameMinLength = 1;
             public const int CoachCategoryNameMaxLength = 30;
+        }
+
+        public static class User
+        {
+            public const int UserFirstNameMinLength = 1;
+            public const int UserFirstNameMaxLength = 15;
+
+            public const int UserLastNameMinLength = 1;
+            public const int UserLastNameMaxLength = 15; 
         }
     }
 }

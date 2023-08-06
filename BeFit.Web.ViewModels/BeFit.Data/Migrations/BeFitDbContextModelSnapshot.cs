@@ -42,6 +42,20 @@ namespace BeFit.Data.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasDefaultValue("Test");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasDefaultValue("Testov");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 

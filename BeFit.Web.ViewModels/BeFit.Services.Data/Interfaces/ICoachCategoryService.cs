@@ -6,6 +6,12 @@ namespace BeFit.Services.Data.Interfaces
 	{
 		Task<IEnumerable<CoachSelectCategoryFormModel>> AllCoachCategoriesAsync();
 
+		Task<IEnumerable<AllCoachCategoriesViewModel>> AllCoachCategoriesForListAsync();
+
+		Task<bool> ExistsByIdAsync(int id);
+
 		Task<IEnumerable<string>> AllCoachCategoryNamesAsync();
+
+		Task<CoachCategoryDetailsViewModel> GetDetailsByIdAsync(int id);
 	}
 }
