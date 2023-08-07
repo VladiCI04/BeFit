@@ -34,4 +34,8 @@
     <ProjectReference Include="..\BeFit.Web.ViewModels\BeFit.Web.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Pages\Account\" />
+  </ItemGroup>
+
 </Project>

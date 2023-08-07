@@ -38,6 +38,11 @@ namespace BeFit
 
             builder.Services.AddApplicationServices(typeof(IEventService));
 
+            builder.Services.ConfigureApplicationCookie(cfg =>
+            {
+                cfg.LogoutPath = "/User/Login";
+            });
+
             builder.Services
                 .AddControllersWithViews()
                 .AddMvcOptions(options =>
