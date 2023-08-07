@@ -1,15 +1,15 @@
-﻿@using BeFit.Services.Data.Interfaces;
-@using BeFit.Web.Infrastructure.Extensions;
-@inject ICoachService coachService;
+﻿@using BeFit.Services.Data.Interfaces
+@using BeFit.Web.Infrastructure.Extensions
+
+@inject ICoachService coachService
 @{
 	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
 }
-@model EventCategoryDetailsViewModel
 
+@model EventCategoryDetailsViewModel
 @{
 	ViewData["Title"] = "Event Category Details";
 }
-
 
 @if (isUserCoach)
 {

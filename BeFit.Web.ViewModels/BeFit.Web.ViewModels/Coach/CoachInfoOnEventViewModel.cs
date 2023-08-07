@@ -4,7 +4,7 @@ namespace BeFit.Web.ViewModels.Coach
 {
 	public class CoachInfoOnEventViewModel
 	{
-		public string Name { get; set; } = null!;
+		public string FullName { get; set; } = null!;
 
         public string Email { get; set; } = null!;
 

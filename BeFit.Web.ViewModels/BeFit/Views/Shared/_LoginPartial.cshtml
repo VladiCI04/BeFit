@@ -1,13 +1,16 @@
-﻿@using BeFit.Data.Models;
+﻿@using BeFit.Data.Models
 @using Microsoft.AspNetCore.Identity
+@using BeFit.Services.Data.Interfaces
+@using BeFit.Web.Infrastructure.Extensions
+
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
-@using BeFit.Services.Data.Interfaces
-@using BeFit.Web.Infrastructure.Extensions;
+@inject IUserService UserService
 
 @inject ICoachService CoachService
 @{
     bool isUserCoach = await CoachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    string? userFullName = await UserService.GetFullNameByEmailAsync(User.Identity?.Name!);
 }
 
 <ul class="navbar-nav">
@@ -20,7 +23,7 @@
         </li>
     }
     <li>
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello, @User.Identity?.Name!</a>
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello, @userFullName</a>
     </li>
     <li>
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
@@ -31,10 +34,10 @@
 else
 {
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Register">Register</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Login">Login</a>
     </li>
 }
 </ul>

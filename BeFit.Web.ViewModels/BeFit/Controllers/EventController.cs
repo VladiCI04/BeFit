@@ -14,12 +14,14 @@ namespace BeFit.Controllers
         private readonly IEventCategoryService eventCategoryService;
 		private readonly ICoachService coachService;
         private readonly IEventService eventService;
+		private readonly IUserService userService;
 
-        public EventController(IEventCategoryService eventCategoryService, IEventService eventService, ICoachCategoryService coachCategoryService,ICoachService coachService)
+        public EventController(IEventCategoryService eventCategoryService, IEventService eventService, ICoachCategoryService coachCategoryService,ICoachService coachService, IUserService userService)
         {
             this.eventCategoryService = eventCategoryService;
 			this.eventService = eventService;
             this.coachService = coachService;
+			this.userService = userService;
         }
 
         [HttpGet]
@@ -54,7 +56,7 @@ namespace BeFit.Controllers
 					EventCategories = await this.eventCategoryService.AllEventCategoriesAsync()
 				};
 
-				return View(formModel);
+				return this.View(formModel);
 			}
             catch (Exception)
             {
@@ -120,10 +122,11 @@ namespace BeFit.Controllers
 
             try
             {
-				EventDetailsViewModel? viewModel = await this.eventService
-					.GetDetailsByIdAsync(id);
+				EventDetailsViewModel? viewModel = await this.eventService.GetDetailsByIdAsync(id);
 
-				return View(viewModel);
+				viewModel!.Coach.FullName = await this.userService.GetFullNameByEmailAsync(this.User.Identity?.Name!);
+
+				return this.View(viewModel);
 			}
             catch (Exception)
             {

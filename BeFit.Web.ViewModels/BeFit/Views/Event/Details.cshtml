@@ -1,6 +1,7 @@
-﻿@using BeFit.Services.Data.Interfaces;
-@using BeFit.Web.Infrastructure.Extensions;
-@inject ICoachService coachService; 
+﻿@using BeFit.Services.Data.Interfaces
+@using BeFit.Web.Infrastructure.Extensions
+
+@inject ICoachService coachService
 @{
 	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
 	bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
@@ -70,7 +71,7 @@
 			<div class="card" style="width: 18rem;">
 				<div class="card-body">
 					<h5 class="card-title">Coach Info</h5>
-					<p class="card-text">Name: @Model.Coach.Name</p>
+					<p class="card-text">Name: @Model.Coach.FullName</p>
 					@if (@Model.Coach.Category == 1)
 					{
 						<p class="card-text">Category: Exercise specialist</p>

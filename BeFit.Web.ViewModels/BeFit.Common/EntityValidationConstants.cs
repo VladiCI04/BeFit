@@ -62,9 +62,15 @@ namespace BeFit.Common
 
         public static class User
         {
+            //Password
+            public const int PasswordMinLength = 6;
+            public const int PasswordMaxLength = 100;
+
+            // FirstName
             public const int UserFirstNameMinLength = 1;
             public const int UserFirstNameMaxLength = 15;
 
+            // LastName
             public const int UserLastNameMinLength = 1;
             public const int UserLastNameMaxLength = 15; 
         }

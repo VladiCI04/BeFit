@@ -103,7 +103,7 @@ namespace BeFit.Services.Data
                     Address = e.Address,
                     ImageUrl = e.ImageUrl,
                     Tax = e.Tax,
-                    CoachName = e.Coach.User.UserName
+                    CoachName = $"{e.Coach.User.FirstName} {e.Coach.User.LastName}"
                 })
                 .ToArrayAsync();
 
@@ -128,7 +128,7 @@ namespace BeFit.Services.Data
                     Address = e.Address,
                     ImageUrl = e.ImageUrl,
                     Tax = e.Tax,
-                    CoachName = e.Coach.User.UserName
+                    CoachName = $"{e.Coach.User.FirstName} {e.Coach.User.LastName}"
                 })
                 .ToArrayAsync();
                    
@@ -147,7 +147,7 @@ namespace BeFit.Services.Data
 					Address = e.Event.Address,
 					ImageUrl = e.Event.ImageUrl,
 					Tax = e.Event.Tax,
-					CoachName = e.Event.Coach.User.UserName,
+					CoachName = $"{e.Event.Coach.User.FirstName} {e.Event.Coach.User.LastName}",
 				})
 				.ToArrayAsync();
 
@@ -178,7 +178,7 @@ namespace BeFit.Services.Data
                 Clients = this.dbContext.EventClients.ToList().Count(ec => ec.EventId == even.Id),
                 Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
                 {
-                    Name = even.Coach.User.UserName,
+                    FullName = $"{even.Coach.User.FirstName} {even.Coach.User.LastName}",
                     Email = even.Coach.User.Email,
                     PhoneNumber = even.Coach.PhoneNumber,
                     Category = even.Coach.CoachCategoryId
@@ -313,8 +313,8 @@ namespace BeFit.Services.Data
                    Address = e.Address,
                    ImageUrl = e.ImageUrl,
                    Tax = e.Tax, 
-                   CoachName = e.Coach.User.UserName
-			   })
+                   CoachName = $"{e.Coach.User.FirstName} {e.Coach.User.LastName}"
+               })
 			   .FirstOrDefaultAsync();
 		}
 
