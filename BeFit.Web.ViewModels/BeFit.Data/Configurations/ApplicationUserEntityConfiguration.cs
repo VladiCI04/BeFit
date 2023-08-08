@@ -1,6 +1,7 @@
 ﻿using BeFit.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using static BeFit.Common.GeneralApplicationConstants;
 
 namespace BeFit.Data.Configurations
 {
@@ -16,5 +17,5 @@ namespace BeFit.Data.Configurations
 				.Property(u => u.LastName)
 				.HasDefaultValue("Testov");
 		}
-	}
+    }
 }

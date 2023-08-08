@@ -112,7 +112,6 @@ namespace BeFit.Controllers
         {
             bool eventExists = await this.eventService
                 .ExistsByIdAsync(id);
-
             if (!eventExists)
             {
                 this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
@@ -124,7 +123,7 @@ namespace BeFit.Controllers
             {
 				EventDetailsViewModel? viewModel = await this.eventService.GetDetailsByIdAsync(id);
 
-				viewModel!.Coach.FullName = await this.userService.GetFullNameByEmailAsync(this.User.Identity?.Name!);
+				viewModel!.Coach.FullName = await this.userService.GetFullNameByEmailAsync(this.User?.Identity?.Name!);
 
 				return this.View(viewModel);
 			}
@@ -139,7 +138,6 @@ namespace BeFit.Controllers
         {
             bool eventExists = await this.eventService
                 .ExistsByIdAsync(id);
-
             if (!eventExists)
             {
                 this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
@@ -149,8 +147,7 @@ namespace BeFit.Controllers
 
             bool isUserCoach = await this.coachService
                 .CoachExistsByUserIdAsync(this.User.GetId()!);
-
-            if (!isUserCoach)
+            if (!isUserCoach && !this.User.IsAdmin())
             {
                 this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
 
@@ -159,8 +156,7 @@ namespace BeFit.Controllers
 
             string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
             bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
-
-            if (!isCoachOwner)
+            if (!isCoachOwner && !this.User.IsAdmin())
             {
                 this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
 
@@ -193,7 +189,6 @@ namespace BeFit.Controllers
 
 			bool eventExists = await this.eventService
 				.ExistsByIdAsync(id);
-
 			if (!eventExists)
 			{
 				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
@@ -203,8 +198,7 @@ namespace BeFit.Controllers
 
 			bool isUserCoach = await this.coachService
 				.CoachExistsByUserIdAsync(this.User.GetId()!);
-
-			if (!isUserCoach)
+			if (!isUserCoach && !this.User.IsAdmin())
 			{
 				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
 
@@ -213,8 +207,7 @@ namespace BeFit.Controllers
 
 			string coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
 			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
-
-			if (!isCoachOwner)
+			if (!isCoachOwner && !this.User.IsAdmin())
 			{
 				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
 
@@ -243,7 +236,6 @@ namespace BeFit.Controllers
         {
 			bool eventExists = await this.eventService
 				.ExistsByIdAsync(id);
-
 			if (!eventExists)
 			{
 				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
@@ -253,8 +245,7 @@ namespace BeFit.Controllers
 
 			bool isUserCoach = await this.coachService
 				.CoachExistsByUserIdAsync(this.User.GetId()!);
-
-			if (!isUserCoach)
+			if (!isUserCoach && !this.User.IsAdmin())
 			{
 				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
 
@@ -263,7 +254,7 @@ namespace BeFit.Controllers
 
 			string coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
 			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId);
-			if (!isCoachOwner)
+			if (!isCoachOwner && !this.User.IsAdmin())
 			{
 				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
 
@@ -287,7 +278,6 @@ namespace BeFit.Controllers
 		{
 			bool eventExists = await this.eventService
 			.ExistsByIdAsync(id);
-
 			if (!eventExists)
 			{
 				this.TempData[ErrorMessage] = "Event with the provided id does not exist!";
@@ -297,8 +287,7 @@ namespace BeFit.Controllers
 
 			bool isUserCoach = await this.coachService
 				.CoachExistsByUserIdAsync(this.User.GetId()!);
-
-			if (!isUserCoach)
+			if (!isUserCoach && !this.User.IsAdmin())
 			{
 				this.TempData[ErrorMessage] = "You must become a coach in order to edit event info!";
 
@@ -307,7 +296,7 @@ namespace BeFit.Controllers
 
 			string? coachId = await this.coachService.GetCoachIdByUserIdAsync(this.User.GetId()!);
 			bool isCoachOwner = await this.eventService.IsCoachWithIdOwnerOfEventWithIdAsync(id, coachId!);
-			if (!isCoachOwner)
+			if (!isCoachOwner && !this.User.IsAdmin())
 			{
 				this.TempData[ErrorMessage] = "You must be the coach owner of the event you want to edit!";
 
@@ -337,10 +326,9 @@ namespace BeFit.Controllers
 			}
 
 			string userId = this.User.GetId()!;
-
             bool isUserCoach = await this.coachService
 				.CoachExistsByUserIdAsync(userId);
-            if (isUserCoach)
+            if (isUserCoach && !this.User.IsAdmin())
             {
 				this.TempData[WarningMessage] = "You are coach and can't join in events!";
 
@@ -364,14 +352,12 @@ namespace BeFit.Controllers
 		public async Task<IActionResult> Leave(string id)
 		{
 			EventDetailsViewModel? even = await eventService.GetEventDetailsByIdAsync(id);
-
 			if (even == null)
 			{
 				return RedirectToAction("All", "Event");
 			}
 
 			string userId = this.User.GetId()!;
-
 			await eventService.RemoveEventFromMineAsync(userId, even);
 
 			return RedirectToAction("All", "Event");
@@ -388,7 +374,19 @@ namespace BeFit.Controllers
 
             try
             {
-				if (isUserCoach)
+				if (this.User.IsAdmin()) 
+				{
+                    string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
+
+                    myEvents.AddRange(await this.eventService.AllByCoachIdAsync(coachId));
+
+                    myEvents.AddRange(await this.eventService.AllByUserIdAsync(userId));
+
+					myEvents = myEvents
+						.DistinctBy(e => e.Id)
+						.ToList();
+                }
+				else if (isUserCoach)
 				{
 					string? coachId = await this.coachService.GetCoachIdByUserIdAsync(userId);
 

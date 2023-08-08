@@ -24,7 +24,6 @@ namespace BeFit.Controllers
         {
             string userId = this.User.GetId()!;
             bool isAgent = await this.coachService.CoachExistsByUserIdAsync(userId);
-
             if (isAgent)
             {
                 TempData[ErrorMessage] = "You are already a coach!";
@@ -45,7 +44,6 @@ namespace BeFit.Controllers
         {
 			string userId = this.User.GetId()!;
 			bool isAgent = await this.coachService.CoachExistsByUserIdAsync(userId);
-
 			if (isAgent)
 			{
 				this.TempData[ErrorMessage] = "You are already a coach!";

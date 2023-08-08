@@ -52,7 +52,7 @@ namespace BeFit.Web.Infrastructure.Extensions
 
             Task.Run(async () =>
             {
-                if (await roleManager.RoleExistsAsync(AdminRoleName)) 
+                if (!await roleManager.RoleExistsAsync(AdminRoleName)) 
                 {
                     return;
                 }
@@ -60,7 +60,7 @@ namespace BeFit.Web.Infrastructure.Extensions
                 IdentityRole<Guid> role = new IdentityRole<Guid>(AdminRoleName);
                 await roleManager.CreateAsync(role);
 
-                ApplicationUser adminUser = await userManager.FindByNameAsync(email);
+                ApplicationUser adminUser = await userManager.FindByEmailAsync(email);
 
                 await userManager.AddToRoleAsync(adminUser, AdminRoleName);
             })

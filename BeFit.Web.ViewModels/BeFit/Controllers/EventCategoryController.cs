@@ -28,14 +28,12 @@ namespace BeFit.Controllers
         public async Task<IActionResult> Details(int id, string information)
         {
             bool eventCategoryExists = await this.eventCategoryService.ExistsByIdAsync(id);
-
             if (!eventCategoryExists) 
             { 
                 return NotFound();
             }
 
             EventCategoryDetailsViewModel viewModel = await this.eventCategoryService.GetDetailsByIdAsync(id);
-
             if (viewModel.GetUrlInformationForEvent() != information)
             {
                 return this.NotFound();

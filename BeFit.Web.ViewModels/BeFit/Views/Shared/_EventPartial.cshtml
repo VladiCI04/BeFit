@@ -30,7 +30,7 @@
 				{
 					<a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"
 					class="btn btn-success">Details</a>
-					@if (isUserCoach && isCoachOwnerOfEvent)
+					@if ((isUserCoach && isCoachOwnerOfEvent) || this.User.IsAdmin())
 					{
 						<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
 						class="btn btn-warning">Edit</a>
@@ -39,7 +39,7 @@
 						class="btn btn-danger">Delete</a>
 					}
 
-					@if (!isUserCoach)
+					@if (!isUserCoach || this.User.IsAdmin())
 					{
 						@if (!isEventAlreadyAdded)
 						{
