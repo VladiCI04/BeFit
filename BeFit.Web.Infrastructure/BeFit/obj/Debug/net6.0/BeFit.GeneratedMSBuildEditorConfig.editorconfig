@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Vladi/OneDrive - Software University (SoftUni)/Desktop/BeFit Project/BeFit/Views/CoachCategory/All.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29hY2hDYXRlZ29yeVxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

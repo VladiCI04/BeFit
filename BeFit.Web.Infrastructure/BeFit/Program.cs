@@ -6,6 +6,7 @@ using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.Infrastructure.ModelBinders;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
+using static BeFit.Common.GeneralApplicationConstants;
 
 namespace BeFit
 {
@@ -23,24 +24,26 @@ namespace BeFit
 
             builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
             {
-                options.SignIn.RequireConfirmedAccount = 
+                options.SignIn.RequireConfirmedAccount =
                     builder.Configuration.GetValue<bool>("Identity: SignIn.RequireConfirmedAccount");
-                options.Password.RequireLowercase = 
+                options.Password.RequireLowercase =
                     builder.Configuration.GetValue<bool>("Identity: Password.RequireLowercase");
-                options.Password.RequireUppercase = 
+                options.Password.RequireUppercase =
                     builder.Configuration.GetValue<bool>("Identity: Password.RequireUppercase");
-                options.Password.RequireNonAlphanumeric = 
+                options.Password.RequireNonAlphanumeric =
                     builder.Configuration.GetValue<bool>("Identity: Password.RequireNonAlphanumeric");
-                options.Password.RequiredLength = 
+                options.Password.RequiredLength =
                     builder.Configuration.GetValue<int>("Identity: Password.RequiredLength");
             })
-                .AddEntityFrameworkStores<BeFitDbContext>();
+            .AddRoles<IdentityRole<Guid>>()
+            .AddEntityFrameworkStores<BeFitDbContext>();
 
             builder.Services.AddApplicationServices(typeof(IEventService));
 
             builder.Services.ConfigureApplicationCookie(cfg =>
             {
                 cfg.LogoutPath = "/User/Login";
+                cfg.AccessDeniedPath = "/Home/Error/401";
             });
 
             builder.Services
@@ -73,12 +76,22 @@ namespace BeFit
             app.UseAuthentication();
             app.UseAuthorization();
 
+            if (app.Environment.IsDevelopment())
+            {
+                app.SeedAdministrator(AdminEmail);
+            }
+
             app.UseEndpoints(config =>
             {
-                config.MapControllerRoute(
+				config.MapControllerRoute(
+	                name: "areas",
+	                pattern: "/{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    );
+				config.MapControllerRoute(
                     name: "ProtectingUrlPattern",
                     pattern: "/{controller}/{action}/{id}/{information}",
-                    defaults: new { Controller = "Category", Action = "Details" });
+                    defaults: new { Controller = "Category", Action = "Details"
+                    });
                 config.MapDefaultControllerRoute();
                 config.MapRazorPages();
             });

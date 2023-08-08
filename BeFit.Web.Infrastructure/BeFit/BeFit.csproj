@@ -35,6 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\ViewModels\" />
     <Folder Include="Areas\Identity\Pages\Account\" />
   </ItemGroup>
 

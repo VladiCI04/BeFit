@@ -28,34 +28,41 @@
 				<br />			
 				@if (this.User.Identity?.IsAuthenticated ?? false)
 				{
-					<a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"
+					<a asp-area="" asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"
 					class="btn btn-success">Details</a>
-					@if (isUserCoach && isCoachOwnerOfEvent)
+					@if ((isUserCoach && isCoachOwnerOfEvent) || this.User.IsAdmin())
 					{
-						<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
+						<a asp-area="" asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
 						class="btn btn-warning">Edit</a>
 
-						<a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
+						<a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
 						class="btn btn-danger">Delete</a>
 					}
 
-					@if (!isUserCoach)
+					@if (!isUserCoach || this.User.IsAdmin())
 					{
-						@if (!isEventAlreadyAdded)
+						@if (this.User.IsAdmin() && isCoachOwnerOfEvent)
 						{
-							<p></p>
-							<form asp-controller="Event"
-							asp-action="Join" asp-route-id="@Model.Id" method="post">
-								<input class="btn btn-primary" type="submit" value="Join" />
-							</form>
+
 						}
 						else
 						{
-							<p></p>
-							<form asp-controller="Event"
-							asp-action="Leave" asp-route-id="@Model.Id" method="post">
-								<input class="btn btn-primary" type="submit" value="Leave" />
-							</form>
+							@if (!isEventAlreadyAdded)
+							{
+								<p></p>
+								<form asp-area="" asp-controller="Event"
+								asp-action="Join" asp-route-id="@Model.Id" method="post">
+									<input class="btn btn-primary" type="submit" value="Join" />
+								</form>
+							}
+							else
+							{
+								<p></p>
+								<form asp-area="" asp-controller="Event"
+								asp-action="Leave" asp-route-id="@Model.Id" method="post">
+									<input class="btn btn-primary" type="submit" value="Leave" />
+								</form>
+							}
 						}
 					}
 				}

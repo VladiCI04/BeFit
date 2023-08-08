@@ -1,6 +1,7 @@
 ﻿using BeFit.Services.Data.Interfaces;
 using BeFit.Web.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
+using static BeFit.Common.GeneralApplicationConstants;
 
 namespace BeFit.Controllers
 {
@@ -15,6 +16,11 @@ namespace BeFit.Controllers
 
         public async Task<IActionResult> Index()
         {
+            if (this.User.IsInRole(AdminRoleName))
+            {
+                return this.RedirectToAction("Index", "Home", new { Area = AdminAreaName });
+            }
+
             IEnumerable<IndexViewModel> viewModel = await this.eventService.AllEventsAsync();
                 
             return this.View(viewModel);

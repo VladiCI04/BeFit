@@ -26,14 +26,12 @@ namespace BeFit.Controllers
 		public async Task<IActionResult> Details(int id, string information)
 		{
 			bool coachCategoryExists = await this.coachCategoryService.ExistsByIdAsync(id);
-
 			if (!coachCategoryExists) 
 			{ 
 				return this.NotFound();
 			}
 
-			CoachCategoryDetailsViewModel viewModel = await this.coachCategoryService.GetDetailsByIdAsync(id);
-			
+			CoachCategoryDetailsViewModel viewModel = await this.coachCategoryService.GetDetailsByIdAsync(id);		
 			if (viewModel.GetUrlInformationForCoach() != information) 
 			{ 
 				return this.NotFound();
