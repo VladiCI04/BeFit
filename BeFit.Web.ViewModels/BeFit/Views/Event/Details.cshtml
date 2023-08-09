@@ -1,11 +1,13 @@
 ﻿@using BeFit.Services.Data.Interfaces
 @using BeFit.Web.Infrastructure.Extensions
+@using BeFit.Web.Infrastructure.Middlewares
 
 @inject ICoachService coachService
 @{
 	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
 	bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
 	bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
+	string coachId = await coachService.GetCoachIdByCoachEmailAsync(Model.Coach.Email);
 }
 
 @model EventDetailsViewModel
@@ -106,6 +108,14 @@
 					}
 					<p class="card-text">Email: @Model.Coach.Email</p>
 					<p class="card-text">Phone Number: @Model.Coach.PhoneNumber</p>
+					@if (OnlineUsersMiddleware.CheckIfUserIsOnline(coachId))
+					{
+						<p class="card-text">Online: ✔</p>
+					}
+					else
+					{
+						<p class="card-text">Online: ❌</p>
+					}
 				</div>
 			</div>
 		</div>

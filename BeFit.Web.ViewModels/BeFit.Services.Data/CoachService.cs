@@ -81,6 +81,15 @@ namespace BeFit.Services.Data
 			}
 		}
 
+		public async Task<string> GetCoachIdByCoachEmailAsync(string coachEmail)
+		{
+			Coach? coach = await this.dbContext
+				.Coaches
+				.FirstAsync(c => c.User.Email == coachEmail);
+
+			return coach.UserId.ToString();
+		}
+
 		public async Task<bool> HasEventWithIdAsync(string userId, string eventId)
 		{
 			Coach? coach = await this.dbContext

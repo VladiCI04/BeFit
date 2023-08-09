@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using BeFit.Web.Infrastructure.Middlewares;
 using static BeFit.Common.GeneralApplicationConstants;
 
 namespace BeFit.Web.Infrastructure.Extensions
@@ -68,6 +69,11 @@ namespace BeFit.Web.Infrastructure.Extensions
             .GetResult();
 
             return app;
+        }
+
+        public static IApplicationBuilder EnableOnlineUsersCheck(this IApplicationBuilder app)
+        {
+            return app.UseMiddleware<OnlineUsersMiddleware>();
         }
     }
 }

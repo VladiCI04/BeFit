@@ -14,7 +14,10 @@ namespace BeFit.Services.Data.Interfaces
 
         Task<string> GetCoachIdByUserIdAsync(string userId);
 
-        Task<bool> HasEventWithIdAsync(string userId, string eventId);
+        Task<string> GetCoachIdByCoachEmailAsync(string coachEmail);
+
+
+		Task<bool> HasEventWithIdAsync(string userId, string eventId);
 
 		Task<bool> HasUserThisEvent(string userId, string eventId);
 	}
