@@ -4,6 +4,7 @@ using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Event;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using static BeFit.Common.GeneralApplicationConstants;
 using static BeFit.Common.NotificationMessagesConstants;
 
@@ -12,17 +13,15 @@ namespace BeFit.Controllers
     [Authorize]
     public class EventController : Controller
     {
+        private readonly IEventService eventService;
         private readonly IEventCategoryService eventCategoryService;
 		private readonly ICoachService coachService;
-        private readonly IEventService eventService;
-		private readonly IUserService userService;
 
-        public EventController(IEventCategoryService eventCategoryService, IEventService eventService, ICoachCategoryService coachCategoryService,ICoachService coachService, IUserService userService)
+        public EventController(IEventCategoryService eventCategoryService, IEventService eventService, ICoachService coachService)
         {
-            this.eventCategoryService = eventCategoryService;
 			this.eventService = eventService;
+            this.eventCategoryService = eventCategoryService;
             this.coachService = coachService;
-			this.userService = userService;
         }
 
         [HttpGet]

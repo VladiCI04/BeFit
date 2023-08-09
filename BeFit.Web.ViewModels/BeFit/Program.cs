@@ -75,6 +75,8 @@ namespace BeFit
 
             app.UseRouting();
 
+            builder.Services.AddResponseCaching();
+
             app.UseAuthentication();
             app.UseAuthorization();
 
