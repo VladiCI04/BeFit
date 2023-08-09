@@ -40,6 +40,8 @@ namespace BeFit
 
             builder.Services.AddApplicationServices(typeof(IEventService));
 
+            builder.Services.AddMemoryCache();
+
             builder.Services.ConfigureApplicationCookie(cfg =>
             {
                 cfg.LogoutPath = "/User/Login";

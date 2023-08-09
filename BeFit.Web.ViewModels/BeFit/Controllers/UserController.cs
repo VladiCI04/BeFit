@@ -3,6 +3,8 @@ using BeFit.Web.ViewModels.User;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
+using static BeFit.Common.GeneralApplicationConstants;
 using static BeFit.Common.NotificationMessagesConstants;
 
 namespace BeFit.Controllers
@@ -11,11 +13,13 @@ namespace BeFit.Controllers
 	{
 		private readonly SignInManager<ApplicationUser> signInManager;
 		private readonly UserManager<ApplicationUser> userManager;
+		private readonly IMemoryCache memoryCache;
 
-        public UserController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
+        public UserController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, IMemoryCache memoryCache)
         {
 			this.signInManager = signInManager;
 			this.userManager = userManager;
+			this.memoryCache = memoryCache;
         }
 
         [HttpGet]
@@ -53,6 +57,7 @@ namespace BeFit.Controllers
 			}
 
             await this.signInManager.SignInAsync(user, false);
+			this.memoryCache.Remove(UserCacheKey);
 
             return RedirectToAction("Index", "Home");
         }
