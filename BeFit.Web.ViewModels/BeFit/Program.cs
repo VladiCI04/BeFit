@@ -43,6 +43,7 @@ namespace BeFit
             builder.Services.ConfigureApplicationCookie(cfg =>
             {
                 cfg.LogoutPath = "/User/Login";
+                cfg.AccessDeniedPath = "/Home/Error/401";
             });
 
             builder.Services
@@ -82,10 +83,15 @@ namespace BeFit
 
             app.UseEndpoints(config =>
             {
-                config.MapControllerRoute(
+				config.MapControllerRoute(
+	                name: "areas",
+	                pattern: "/{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    );
+				config.MapControllerRoute(
                     name: "ProtectingUrlPattern",
                     pattern: "/{controller}/{action}/{id}/{information}",
-                    defaults: new { Controller = "Category", Action = "Details" });
+                    defaults: new { Controller = "Category", Action = "Details"
+                    });
                 config.MapDefaultControllerRoute();
                 config.MapRazorPages();
             });

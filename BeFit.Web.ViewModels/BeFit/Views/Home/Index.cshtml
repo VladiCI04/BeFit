@@ -25,7 +25,7 @@
             {
                 if (isUserCoach)
                 {
-                    <a asp-controller="Event" asp-action="Add" class="btn btn-primary btn-lg" role="button">Add Event</a>
+                    <a asp-area="" asp-controller="Event" asp-action="Add" class="btn btn-primary btn-lg" role="button">Add Event</a>
                 }               
             }
         </p>
@@ -42,7 +42,7 @@
                      src="@even.ImageUrl" alt="@even.Title">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>
-                        <a class="btn btn-primary" asp-controller="Event" asp-action="Details"
+                        <a class="btn btn-primary" asp-area="" asp-controller="Event" asp-action="Details"
                            asp-route-id="@even.Id"> @even.Title</a>
                     </h5>
                 </div>

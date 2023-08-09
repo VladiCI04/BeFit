@@ -1,5 +1,4 @@
-﻿using BeFit.Data.Models;
-using BeFit.Web.ViewModels.Coach;
+﻿using BeFit.Web.ViewModels.Coach;
 using System.ComponentModel.DataAnnotations;
 
 namespace BeFit.Web.ViewModels.Event

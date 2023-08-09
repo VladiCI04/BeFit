@@ -19,7 +19,7 @@
 	<div class="list-group">
 		@foreach (AllCoachCategoriesViewModel coachCategory in Model)
 		{
-			<a class="list-group-item list-group-item-action" asp-controller="CoachCategory" asp-action="Details" asp-route-id="@coachCategory.Id" asp-route-information="@coachCategory.GetUrlInformationForCoach()">@coachCategory.Name</a>
+			<a class="list-group-item list-group-item-action" asp-area="" asp-controller="CoachCategory" asp-action="Details" asp-route-id="@coachCategory.Id" asp-route-information="@coachCategory.GetUrlInformationForCoach()">@coachCategory.Name</a>
 		}
 	</div>
 }
@@ -35,7 +35,7 @@ else
 					<div class="text-left h4">
 						<p>Oops, you don't have access here.</p>
 					</div>
-					<div class="text-left h4"> Go back to <a asp-controller="Home" asp-action="Index">Home</a> Page</div>
+					<div class="text-left h4"> Go back to <a asp-area="" asp-controller="Home" asp-action="Index">Home</a> Page</div>
 				</div>
 			</div>
 		</div>

@@ -4,6 +4,7 @@ using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.Event;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using static BeFit.Common.GeneralApplicationConstants;
 using static BeFit.Common.NotificationMessagesConstants;
 
 namespace BeFit.Controllers
@@ -122,8 +123,6 @@ namespace BeFit.Controllers
             try
             {
 				EventDetailsViewModel? viewModel = await this.eventService.GetDetailsByIdAsync(id);
-
-				viewModel!.Coach.FullName = await this.userService.GetFullNameByEmailAsync(this.User?.Identity?.Name!);
 
 				return this.View(viewModel);
 			}
@@ -366,6 +365,11 @@ namespace BeFit.Controllers
 		[HttpGet]
         public async Task<IActionResult> Mine()
         {
+			if (this.User.IsInRole(AdminRoleName))
+			{
+				return this.RedirectToAction("Mine", "Event", new { Area = AdminAreaName });
+			}
+
             List<EventAllViewModel> myEvents = new List<EventAllViewModel>();
 
             string userId = this.User.GetId()!;
