@@ -1,41 +1,72 @@
-﻿@model EventAllViewModel
+﻿@using BeFit.Services.Data.Interfaces;
+@using BeFit.Web.Infrastructure.Extensions;
 
-<div class="col-md-4">
-	<div class="card mb-3">
-		<img class="card-img-top" src="@Model.ImageUrl" alt="Event Image">
-		<div class="card-body text-center">
-			<h4>@Model.Title</h4>
-			<h6>Address: <b>@Model.Address</b></h6>
-			<h6>
-				Tax:
-				<b>@String.Format("{0:f2}", Model.Tax) BGN</b>
-			</h6>
-			<h6>Coach: <b>@Model.CoachName</b></h6>
-			<br />
-			<a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"
-			   class="btn btn-success">Details</a>
-			@if (this.User.Identity?.IsAuthenticated ?? false)
-			{
-				<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
-				   class="btn btn-warning">Edit</a>
-				<a asp-controller="Event" asp-action="Delete" asp-routeid="@Model.Id"
-				   class="btn btn-danger">Delete</a>
-				<p></p>
-				@if (!(this.User.Identity.Name == Model.CoachName))
+@inject IEventService eventService;
+@inject ICoachService coachService;
+@{
+	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+	bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
+	bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
+	bool isEventExpired = await eventService.IsEventExpired(Model.Id);
+}
+
+@model EventAllViewModel
+
+@if (isEventExpired)
+{
+	<div class="col-md-4">
+		<div class="card mb-3">
+			<img class="card-img-top" src="@Model.ImageUrl" alt="Event Image">
+			<div class="card-body text-center">
+				<h4>@Model.Title</h4>
+				<h6>Address: <b>@Model.Address</b></h6>
+				<h6>
+					Tax:
+					<b>@String.Format("{0:f2}", Model.Tax) BGN</b>
+				</h6>
+				<h6>Coach: <b>@Model.CoachName</b></h6>
+				<br />			
+				@if (this.User.Identity?.IsAuthenticated ?? false)
 				{
-					<form class="input-group-sm" asp-controller="Event"
-						  asp-action="Joined" asp-route-id="@Model.Id" method="post">
-						<input class="btn btn-primary" type="submit" value="Join" />
-					</form>
+					<a asp-area="" asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"
+					class="btn btn-success">Details</a>
+					@if ((isUserCoach && isCoachOwnerOfEvent) || this.User.IsAdmin())
+					{
+						<a asp-area="" asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
+						class="btn btn-warning">Edit</a>
+
+						<a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
+						class="btn btn-danger">Delete</a>
+					}
+
+					@if (!isUserCoach || this.User.IsAdmin())
+					{
+						@if (this.User.IsAdmin() && isCoachOwnerOfEvent)
+						{
+
+						}
+						else
+						{
+							@if (!isEventAlreadyAdded)
+							{
+								<p></p>
+								<form asp-area="" asp-controller="Event"
+								asp-action="Join" asp-route-id="@Model.Id" method="post">
+									<input class="btn btn-primary" type="submit" value="Join" />
+								</form>
+							}
+							else
+							{
+								<p></p>
+								<form asp-area="" asp-controller="Event"
+								asp-action="Leave" asp-route-id="@Model.Id" method="post">
+									<input class="btn btn-primary" type="submit" value="Leave" />
+								</form>
+							}
+						}
+					}
 				}
-				else
-				{
-					<form asp-controller="Event" asp-action="Leave"
-						  asp-route-id="@Model.Id" method="post">
-						<input class="btn btn-primary" type="submit" value="Leave" />
-					</form>
-				}
-			}
+			</div>
 		</div>
 	</div>
-</div>
+}

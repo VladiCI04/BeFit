@@ -4,6 +4,9 @@ using BeFit.Services.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.Infrastructure.ModelBinders;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using static BeFit.Common.GeneralApplicationConstants;
 
 namespace BeFit
 {
@@ -21,26 +24,36 @@ namespace BeFit
 
             builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
             {
-                options.SignIn.RequireConfirmedAccount = 
+                options.SignIn.RequireConfirmedAccount =
                     builder.Configuration.GetValue<bool>("Identity: SignIn.RequireConfirmedAccount");
-                options.Password.RequireLowercase = 
+                options.Password.RequireLowercase =
                     builder.Configuration.GetValue<bool>("Identity: Password.RequireLowercase");
-                options.Password.RequireUppercase = 
+                options.Password.RequireUppercase =
                     builder.Configuration.GetValue<bool>("Identity: Password.RequireUppercase");
-                options.Password.RequireNonAlphanumeric = 
+                options.Password.RequireNonAlphanumeric =
                     builder.Configuration.GetValue<bool>("Identity: Password.RequireNonAlphanumeric");
-                options.Password.RequiredLength = 
+                options.Password.RequiredLength =
                     builder.Configuration.GetValue<int>("Identity: Password.RequiredLength");
             })
-                .AddEntityFrameworkStores<BeFitDbContext>();
+            .AddRoles<IdentityRole<Guid>>()
+            .AddEntityFrameworkStores<BeFitDbContext>();
 
             builder.Services.AddApplicationServices(typeof(IEventService));
+
+            builder.Services.AddMemoryCache();
+
+            builder.Services.ConfigureApplicationCookie(cfg =>
+            {
+                cfg.LogoutPath = "/User/Login";
+                cfg.AccessDeniedPath = "/Home/Error/401";
+            });
 
             builder.Services
                 .AddControllersWithViews()
                 .AddMvcOptions(options =>
                 {
                     options.ModelBinderProviders.Insert(0, new DecimalModelBinderProvider());
+                    options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
                 });
 
             WebApplication app = builder.Build();
@@ -52,7 +65,8 @@ namespace BeFit
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Home/Error/500");
+                app.UseStatusCodePagesWithRedirects("/Home/Error?statusCode={0}");
                 app.UseHsts();
             }
 
@@ -61,11 +75,32 @@ namespace BeFit
 
             app.UseRouting();
 
+            builder.Services.AddResponseCaching();
+
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapDefaultControllerRoute();
-            app.MapRazorPages();
+            app.EnableOnlineUsersCheck();
+
+            if (app.Environment.IsDevelopment())
+            {
+                app.SeedAdministrator(AdminEmail);
+            }
+
+            app.UseEndpoints(config =>
+            {
+				config.MapControllerRoute(
+	                name: "areas",
+	                pattern: "/{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    );
+				config.MapControllerRoute(
+                    name: "ProtectingUrlPattern",
+                    pattern: "/{controller}/{action}/{id}/{information}",
+                    defaults: new { Controller = "Category", Action = "Details"
+                    });
+                config.MapDefaultControllerRoute();
+                config.MapRazorPages();
+            });
 
             app.Run();
         }

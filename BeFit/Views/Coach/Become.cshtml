@@ -1,5 +1,4 @@
 ﻿@model BecomeCoachFormModel
-
 @{
 	ViewBag.Title = "Become Coach";
 }
@@ -9,18 +8,13 @@
 @if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"] != null)
 {
 	<div class="alert alert-danger" role="alert">
-		@ViewData.ModelState["Error"].Errors.First().ErrorMessage
+		@ViewData.ModelState["Error"]!.Errors.First().ErrorMessage
 	</div>
 }
 <div class="row">
 	<div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
 		<form method="post">
 			<div class="form-group">
-				<label asp-for="Name"></label>
-				<input asp-for="Name" class="form-control"
-					   placeholder="First and Last Name">
-				<span asp-validation-for="Name" class="small textdanger"></span>
-
 				<label asp-for="Age"></label>
 				<input asp-for="Age" class="form-control"
 					   placeholder="Age">
@@ -30,6 +24,7 @@
 				<select asp-for="Gender" class="form-control">
 					<option value="Male">Male</option>
 					<option value="Male">Female</option>
+					<option value="Other">Other</option>
 				</select>
 				<span asp-validation-for="Gender" class="small textdanger"></span>
 
@@ -47,11 +42,6 @@
 				<input asp-for="PhoneNumber" class="form-control"
 					   placeholder="+359 888 8888 88">
 				<span asp-validation-for="PhoneNumber" class="small textdanger"></span>
-
-				<label asp-for="Email"></label>
-				<input asp-for="Email" class="form-control"
-					   placeholder="Email">
-				<span asp-validation-for="Email" class="small textdanger"></span>
 
 				<div class="form-group">
 					<label asp-for="Description"></label>

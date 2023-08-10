@@ -15,4 +15,11 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: tan;
+}
+header {
+    background-color: lightsalmon;
+}
+footer {
+    background-color: darksalmon;
 }

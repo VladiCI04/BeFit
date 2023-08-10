@@ -1,11 +1,12 @@
 ﻿using BeFit.Data;
+using BeFit.Data.Models;
 using BeFit.Services.Data.Interfaces;
 using BeFit.Services.Data.Models.Events;
+using BeFit.Services.Data.Models.Statistics;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Event.Enums;
 using BeFit.Web.ViewModels.Home;
 using Microsoft.EntityFrameworkCore;
-using static BeFit.Common.EntityValidationConstants;
 
 namespace BeFit.Services.Data
 {
@@ -35,9 +36,9 @@ namespace BeFit.Services.Data
             return allEvents;
         }
 
-		public async Task CreateAsync(EventFormModel formModel, string coachId)
+		public async Task<string> CreateAndReturnIdAsync(EventFormModel formModel, string coachId)
 		{
-            BeFit.Data.Models.Event newEvent = new BeFit.Data.Models.Event()
+            Event newEvent = new Event()
             {
                 Title = formModel.Title,
                 Address = formModel.Address,
@@ -48,17 +49,18 @@ namespace BeFit.Services.Data
                 Start = formModel.Start,
                 End = formModel.End,
                 CoachId = Guid.Parse(coachId),
-                EventCategoryId = formModel.EventCategoryId,
-                Clients = formModel.Clients
+                EventCategoryId = formModel.EventCategoryId
             };
 
             await this.dbContext.Events.AddAsync(newEvent);
             await this.dbContext.SaveChangesAsync();
+
+            return newEvent.Id.ToString();
 		}
 
 		public async Task<AllEventsFilteredAndPagedServiceModel> AllAsync(AllEventsQueryModel queryModel)
 		{
-            IQueryable<BeFit.Data.Models.Event> eventsQuery = this.dbContext
+            IQueryable<Event> eventsQuery = this.dbContext
                 .Events
                 .AsQueryable();
 
@@ -78,16 +80,17 @@ namespace BeFit.Services.Data
             }
 
             eventsQuery = queryModel.EventSorting switch
-            {
-                EventSorting.Newest => eventsQuery
-                    .OrderByDescending(e => e.CreatedOn),
-                EventSorting.Oldest => eventsQuery
-                    .OrderBy(e => e.CreatedOn),
-                EventSorting.TaxAscending => eventsQuery
-                    .OrderBy(e => e.Tax),
-                EventSorting.TaxDescending => eventsQuery
-                    .OrderByDescending(e => e.Tax)
-            };
+			{
+				EventSorting.Newest => eventsQuery
+					.OrderByDescending(e => e.CreatedOn),
+				EventSorting.Oldest => eventsQuery
+					.OrderBy(e => e.CreatedOn),
+				EventSorting.TaxAscending => eventsQuery
+					.OrderBy(e => e.Tax),
+				EventSorting.TaxDescending => eventsQuery
+					.OrderByDescending(e => e.Tax),
+				_ => throw new NotImplementedException()
+			};
 
             IEnumerable<EventAllViewModel> allEvents = await eventsQuery
                 .Where(e => e.IsActive)
@@ -100,7 +103,7 @@ namespace BeFit.Services.Data
                     Address = e.Address,
                     ImageUrl = e.ImageUrl,
                     Tax = e.Tax,
-                    CoachName = e.Coach.Name
+                    CoachName = $"{e.Coach.User.FirstName} {e.Coach.User.LastName}"
                 })
                 .ToArrayAsync();
 
@@ -125,7 +128,7 @@ namespace BeFit.Services.Data
                     Address = e.Address,
                     ImageUrl = e.ImageUrl,
                     Tax = e.Tax,
-                    CoachName = e.Coach.Name
+                    CoachName = $"{e.Coach.User.FirstName} {e.Coach.User.LastName}"
                 })
                 .ToArrayAsync();
                    
@@ -144,27 +147,22 @@ namespace BeFit.Services.Data
 					Address = e.Event.Address,
 					ImageUrl = e.Event.ImageUrl,
 					Tax = e.Event.Tax,
-					CoachName = e.Event.Coach.Name,
+					CoachName = $"{e.Event.Coach.User.FirstName} {e.Event.Coach.User.LastName}",
 				})
 				.ToArrayAsync();
 
 			return allUsersEvents;
 		}
 
-		public async Task<EventDetailsViewModel> GetDetailsByIdAsync(string eventId)
+		public async Task<EventDetailsViewModel?> GetDetailsByIdAsync(string eventId)
 		{
-            BeFit.Data.Models.Event? even = await this.dbContext
+            Event? even = await this.dbContext
                 .Events
                 .Include(e => e.EventCategory)
                 .Include(e => e.Coach)
                 .ThenInclude(e => e.User)
                 .Where(e => e.IsActive)
-                .FirstOrDefaultAsync(e => e.Id.ToString() == eventId);
-
-            if (even == null)
-            {
-                return null;
-            }
+                .FirstAsync(e => e.Id.ToString() == eventId);
 
             return new EventDetailsViewModel
             {
@@ -177,15 +175,197 @@ namespace BeFit.Services.Data
                 Category = even.EventCategory.Name,
                 Start = even.Start,
                 End = even.End,
-                Clients = (List<BeFit.Data.Models.ApplicationUser>)even.Clients,
+                Clients = this.dbContext.EventClients.Count(ec => ec.EventId == even.Id),
                 Coach = new Web.ViewModels.Coach.CoachInfoOnEventViewModel()
                 {
-                    Name = even.Coach.Name,
+                    FullName = $"{even.Coach.User.FirstName} {even.Coach.User.LastName}",
                     Email = even.Coach.User.Email,
                     PhoneNumber = even.Coach.PhoneNumber,
                     Category = even.Coach.CoachCategoryId
                 }
             };
 		}
+
+        public async Task<bool> ExistsByIdAsync(string eventId)
+        {
+            bool result = await this.dbContext
+                 .Events
+                 .Where(e => e.IsActive)
+                 .AnyAsync(e => e.Id.ToString() == eventId);
+
+            return result;
+        }
+
+        public async Task<EventFormModel> GetEventForEditByIdAsync(string eventId)
+        {
+            Event? even = await this.dbContext
+                .Events
+                .Include(e => e.EventCategory)
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return new EventFormModel
+            {
+                Title = even.Title,
+                Address = even.Address,
+                Description = even.Description,
+                ImageUrl = even.ImageUrl,
+                Tax = even.Tax,
+                Start = even.Start,
+                End = even.End,
+                EventCategoryId = even.EventCategoryId
+            };
+        }
+
+        public async Task<bool> IsCoachWithIdOwnerOfEventWithIdAsync(string eventId, string coachId)
+        {
+            Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return even.CoachId.ToString() == coachId;
+        }
+
+		public async Task EditEventByIdAndFormModelAsync(string eventId, EventFormModel formModel)
+		{
+			Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            even.Title = formModel.Title;
+            even.Address = formModel.Address;
+            even.Description = formModel.Description;
+            even.ImageUrl = formModel.ImageUrl;
+            even.Tax = formModel.Tax;
+            even.EventCategoryId = formModel.EventCategoryId;
+            even.Start = formModel.Start;   
+            even.End = formModel.End;
+
+            await this.dbContext.SaveChangesAsync();
+		}
+
+		public async Task<EventPreDeleteDetailsViewModel> GetEventForDeleteByIdAsync(string eventId)
+		{
+            Event even = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            return new EventPreDeleteDetailsViewModel
+            {
+                Title = even.Title,
+                Address = even.Address,
+                ImageUrl = even.ImageUrl
+            };
+		}
+
+		public async Task DeleteEventByIdAsync(string eventId)
+		{
+            Event eventToDelete = await this.dbContext
+                .Events
+                .Where(e => e.IsActive)
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            eventToDelete.IsActive = false;
+
+            await this.dbContext.SaveChangesAsync();
+		}
+
+		public async Task<bool> AddEventToMineAsync(string userId, EventDetailsViewModel even)
+		{
+			bool alreadyAdded = await dbContext
+                .EventClients
+				.AnyAsync(ec => ec.ClientId.ToString() == userId && ec.EventId.ToString() == even.Id);
+
+			if (!alreadyAdded)
+			{
+				EventClient userEvent = new EventClient
+				{
+					ClientId = Guid.Parse(userId),
+					EventId = Guid.Parse(even.Id)
+				};
+
+                even.Clients += 1;
+
+				await dbContext.EventClients.AddAsync(userEvent);
+				await dbContext.SaveChangesAsync();
+
+                return true;
+			}
+            else
+            {
+                even.Clients -= 1;
+                return false;
+            }
+		}
+
+		public async Task<EventDetailsViewModel?> GetEventDetailsByIdAsync(string id)
+		{
+		    return await dbContext
+               .Events
+			   .Where(e => e.Id.ToString() == id)
+			   .Select(e => new EventDetailsViewModel
+			   {
+				   Id = e.Id.ToString(),
+                   Title = e.Title,
+                   Address = e.Address,
+                   ImageUrl = e.ImageUrl,
+                   Tax = e.Tax, 
+                   CoachName = $"{e.Coach.User.FirstName} {e.Coach.User.LastName}"
+               })
+			   .FirstOrDefaultAsync();
+		}
+
+		public async Task<Event> GetEventByIdAsync(string id)
+		{
+			Event even = await dbContext
+			   .Events
+			   .Where(e => e.Id.ToString() == id)
+			   .FirstAsync();
+
+            return even;
+		}
+
+		public async Task RemoveEventFromMineAsync(string userId, EventDetailsViewModel even)
+		{
+			var userEvent = await dbContext.EventClients
+				.FirstOrDefaultAsync(ec => ec.ClientId.ToString() == userId && ec.EventId.ToString() == even.Id);
+
+			if (userEvent != null)
+			{
+				dbContext.EventClients.Remove(userEvent);
+				await dbContext.SaveChangesAsync();
+			}
+		}
+
+		public async Task<StatisticsServiceModel> GetStatisticsAsync()
+		{
+            return new StatisticsServiceModel()
+            {
+                TotalEvents = await this.dbContext.Events.CountAsync(),
+                TotalClients = await this.dbContext.Users.CountAsync(),
+                TotalCoaches = await this.dbContext.Coaches.CountAsync(),
+            };
+		}
+
+        public async Task<bool> IsEventExpired(string eventId)
+        {
+            eventId = eventId.ToLower();
+            Event? even = await this.dbContext
+                .Events
+                .FirstAsync(e => e.Id.ToString() == eventId);
+
+            if (even.End >= DateTime.Now)
+            {
+                return true;
+            }
+
+            even.IsActive = false;
+            await this.dbContext.SaveChangesAsync();
+
+            return false;
+        }
 	}
 }
