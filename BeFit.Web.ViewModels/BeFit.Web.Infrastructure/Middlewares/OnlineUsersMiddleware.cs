@@ -60,7 +60,7 @@ namespace BeFit.Web.Infrastructure.Middlewares
                     }
                 }
 
-                if (AlreadyKeys.ContainsKey(userId) && AllKeys.Count >= 1)
+                if (AlreadyKeys.ContainsKey(userId) && AllKeys.Count >= 0)
                 {
                     AllKeys.TryAdd(userId, AlreadyKeys[userId]);
                 }
