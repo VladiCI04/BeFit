@@ -1,7 +1,6 @@
 ﻿using BeFit.Services.Data.Interfaces;
 using BeFit.Web.Infrastructure.Extensions;
 using BeFit.Web.ViewModels.CoachCategory;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BeFit.Controllers

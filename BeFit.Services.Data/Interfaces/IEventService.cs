@@ -3,7 +3,6 @@ using BeFit.Services.Data.Models.Events;
 using BeFit.Services.Data.Models.Statistics;
 using BeFit.Web.ViewModels.Event;
 using BeFit.Web.ViewModels.Home;
-using System.Security.Claims;
 
 namespace BeFit.Services.Data.Interfaces
 {
