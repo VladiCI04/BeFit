@@ -1,6 +1,7 @@
 using BeFit.Data;
 using BeFit.Services.Data;
 using BeFit.Services.Data.Interfaces;
+using BeFit.Web.ViewModels.Coach;
 using Microsoft.EntityFrameworkCore;
 using static BeFit.Services.Tests.DatabaseSeeder;
 
@@ -88,7 +89,6 @@ namespace BeFit.Services.Tests
 
             Assert.IsTrue(expectingCoachId.Equals(actualCoachId));
         }
-
         [Test]
         public async Task GetCoachIdByUserIdAsyncShouldReturnNullWhenIsFalse()
         {

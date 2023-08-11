@@ -114,5 +114,12 @@ namespace BeFit.Services.Tests
 
             Assert.IsTrue(expectedViewModel.Id == actualViewModel.Id && expectedViewModel.Name == actualViewModel.Name && expectedViewModel.Events == actualViewModel.Events);
         }
+        [Test]
+        public void GetDetailsByNameAsyncShouldReturnExceptionIfCategoryIdNotExist()
+        {
+            int eventCategoryId = 2;
+
+            Assert.ThrowsAsync<InvalidOperationException>(async () => await this.eventCategoryService.GetDetailsByIdAsync(eventCategoryId));
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace BeFit.Services.Tests
 
         public static Event Even = null!;
         public static Event Even2 = null!;
+        public static Event Even3 = null!;
 
         public static Coach Coach = null!;
         public static Coach Coach2 = null!;
@@ -147,6 +148,20 @@ namespace BeFit.Services.Tests
                 IsActive = true,
                 Start = DateTime.Parse("2023-08-06 01:06:00.0000000"),
                 End = DateTime.Parse("2023-08-17 01:06:00.0000000"),
+                EventCategoryId = EventCategory.Id
+            };
+            Even3 = new Event()
+            {
+                Title = "Test2",
+                Description = "Test2 Test2 Test2 Test2",
+                Address = "Test2",
+                ImageUrl = "https://yogagames.org/wp-content/uploads/2023/06/YGS24-start.jpg",
+                Tax = 12,
+                CoachId = Coach2.Id,
+                CreatedOn = DateTime.Parse("2023-08-06 01:06:22.3300000"),
+                IsActive = true,
+                Start = DateTime.Parse("2023-08-06 01:06:00.0000000"),
+                End = DateTime.Parse("2023-08-03 01:06:00.0000000"),
                 EventCategoryId = EventCategory.Id
             };
 

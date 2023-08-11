@@ -7,6 +7,7 @@ using BeFit.Web.Infrastructure.ModelBinders;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using static BeFit.Common.GeneralApplicationConstants;
+using BeFit.Hubs;
 
 namespace BeFit
 {
@@ -37,6 +38,8 @@ namespace BeFit
             })
             .AddRoles<IdentityRole<Guid>>()
             .AddEntityFrameworkStores<BeFitDbContext>();
+
+            builder.Services.AddSignalR();
 
             builder.Services.AddApplicationServices(typeof(IEventService));
 
@@ -100,6 +103,7 @@ namespace BeFit
                     });
                 config.MapDefaultControllerRoute();
                 config.MapRazorPages();
+                config.MapHub<ChatHub>("/chatHub");
             });
 
             app.Run();
