@@ -35,25 +35,25 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="All">All Events</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="All">All Events   |</a>
                         </li>
                         @if (this.User.Identity?.IsAuthenticated ?? false)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Mine">My Events</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Mine">My Events |</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Chat" asp-action="Chatting">Online Chat</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Chat" asp-action="Chatting">Online Chat |</a>
                             </li>
                             if (isUserCoach)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Add">Create Event</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Add">Create Event |</a>
                                 </li>                              
                             }            
                         }
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="EventCategory" asp-action="All">Events Categories</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="EventCategory" asp-action="All">Events Categories |</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="CoachCategory" asp-action="All">Coaches Categories</a>

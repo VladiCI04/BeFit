@@ -85,10 +85,7 @@ namespace BeFit
 
             app.EnableOnlineUsersCheck();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.SeedAdministrator(AdminEmail);
-            }
+            app.SeedAdministrator(AdminEmail);
 
             app.UseEndpoints(config =>
             {

@@ -21,7 +21,7 @@
         </p>
         <hr class="my-4">
         <p class="lead">
-            @if (User.Identity!.IsAuthenticated)
+            @if (this.User.Identity!.IsAuthenticated)
             {
                 if (isUserCoach)
                 {
@@ -32,6 +32,24 @@
     </div>
 }
 <div class="mb-5"></div>
+<br />
+@if (this.User.Identity!.IsAuthenticated)
+{
+    if (isUserCoach)
+    {
+        <p class="text-center text-uppercase">You are now a coach! Organize your own sports events! Good luck!</p>
+    }
+    else
+    {
+        <p class="text-center text-uppercase">As a registered user on our site, you now have the opportunity to sign up for sports events or become a coach!</p>
+    }
+}
+else
+{
+    <p class="text-center text-uppercase">Welcome to BeFit! Make your registration to participate in their sports events or add your own!</p>
+}
+<br />
+<br />
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         @for (int i = 0; i < events.Count(); i++)
@@ -49,14 +67,6 @@
             </div>
         }
     </div>
-    <button class="carousel-control-prev" type="button" data-bstarget="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bstarget="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 </div>
 
 <p></p>
