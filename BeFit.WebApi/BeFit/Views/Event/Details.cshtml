@@ -1,0 +1,123 @@
+﻿@using BeFit.Services.Data.Interfaces
+@using BeFit.Web.Infrastructure.Extensions
+@using BeFit.Web.Infrastructure.Middlewares
+
+@inject ICoachService coachService
+@{
+	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+	bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
+	bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
+	string coachId = await coachService.GetCoachIdByCoachEmailAsync(Model.Coach.Email);
+}
+
+@model EventDetailsViewModel
+@{
+	ViewBag.Title = "Event Details";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="container" style="display:inline">
+	<div class="row">
+		<div class="col-4">
+			<img class="card-img-top" style="width: 20rem;"
+				 src="@Model.ImageUrl" alt="Event Image">
+		</div>
+		<div class="card col-8 border-0">
+			<p style="font-size:25px;"><u>@Model.Title</u></p>
+			<p>Located in: <b>@Model.Address</b></p>
+			<p>
+				Tax:
+				<b>@String.Format("{0:f2}", Model.Tax) BGN</b>
+			</p>
+			<p>@Model.Description</p>
+			<p>Category: <b>@Model.Category</b></p>
+			<p>Start: <b>@Model.Start</b></p>
+			<p>End: <b>@Model.End</b></p>
+			<p>Clients: @Model.Clients</p>	
+			<div class="form-inline">
+				@if (this.User.Identity?.IsAuthenticated ?? false)
+				{
+					@if (isUserCoach && isCoachOwnerOfEvent)
+					{
+						<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
+						   class="btn btn-warning">Edit</a>
+
+						<a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
+						class="btn btn-danger">Delete</a>
+					}
+
+					@if(!isUserCoach)
+					{
+						@if (!isEventAlreadyAdded)
+						{
+							<p></p>
+							<form asp-controller="Event"
+							asp-action="Join" asp-route-id="@Model.Id" method="post">
+								<input class="btn btn-primary" type="submit" value="Join" />
+							</form>
+						}
+						else
+						{
+							<p></p>
+							<form asp-controller="Event"
+							asp-action="Leave" asp-route-id="@Model.Id" method="post">
+								<input class="btn btn-primary" type="submit" value="Leave" />
+							</form>
+						}
+					}
+				}
+			</div>
+			<p></p>
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Coach Info</h5>
+					<p class="card-text">Name: @Model.Coach.FullName</p>
+					@if (@Model.Coach.Category == 1)
+					{
+						<p class="card-text">Category: Exercise specialist</p>
+					} 
+					else if (@Model.Coach.Category == 2)
+					{
+						<p class="card-text">Category: Health coach</p>
+					}
+					else if (@Model.Coach.Category == 3)
+					{
+						<p class="card-text">Category: Wellness specialist</p>
+					}
+					else if (@Model.Coach.Category == 4)
+					{
+						<p class="card-text">Category: Athletic trainer</p>
+					}
+					else if (@Model.Coach.Category == 5)
+					{
+						<p class="card-text">Category: Personal trainer</p>
+					}
+					else if (@Model.Coach.Category == 6)
+					{
+						<p class="card-text">Category: Sports coach</p>
+					}
+					else if (@Model.Coach.Category == 7)
+					{
+						<p class="card-text">Category: Lifestyle coach</p>
+					}
+					else if (@Model.Coach.Category == 8)
+					{
+						<p class="card-text">Category: Fitness trainer</p>
+					}
+					<p class="card-text">Email: @Model.Coach.Email</p>
+					<p class="card-text">Phone Number: @Model.Coach.PhoneNumber</p>
+					@if (OnlineUsersMiddleware.CheckIfUserIsOnline(coachId))
+					{
+						<p class="card-text">Online: ✔</p>
+					}
+					else
+					{
+						<p class="card-text">Online: ❌</p>
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

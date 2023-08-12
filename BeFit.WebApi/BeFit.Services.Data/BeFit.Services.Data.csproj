@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeFit.Common\BeFit.Common.csproj" />
+    <ProjectReference Include="..\BeFit.Data.Models\BeFit.Data.Models.csproj" />
+    <ProjectReference Include="..\BeFit.Data\BeFit.Data.csproj" />
+    <ProjectReference Include="..\BeFit.Services.Data.Models\BeFit.Services.Data.Models.csproj" />
+    <ProjectReference Include="..\BeFit.Web.ViewModels\BeFit.Web.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
