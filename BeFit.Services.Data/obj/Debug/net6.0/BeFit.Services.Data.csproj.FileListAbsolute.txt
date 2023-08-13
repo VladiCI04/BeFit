@@ -21,3 +21,11 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Services.Data\obj\Debug\net6.0\ref\BeFit.Services.Data.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.Models.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.Models.pdb
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.csproj.AssemblyReference.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.AssemblyInfoInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.AssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\refint\BeFit.Services.Data.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.pdb

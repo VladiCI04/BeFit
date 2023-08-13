@@ -10,3 +10,15 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Common\obj\Debug\net6.0\refint\BeFit.Common.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Common\obj\Debug\net6.0\BeFit.Common.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Common\obj\Debug\net6.0\ref\BeFit.Common.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\bin\Debug\net6.0\BeFit.Common.deps.json
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\bin\Debug\net6.0\BeFit.Common.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\bin\Debug\net6.0\BeFit.Common.pdb
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.csproj.AssemblyReference.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.AssemblyInfoInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.AssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\refint\BeFit.Common.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\BeFit.Common.pdb
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Common\obj\Debug\net6.0\ref\BeFit.Common.dll

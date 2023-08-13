@@ -93,3 +93,15 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.genruntimeconfig.cache
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.WebApi\obj\Debug\net6.0\ref\BeFit.WebApi.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.csproj.AssemblyReference.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.AssemblyInfoInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.AssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.RazorAssemblyInfo.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.RazorAssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\refint\BeFit.WebApi.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.WebApi\obj\Debug\net6.0\BeFit.WebApi.pdb

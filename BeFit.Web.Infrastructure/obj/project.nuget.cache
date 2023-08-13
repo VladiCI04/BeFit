@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BfUm8oC98jukjTawEgEhAdaHTTW9GHHUZX+rYBNmfoO3R5XTcTtGjAQ4Rk7ViOXm9GtuLih7jgjSdBd0EDyJKw==",
+  "dgSpecHash": "tTffoCHimVYJqGZLEkcoX4Bpd4tB4NlS4VzNfXOJEXN2ckrBbpH0lpzqkY41Xtzfko5y0D7jCy0w6py2Pbizpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vladi\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Vladi\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

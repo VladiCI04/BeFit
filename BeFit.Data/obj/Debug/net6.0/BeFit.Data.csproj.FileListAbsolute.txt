@@ -17,3 +17,11 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Data\bin\Debug\net6.0\BeFit.Common.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Data\bin\Debug\net6.0\BeFit.Data.Models.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Data\obj\Debug\net6.0\BeFit.Data.csproj.CopyComplete
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.csproj.AssemblyReference.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.AssemblyInfoInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.AssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\refint\BeFit.Data.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Data\obj\Debug\net6.0\BeFit.Data.pdb

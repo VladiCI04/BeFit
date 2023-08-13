@@ -15,3 +15,11 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\Be
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.csproj.CopyComplete
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\bin\Debug\net6.0\BeFit.Data.Models.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit Project\BeFit.Web.ViewModels\bin\Debug\net6.0\BeFit.Data.Models.pdb
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.AssemblyInfo.cs
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\refint\BeFit.Web.ViewModels.dll
+C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Web.ViewModels\obj\Debug\net6.0\BeFit.Web.ViewModels.pdb

@@ -2185,11 +2185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
       "projectName": "BeFit.Services.Data",
-      "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
+      "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
       "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data\\obj\\",
+      "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2210,20 +2210,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Common\\BeFit.Common.csproj": {
-              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Common\\BeFit.Common.csproj"
+            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
+              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
             },
-            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
+            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
             },
-            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data\\BeFit.Data.csproj": {
-              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Data\\BeFit.Data.csproj"
+            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj": {
+              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj"
             },
-            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj"
+            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj"
             },
-            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
-              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit Project\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
+            "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
             }
           }
         }
