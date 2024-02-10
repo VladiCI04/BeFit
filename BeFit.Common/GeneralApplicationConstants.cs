@@ -2,9 +2,6 @@
 {
     public class GeneralApplicationConstants
     {
-        // App Year Constant
-        public const int BeFitYearPublished = 2023;
-
         // Pages Constants
         public const int DefaultPage = 1;
         public const int EntitiesPerPage = 3;

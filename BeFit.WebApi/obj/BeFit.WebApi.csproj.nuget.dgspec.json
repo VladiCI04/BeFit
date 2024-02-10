@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj": {}
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj",
         "projectName": "BeFit.Common",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,18 +59,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj",
         "projectName": "BeFit.Data.Models",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
               }
             }
           }
@@ -128,18 +128,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj",
         "projectName": "BeFit.Data",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,11 +160,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
               },
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
               }
             }
           }
@@ -210,18 +210,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj",
         "projectName": "BeFit.Services.Data.Models",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -242,8 +242,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
               }
             }
           }
@@ -273,18 +273,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
         "projectName": "BeFit.Services.Data",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -305,20 +305,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
               },
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
               },
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data\\BeFit.Data.csproj"
               },
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data.Models\\BeFit.Services.Data.Models.csproj"
               },
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj"
               }
             }
           }
@@ -348,18 +348,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj",
         "projectName": "BeFit.Web.Infrastructure",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -380,8 +380,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Data\\BeFit.Services.Data.csproj"
               }
             }
           }
@@ -421,18 +421,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj",
         "projectName": "BeFit.Web.ViewModels",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\BeFit.Web.ViewModels.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.ViewModels\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -453,11 +453,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Common\\BeFit.Common.csproj"
               },
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj"
               }
             }
           }
@@ -487,18 +487,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj": {
+    "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj",
         "projectName": "BeFit.WebApi",
-        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj",
+        "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.WebApi\\BeFit.WebApi.csproj",
         "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -513,15 +513,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj"
+              "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Web.Infrastructure\\BeFit.Web.Infrastructure.csproj"
               }
             }
           }
@@ -560,7 +559,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

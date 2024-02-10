@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "39lSK3NwzD1oayEMdcdUBvYaxCIRfClqJSIAS/S2XFVfMHrenVj+CGbWpEczG73sizMjFscvbQdMqB5KJb1s0g==",
+  "dgSpecHash": "ohKfzAKD7QOtktbWc8ZTero9DTvucheKgzpNGcuPkTZm17yxMbuRtMV8au0PF15yf8NecErs0KYjLhCoqpB4LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Services.Tests\\BeFit.Services.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Services.Tests\\BeFit.Services.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vladi\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Vladi\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

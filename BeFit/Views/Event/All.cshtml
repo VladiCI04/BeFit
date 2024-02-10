@@ -66,12 +66,15 @@
 {
 	<h2 class="text-center">No events found by the given criteria!</h2>
 }
-<div class="row">
-	@foreach (var even in Model.Events)
-	{
-		<partial name="_EventPartial" model="@even" />
-	}
-</div>
+else
+{
+	<div class="row">
+		@foreach (var even in Model.Events)
+		{
+			<partial name="_EventPartial" model="@even" />
+		}
+	</div>
+}
 
 <div class="row mt-5">
 	<div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-start">

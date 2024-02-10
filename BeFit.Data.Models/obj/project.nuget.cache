@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YN7x6rJdfEeswr+dqzbNvpJWAcu2t6KAQERzjImx22UxSbaHLRQekonXzomJjE+FqbmBNjRh0l2mIJbPfEWFEA==",
+  "dgSpecHash": "zStiX/UfBllbzn2EdW6tJGDv9gkClUy+j6FBWSZIwV1VMVvO+hrkkaj9oVgiRp3QvgW41CnXiBujcCMHLWJI/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj",
+  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit.Data.Models\\BeFit.Data.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vladi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.20\\microsoft.aspnetcore.cryptography.internal.6.0.20.nupkg.sha512",
     "C:\\Users\\Vladi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.20\\microsoft.aspnetcore.cryptography.keyderivation.6.0.20.nupkg.sha512",

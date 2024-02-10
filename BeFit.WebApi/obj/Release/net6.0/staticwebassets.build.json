@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "/S8pbCw86ovpwfkRZg5+T6Fh1s5xFNQjKJgQLv/JANI=",
+  "Source": "BeFit.WebApi",
+  "BasePath": "_content/BeFit.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

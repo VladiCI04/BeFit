@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TX4/adv4qauOmp7OFMYdAp9X1f7GZkLTqyASDhSa8QC2xHqD+o4T6rwfvkSqAwU2trcpT3JkJFJf2EUpsLs93g==",
+  "dgSpecHash": "XsifTGwRPzOTGzobqIdQLhCU6NSRPah26R9mLe6FZuahyxtchWdLpi7pxd9J0Q4xM331/TpFvwS6hoZT7JxSJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\BeFit GitHub\\BeFit\\BeFit\\BeFit.csproj",
+  "projectFilePath": "C:\\Users\\Vladi\\OneDrive - Software University (SoftUni)\\Desktop\\GitHub\\BeFit\\BeFit\\BeFit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vladi\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Vladi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
