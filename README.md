@@ -83,8 +83,6 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 
 ![Event Category Details](./screenshots/Screenshot5.png)
 
-![Coach Category Details](./screenshots/Screenshot6.png)
-
 ---
 
 ### 💬 Real-Time Chat & Form Management
@@ -97,7 +95,7 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 ### 🔐 Authentication
 ![Register Page](./screenshots/Screenshot9.png)
 
-![Login Page](./screenshots/Screenshot8.png)
+![Login Page](./screenshots/Screenshot10.png)
 
 ---
 
