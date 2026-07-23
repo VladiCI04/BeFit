@@ -1,0 +1,47 @@
+﻿@using BeFit.Services.Data.Interfaces
+@using BeFit.Web.Infrastructure.Extensions
+
+@inject ICoachService coachService
+@{
+    bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    ViewData["Title"] = "All Coach Categories";
+}
+
+@model IEnumerable<AllCoachCategoriesViewModel>
+
+<div class="befit-register-wrapper my-5" style="max-width: 680px;">
+    <div class="befit-card shadow-lg overflow-hidden">
+
+        <div class="befit-card-header text-center">
+            <span class="brand-badge mb-2">Specializations</span>
+            <h2 class="fw-bold m-0">@ViewData["Title"]</h2>
+            <p class="text-muted small mb-0 mt-1">Explore coaching categories and find certified fitness professionals</p>
+        </div>
+
+        <div class="befit-card-body p-4 p-md-5">
+            <div class="list-group gap-2">
+                @foreach (AllCoachCategoriesViewModel coachCategory in Model)
+                {
+                    <a class="list-group-item list-group-item-action border rounded-3 p-3 d-flex align-items-center justify-content-between shadow-sm transition-hover"
+                       asp-area=""
+                       asp-controller="CoachCategory"
+                       asp-action="Details"
+                       asp-route-id="@coachCategory.Id"
+                       asp-route-information="@coachCategory.GetUrlInformationForCoach()">
+
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-primary bg-opacity-10 p-2 text-primary d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;">
+                                <i class="bi bi-person-badge-fill fs-5"></i>
+                            </div>
+                            <span class="fw-bold text-dark fs-5">@coachCategory.Name</span>
+                        </div>
+
+                        <span class="text-primary fw-semibold small d-flex align-items-center gap-1">
+                            View Details <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

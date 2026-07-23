@@ -1,0 +1,95 @@
+﻿@model BecomeCoachFormModel
+@{
+    ViewBag.Title = "Become Coach";
+}
+
+<div class="befit-register-wrapper my-5" style="max-width: 650px;">
+    <div class="befit-card shadow-lg overflow-hidden">
+
+        <div class="befit-card-header text-center">
+            <span class="brand-badge mb-2">Application</span>
+            <h2 class="fw-bold m-0">@ViewBag.Title</h2>
+            <p class="text-muted small mb-0 mt-1">Fill out your details to register as a coach on BeFit</p>
+        </div>
+
+        <div class="befit-card-body p-4 p-md-5">
+
+            @if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show rounded-3 mb-4" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData.ModelState["Error"]!.Errors.First().ErrorMessage
+                </div>
+            }
+
+            <form method="post">
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label asp-for="Age" class="form-label fw-semibold text-secondary small mb-1"></label>
+                        <input asp-for="Age" class="form-control" placeholder="Age">
+                        <span asp-validation-for="Age" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Gender" class="form-label fw-semibold text-secondary small mb-1"></label>
+                        <select asp-for="Gender" class="form-select">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span asp-validation-for="Gender" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Height" class="form-label fw-semibold text-secondary small mb-1"></label>
+                        <input asp-for="Height" class="form-control" placeholder="Height (cm)">
+                        <span asp-validation-for="Height" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Weight" class="form-label fw-semibold text-secondary small mb-1"></label>
+                        <input asp-for="Weight" class="form-control" placeholder="Weight (kg)">
+                        <span asp-validation-for="Weight" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="PhoneNumber" class="form-label fw-semibold text-secondary small mb-1"></label>
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="+359 888 8888 88">
+                        <span asp-validation-for="PhoneNumber" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="CoachCategoryId" class="form-label fw-semibold text-secondary small mb-1">Specialization</label>
+                        <select asp-for="CoachCategoryId" class="form-select">
+                            @foreach (var category in Model.CoachCategories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="CoachCategoryId" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="Description" class="form-label fw-semibold text-secondary small mb-1"></label>
+                        <textarea asp-for="Description" rows="4" class="form-control" placeholder="Describe your coaching background and qualifications..."></textarea>
+                        <span asp-validation-for="Description" class="small text-danger"></span>
+                    </div>
+
+                    <div class="col-12 text-center pt-3">
+                        <button class="btn btn-befit btn-lg rounded-pill fw-bold px-5 shadow-sm" type="submit">
+                            Save Application
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

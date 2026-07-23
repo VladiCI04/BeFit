@@ -1,0 +1,78 @@
+﻿@model EventFormModel
+
+<div class="befit-register-wrapper my-4" style="max-width: 680px;">
+    <div class="befit-card shadow-lg">
+        <div class="befit-card-header text-center">
+            <span class="brand-badge mb-2">BeFit</span>
+            <h2 class="fw-bold m-0">Event Details</h2>
+            <p class="text-muted small mb-0 mt-1">Fill in the details below to publish or update your sport event</p>
+        </div>
+
+        <div class="befit-card-body p-4 p-md-5">
+            <form method="post">
+                <div class="form-floating mb-3">
+                    <input asp-for="Title" class="form-control custom-input" placeholder="Title..." />
+                    <label asp-for="Title"></label>
+                    <span asp-validation-for="Title" class="small text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="Address" class="form-control custom-input" placeholder="Address..." />
+                    <label asp-for="Address"></label>
+                    <span asp-validation-for="Address" class="small text-danger"></span>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select asp-for="EventCategoryId" class="form-select custom-input">
+                                @foreach (var category in Model.EventCategories)
+                                {
+                                    <option value="@category.Id">@category.Name</option>
+                                }
+                            </select>
+                            <label asp-for="EventCategoryId">Category</label>
+                            <span asp-validation-for="EventCategoryId" class="small text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Tax" class="form-control custom-input" placeholder="Tax" />
+                            <label asp-for="Tax">Tax (BGN)</label>
+                            <span asp-validation-for="Tax" class="small text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="ImageUrl" class="form-control custom-input" placeholder="Photo URL here..." />
+                    <label asp-for="ImageUrl">Image URL</label>
+                    <span asp-validation-for="ImageUrl" class="small text-danger"></span>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="Start" class="form-label text-secondary fw-semibold small mb-1">Start Time</label>
+                        <input asp-for="Start" class="form-control custom-input" aria-required="true" value="@DateTime.Now.ToString("yyyy-MM-dd H:mm")" />
+                        <span asp-validation-for="Start" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="End" class="form-label text-secondary fw-semibold small mb-1">End Time</label>
+                        <input asp-for="End" class="form-control custom-input" value="@DateTime.Now.ToString("yyyy-MM-dd H:mm")" />
+                        <span asp-validation-for="End" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="Description" class="form-label text-secondary fw-semibold small mb-1">Event Description</label>
+                    <textarea asp-for="Description" rows="4" class="form-control custom-input" placeholder="Describe your event..."></textarea>
+                    <span asp-validation-for="Description" class="small text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-befit btn-lg w-100 fw-bold">
+                    Save Event
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="befit-register-wrapper my-5" style="max-width: 580px;">
+    <div class="befit-card shadow-lg text-center overflow-hidden">
+
+        <div class="befit-card-header bg-light py-3 border-bottom">
+            <span class="brand-badge mb-1">404 Error</span>
+            <h3 class="fw-bold m-0 text-dark">Page Not Found</h3>
+        </div>
+
+        <div class="befit-card-body p-4 p-md-5">
+            <div class="mb-4">
+                <img src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=2000"
+                     alt="Error 404"
+                     class="img-fluid rounded-3 shadow-sm border"
+                     style="max-height: 260px; object-fit: contain;" />
+            </div>
+
+            <p class="fs-5 text-secondary fw-medium mb-4">
+                Oops, better check that URL. Page was not found.
+            </p>
+
+            <div class="pt-2">
+                <a asp-area="" asp-controller="Home" asp-action="Index"
+                   class="btn btn-befit btn-lg px-4 rounded-pill fw-bold text-decoration-none d-inline-flex align-items-center gap-2">
+                    <i class="bi bi-house-door-fill"></i> Go back to Home Page
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>

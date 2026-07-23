@@ -1,0 +1,75 @@
+﻿@using BeFit.Data.Models
+@using Microsoft.AspNetCore.Identity
+@using BeFit.Services.Data.Interfaces
+@using BeFit.Web.Infrastructure.Extensions
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject IUserService UserService
+@inject ICoachService CoachService
+
+@{
+    bool isUserCoach = await CoachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    string? userFullName = await UserService.GetFullNameByEmailAsync(this.User.Identity?.Name!);
+}
+
+<ul class="navbar-nav align-items-center gap-1">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        @if (!isUserCoach)
+        {
+            <li class="nav-item">
+                <a class="btn btn-sm btn-outline-primary rounded-pill px-3 fw-semibold nav-coach-btn"
+                   asp-controller="Coach"
+                   asp-action="Become">
+                    <i class="bi bi-trophy-fill me-1"></i> Become Coach
+                </a>
+            </li>
+        }
+
+        <li class="nav-item">
+            <a class="nav-link text-dark fw-semibold px-2 py-1 rounded nav-user-link"
+               asp-area="Identity"
+               asp-page="/Account/Manage/Index"
+               title="Manage Account">
+                <span class="user-avatar-icon me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-circle text-primary" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                </span>
+                Hello, <span class="text-primary fw-bold">@userFullName</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <form class="form-inline d-inline"
+                  asp-area="Identity"
+                  asp-page="/Account/Logout"
+                  asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="btn btn-link text-muted text-decoration-none nav-link px-2 fw-medium btn-logout">
+                    Logout
+                </button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark fw-semibold px-3 py-1 rounded"
+               asp-area=""
+               asp-controller="User"
+               asp-action="Register">
+                Register
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-sm btn-primary rounded-pill px-3 fw-bold shadow-sm"
+               asp-area=""
+               asp-controller="User"
+               asp-action="Login">
+                Login
+            </a>
+        </li>
+    }
+</ul>

@@ -1,0 +1,91 @@
+﻿@using BeFit.Services.Data.Interfaces;
+@using BeFit.Web.Infrastructure.Extensions;
+
+@inject IEventService eventService;
+@inject ICoachService coachService;
+
+@{
+    bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
+    bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
+    bool isEventExpired = await eventService.IsEventExpired(Model.Id);
+}
+
+@model EventAllViewModel
+
+@if (isEventExpired)
+{
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden event-card">
+
+            <div class="position-relative" style="height: 200px;">
+                <img class="w-100 h-100 object-fit-cover" src="@Model.ImageUrl" alt="@Model.Title">
+            </div>
+
+            <div class="card-body d-flex flex-column p-4">
+                <h5 class="fw-bold mb-3 text-dark text-center">@Model.Title</h5>
+
+                <div class="event-details-list small mb-3 flex-grow-1">
+                    <div class="d-flex align-items-center mb-2 text-muted">
+                        <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                        <span>Address: <strong class="text-dark">@Model.Address</strong></span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted">
+                        <i class="bi bi-tag-fill text-primary me-2"></i>
+                        <span>Tax: <strong class="text-dark">@String.Format("{0:f2}", Model.Tax) BGN</strong></span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted">
+                        <i class="bi bi-person-badge-fill text-primary me-2"></i>
+                        <span>Coach: <strong class="text-dark">@Model.CoachName</strong></span>
+                    </div>
+                </div>
+
+                @if (this.User.Identity?.IsAuthenticated ?? false)
+                {
+                    <div class="pt-3 border-top d-flex flex-column gap-2">
+                        <div class="d-flex gap-2 justify-content-center flex-wrap">
+                            <a asp-area="" asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"
+                               class="btn btn-sm btn-outline-primary fw-semibold px-3 rounded-pill">Details</a>
+
+                            @if ((isUserCoach && isCoachOwnerOfEvent) || this.User.IsAdmin())
+                            {
+                                <a asp-area="" asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
+                                   class="btn btn-sm btn-warning text-white fw-semibold px-3 rounded-pill">Edit</a>
+
+                                <a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
+                                   class="btn btn-sm btn-danger fw-semibold px-3 rounded-pill">Delete</a>
+                            }
+                        </div>
+
+                        @if (!isUserCoach || this.User.IsAdmin())
+                        {
+                            @if (this.User.IsAdmin() && isCoachOwnerOfEvent)
+                            {
+                                /* Preserved Admin check condition */
+                            }
+                            else
+                            {
+                                @if (!isEventAlreadyAdded)
+                                {
+                                    <form asp-area="" asp-controller="Event" asp-action="Join" asp-route-id="@Model.Id" method="post" class="w-100 mt-1">
+                                        <button class="btn btn-sm btn-primary w-100 fw-bold rounded-pill shadow-sm" type="submit">
+                                            Join Event
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form asp-area="" asp-controller="Event" asp-action="Leave" asp-route-id="@Model.Id" method="post" class="w-100 mt-1">
+                                        <button class="btn btn-sm btn-outline-danger w-100 fw-bold rounded-pill" type="submit">
+                                            Leave Event
+                                        </button>
+                                    </form>
+                                }
+                            }
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
