@@ -70,35 +70,34 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 ## 📸 Screenshots
 
 ### 🏠 Home & Discovery
-![Home Page](./screenshots/Screenshot%20(2).jpg)
+![Home Page](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(2).jpg)
 
-![All Events Dashboard](./screenshots/Screenshot%20(3).jpg)
+![All Events Dashboard](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(3).jpg)
 
 ---
 
 ### 🗂️ Categories & Details
-![Event Categories](./screenshots/Screenshot%20(4).jpg)
+![Event Categories](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(4).jpg)
 
-![Coach Specializations](./screenshots/Screenshot%20(5).jpg)
+![Coach Specializations](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(5).jpg)
 
-![Event Category Details](./screenshots/Screenshot%20(6).jpg)
+![Event Category Details](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(6).jpg)
 
-![Coach Category Details](./screenshots/Screenshot%20(7).jpg)
+![Coach Category Details](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(7).jpg)
 
 ---
 
 ### 💬 Real-Time Chat & Form Management
-![Live Community Chat](./screenshots/Screenshot%20(8).jpg)
+![Live Community Chat](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(8).jpg)
 
-![Add Event Form](./screenshots/Screenshot%20(9).jpg)
+![Add Event Form](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(9).jpg)
 
 ---
 
 ### 🔐 Authentication
-![Register Page](./screenshots/Screenshot%20(10).jpg)
+![Register Page](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(10).jpg)
 
-![Login Page](./screenshots/Screenshot%20(11).jpg)
-
+![Login Page](https://raw.githubusercontent.com/VladiCI04/BeFit/master/screenshots/Screenshot%20(11).jpg)
 ---
 
 ## ⭐️ Show Your Support
