@@ -46,3 +46,29 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+/* --- BeFit Main Layout Enhancements --- */
+
+/* Brand Logo Height Cap */
+.brand-logo {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Nav Link Hover States */
+.hover-link {
+    color: #495057 !important;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+    .hover-link:hover {
+        color: #0d6efd !important;
+        background-color: rgba(13, 110, 253, 0.05);
+    }
+
+/* Ensure Sticky Navbar Shadow */
+header.sticky-top {
+    z-index: 1030;
+}

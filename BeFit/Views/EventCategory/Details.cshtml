@@ -3,20 +3,48 @@
 
 @inject ICoachService coachService
 @{
-	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    ViewData["Title"] = "Event Category Details";
 }
 
 @model EventCategoryDetailsViewModel
-@{
-	ViewData["Title"] = "Event Category Details";
-}
 
-<h2 class="text-center">@ViewData["Title"]</h2>
-<hr />
+<div class="befit-register-wrapper my-5" style="max-width: 650px;">
+    <div class="befit-card shadow-lg overflow-hidden">
 
-<div class="container-fluid">
-	<div class="row">
-		<p class="col-6">Name: @Model.Name</p>
-		<p class="col-6">Events in this Category: @Model.Events</p>
-	</div>
+        <div class="befit-card-header text-center">
+            <span class="brand-badge mb-2">Category Overview</span>
+            <h2 class="fw-bold m-0">@ViewData["Title"]</h2>
+            <p class="text-muted small mb-0 mt-1">Detailed statistics for this event category</p>
+        </div>
+
+        <div class="befit-card-body p-4 p-md-5">
+            <div class="row g-4 text-center">
+
+                <div class="col-sm-6">
+                    <div class="p-4 bg-light rounded-4 border h-100 d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-tag-fill text-primary fs-3 mb-2"></i>
+                        <span class="text-uppercase small fw-bold text-muted d-block mb-1">Category Name</span>
+                        <h4 class="fw-bold text-dark m-0">@Model.Name</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="p-4 bg-light rounded-4 border h-100 d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-calendar-event-fill text-primary fs-3 mb-2"></i>
+                        <span class="text-uppercase small fw-bold text-muted d-block mb-1">Total Events</span>
+                        <h4 class="fw-bold text-primary m-0">@Model.Events</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-4 pt-2">
+                <a asp-area="" asp-controller="EventCategory" asp-action="All" class="btn btn-outline-primary rounded-pill fw-semibold px-4">
+                    <i class="bi bi-arrow-left me-1"></i> Back to Categories
+                </a>
+            </div>
+        </div>
+
+    </div>
 </div>

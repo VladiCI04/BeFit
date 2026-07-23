@@ -29,3 +29,26 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeF
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\refint\BeFit.Services.Data.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\BeFit GitHub\BeFit\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.deps.json
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Common.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Data.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Web.ViewModels.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Common.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Data.Models.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Data.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Services.Data.Models.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\bin\Debug\net6.0\BeFit.Web.ViewModels.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.csproj.AssemblyReference.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.AssemblyInfoInputs.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.AssemblyInfo.cs
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Se.7E6EB00A.Up2Date
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\refint\BeFit.Services.Data.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\BeFit.Services.Data.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Services.Data\obj\Debug\net6.0\ref\BeFit.Services.Data.dll

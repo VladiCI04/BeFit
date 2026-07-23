@@ -1,28 +1,51 @@
 ﻿@model EventPreDeleteDetailsViewModel
 @{
-	ViewBag.Title = "Delete Event";
+    ViewBag.Title = "Delete Event";
 }
 
-<h2 class="text-center">@ViewBag.Title</h2>
-<hr />
-<form method="post" asp-action="Delete">
-	<div class="row">
-		<div class="col-md-4">
-			<img class="card-img-top" src="@Model.ImageUrl" alt="Event Image">
-		</div>
-		<div class="col-md-8">
-			<div class="form-group">
-				<label asp-for="Title" class="control-label"></label>
-				<input asp-for="Title" class="form-control" disabled="disabled" />
-			</div>
-			<div class="form-group">
-				<label asp-for="Address" class="control-label"></label>
-				<input asp-for="Address" class="form-control" disabled="disabled" />
-			</div>
-			<div class="form-group mt-2">
-				<input type="submit" value="Delete" class="btn btn-danger" />
-			</div>
-		</div>
-	</div>
-</form>
+<div class="befit-register-wrapper my-5" style="max-width: 680px;">
+    <div class="befit-card shadow-lg overflow-hidden border-danger border-opacity-25">
 
+        <div class="befit-card-header text-center bg-danger bg-opacity-10 py-3 border-bottom border-danger border-opacity-10">
+            <span class="brand-badge bg-danger text-white mb-1">Confirmation Required</span>
+            <h3 class="fw-bold m-0 text-danger">@ViewBag.Title</h3>
+            <p class="text-danger opacity-75 small mb-0 mt-1">Are you sure you want to permanently delete this event?</p>
+        </div>
+
+        <div class="befit-card-body p-4 p-md-5">
+            <form method="post" asp-action="Delete">
+                <div class="row g-4 align-items-center">
+
+                    <div class="col-md-5">
+                        <div class="rounded-4 overflow-hidden border shadow-sm" style="height: 200px;">
+                            <img class="w-100 h-100 object-fit-cover" src="@Model.ImageUrl" alt="@Model.Title">
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="form-group mb-3">
+                            <label asp-for="Title" class="control-label fw-semibold text-secondary small mb-1"></label>
+                            <input asp-for="Title" class="form-control bg-light" disabled="disabled" />
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Address" class="control-label fw-semibold text-secondary small mb-1"></label>
+                            <input asp-for="Address" class="form-control bg-light" disabled="disabled" />
+                        </div>
+
+                        <div class="d-flex gap-2 justify-content-end">
+                            <a asp-controller="Event" asp-action="All" class="btn btn-outline-secondary rounded-pill px-4 fw-semibold">
+                                Cancel
+                            </a>
+                            <button type="submit" class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm">
+                                <i class="bi bi-trash-fill me-1"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

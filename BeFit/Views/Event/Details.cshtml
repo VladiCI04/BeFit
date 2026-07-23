@@ -4,120 +4,182 @@
 
 @inject ICoachService coachService
 @{
-	bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
-	bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
-	bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
-	string coachId = await coachService.GetCoachIdByCoachEmailAsync(Model.Coach.Email);
+    bool isUserCoach = await coachService.CoachExistsByUserIdAsync(this.User.GetId()!);
+    bool isCoachOwnerOfEvent = await coachService.HasEventWithIdAsync(this.User.GetId()!, Model.Id);
+    bool isEventAlreadyAdded = await coachService.HasUserThisEvent(this.User.GetId()!, Model.Id);
+    string coachId = await coachService.GetCoachIdByCoachEmailAsync(Model.Coach.Email);
 }
 
 @model EventDetailsViewModel
 @{
-	ViewBag.Title = "Event Details";
+    ViewBag.Title = "Event Details";
 }
 
-<h2 class="text-center">@ViewBag.Title</h2>
-<hr />
+<div class="container my-4">
+    <div class="text-center mb-4">
+        <span class="brand-badge mb-2">BeFit Event</span>
+        <h2 class="fw-bold text-dark m-0">@ViewBag.Title</h2>
+        <hr class="w-25 mx-auto opacity-25 mt-3" />
+    </div>
 
-<div class="container" style="display:inline">
-	<div class="row">
-		<div class="col-4">
-			<img class="card-img-top" style="width: 20rem;"
-				 src="@Model.ImageUrl" alt="Event Image">
-		</div>
-		<div class="card col-8 border-0">
-			<p style="font-size:25px;"><u>@Model.Title</u></p>
-			<p>Located in: <b>@Model.Address</b></p>
-			<p>
-				Tax:
-				<b>@String.Format("{0:f2}", Model.Tax) BGN</b>
-			</p>
-			<p>@Model.Description</p>
-			<p>Category: <b>@Model.Category</b></p>
-			<p>Start: <b>@Model.Start</b></p>
-			<p>End: <b>@Model.End</b></p>
-			<p>Clients: @Model.Clients</p>	
-			<div class="form-inline">
-				@if (this.User.Identity?.IsAuthenticated ?? false)
-				{
-					@if (isUserCoach && isCoachOwnerOfEvent)
-					{
-						<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id"
-						   class="btn btn-warning">Edit</a>
+    <div class="row g-4">
+        <div class="col-lg-5">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden position-relative h-100" style="min-height: 350px;">
+                <img class="w-100 h-100 object-fit-cover position-absolute top-0 start-0" src="@Model.ImageUrl" alt="@Model.Title">
+            </div>
+        </div>
 
-						<a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
-						class="btn btn-danger">Delete</a>
-					}
+        <div class="col-lg-7">
+            <div class="befit-card shadow-lg p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                        <h2 class="fw-bold text-dark m-0">@Model.Title</h2>
+                        <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold">
+                            <i class="bi bi-tag-fill me-1"></i>@Model.Category
+                        </span>
+                    </div>
 
-					@if(!isUserCoach)
-					{
-						@if (!isEventAlreadyAdded)
-						{
-							<p></p>
-							<form asp-controller="Event"
-							asp-action="Join" asp-route-id="@Model.Id" method="post">
-								<input class="btn btn-primary" type="submit" value="Join" />
-							</form>
-						}
-						else
-						{
-							<p></p>
-							<form asp-controller="Event"
-							asp-action="Leave" asp-route-id="@Model.Id" method="post">
-								<input class="btn btn-primary" type="submit" value="Leave" />
-							</form>
-						}
-					}
-				}
-			</div>
-			<p></p>
-			<div class="card" style="width: 18rem;">
-				<div class="card-body">
-					<h5 class="card-title">Coach Info</h5>
-					<p class="card-text">Name: @Model.Coach.FullName</p>
-					@if (@Model.Coach.Category == 1)
-					{
-						<p class="card-text">Category: Exercise specialist</p>
-					} 
-					else if (@Model.Coach.Category == 2)
-					{
-						<p class="card-text">Category: Health coach</p>
-					}
-					else if (@Model.Coach.Category == 3)
-					{
-						<p class="card-text">Category: Wellness specialist</p>
-					}
-					else if (@Model.Coach.Category == 4)
-					{
-						<p class="card-text">Category: Athletic trainer</p>
-					}
-					else if (@Model.Coach.Category == 5)
-					{
-						<p class="card-text">Category: Personal trainer</p>
-					}
-					else if (@Model.Coach.Category == 6)
-					{
-						<p class="card-text">Category: Sports coach</p>
-					}
-					else if (@Model.Coach.Category == 7)
-					{
-						<p class="card-text">Category: Lifestyle coach</p>
-					}
-					else if (@Model.Coach.Category == 8)
-					{
-						<p class="card-text">Category: Fitness trainer</p>
-					}
-					<p class="card-text">Email: @Model.Coach.Email</p>
-					<p class="card-text">Phone Number: @Model.Coach.PhoneNumber</p>
-					@if (OnlineUsersMiddleware.CheckIfUserIsOnline(coachId))
-					{
-						<p class="card-text">Online: ✔</p>
-					}
-					else
-					{
-						<p class="card-text">Online: ❌</p>
-					}
-				</div>
-			</div>
-		</div>
-	</div>
+                    <div class="d-flex flex-wrap gap-4 text-muted small mb-3 pb-3 border-bottom">
+                        <div>
+                            <i class="bi bi-geo-alt-fill text-primary me-1"></i>
+                            <span>Located in: <strong class="text-dark">@Model.Address</strong></span>
+                        </div>
+                        <div>
+                            <i class="bi bi-cash-stack text-primary me-1"></i>
+                            <span>Tax: <strong class="text-dark">@String.Format("{0:f2}", Model.Tax) BGN</strong></span>
+                        </div>
+                    </div>
+
+                    <p class="text-secondary mb-4 leading-relaxed">@Model.Description</p>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="p-3 bg-light rounded-3 border">
+                                <span class="text-uppercase small fw-bold text-muted d-block mb-1">Start Time</span>
+                                <span class="fw-bold text-dark"><i class="bi bi-clock me-1 text-primary"></i>@Model.Start</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-3 bg-light rounded-3 border">
+                                <span class="text-uppercase small fw-bold text-muted d-block mb-1">End Time</span>
+                                <span class="fw-bold text-dark"><i class="bi bi-clock-history me-1 text-primary"></i>@Model.End</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 bg-light rounded-3 border d-flex align-items-center justify-content-between">
+                                <span class="text-uppercase small fw-bold text-muted">Registered Participants</span>
+                                <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">@Model.Clients Clients</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (this.User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <div class="d-flex gap-2 align-items-center mb-4 flex-wrap">
+                            @if (isUserCoach && isCoachOwnerOfEvent)
+                            {
+                                <a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning text-white rounded-pill px-4 fw-bold shadow-sm">
+                                    <i class="bi bi-pencil-square me-1"></i> Edit Event
+                                </a>
+
+                                <a asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm">
+                                    <i class="bi bi-trash-fill me-1"></i> Delete Event
+                                </a>
+                            }
+
+                            @if (!isUserCoach)
+                            {
+                                @if (!isEventAlreadyAdded)
+                                {
+                                    <form asp-controller="Event" asp-action="Join" asp-route-id="@Model.Id" method="post" class="d-inline">
+                                        <button class="btn btn-primary rounded-pill px-5 fw-bold shadow-sm" type="submit">
+                                            <i class="bi bi-person-plus-fill me-1"></i> Join Event
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form asp-controller="Event" asp-action="Leave" asp-route-id="@Model.Id" method="post" class="d-inline">
+                                        <button class="btn btn-outline-danger rounded-pill px-5 fw-bold" type="submit">
+                                            <i class="bi bi-person-dash-fill me-1"></i> Leave Event
+                                        </button>
+                                    </form>
+                                }
+                            }
+                        </div>
+                    }
+                </div>
+
+                <div class="card border rounded-4 bg-light p-3 mt-2 shadow-sm">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h6 class="fw-bold m-0 text-dark"><i class="bi bi-person-badge text-primary me-2"></i>Coach Information</h6>
+                        @if (OnlineUsersMiddleware.CheckIfUserIsOnline(coachId))
+                        {
+                            <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-2 py-1 small">
+                                <i class="bi bi-circle-fill me-1 small"></i> Online
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary bg-opacity-10 text-secondary border rounded-pill px-2 py-1 small">
+                                <i class="bi bi-circle me-1 small"></i> Offline
+                            </span>
+                        }
+                    </div>
+
+                    <div class="small text-secondary">
+                        <div class="fw-bold text-dark fs-6 mb-1">@Model.Coach.FullName</div>
+
+                        <div class="text-primary fw-semibold mb-2">
+                            @if (@Model.Coach.Category == 1)
+                            {
+                                <span>Exercise specialist</span>
+                            }
+                            else if (@Model.Coach.Category == 2)
+                            {
+
+                                <span>Health coach</span>
+                            }
+                            else if (@Model.Coach.Category == 3)
+                            {
+
+                                <span>Wellness specialist</span>
+                            }
+                            else if (@Model.Coach.Category == 4)
+                            {
+
+                                <span>Athletic trainer</span>
+                            }
+                            else if (@Model.Coach.Category == 5)
+                            {
+
+                                <span>Personal trainer</span>
+                            }
+                            else if (@Model.Coach.Category == 6)
+                            {
+
+                                <span>Sports coach</span>
+                            }
+                            else if (@Model.Coach.Category == 7)
+                            {
+
+                                <span>Lifestyle coach</span>
+                            }
+                            else if (@Model.Coach.Category == 8)
+                            {
+
+                                <span>Fitness trainer</span>
+                            }
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <div><i class="bi bi-envelope me-1"></i>@Model.Coach.Email</div>
+                            <div><i class="bi bi-telephone me-1"></i>@Model.Coach.PhoneNumber</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>

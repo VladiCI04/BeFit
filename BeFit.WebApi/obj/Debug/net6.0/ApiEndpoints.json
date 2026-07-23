@@ -1,0 +1,27 @@
+[
+  {
+    "ContainingType": "BeFit.WebApi.Controllers.StatisticsApiController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BeFit.Services.Data.Models.Statistics.StatisticsServiceModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  }
+]

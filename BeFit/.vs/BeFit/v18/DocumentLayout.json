@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\views\\eventcategory\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:views\\eventcategory\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1D08144-C353-43E2-8312-8A4EDE70425C}|..\\BeFit.Services.Data\\BeFit.Services.Data.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit.services.data\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\views\\coachcategory\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:views\\coachcategory\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\views\\chat\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:views\\chat\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\views\\coach\\become.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:views\\coach\\become.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|c:\\users\\vladi\\downloads\\befit-master\\befit\\views\\coachcategory\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{068DEA93-7A1D-4796-AD5A-7B2A1713A9C2}|BeFit.csproj|solutionrelative:views\\coachcategory\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-23T10:19:33.386Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit.Services.Data\\EventService.cs",
+              "RelativeDocumentMoniker": "..\\BeFit.Services.Data\\EventService.cs",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit.Services.Data\\EventService.cs",
+              "RelativeToolTip": "..\\BeFit.Services.Data\\EventService.cs",
+              "ViewState": "AgIAAEUBAAAAAAAAAAArwFYBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T11:02:36.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\EventCategory\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\EventCategory\\Details.cshtml",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\EventCategory\\Details.cshtml",
+              "RelativeToolTip": "Views\\EventCategory\\Details.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T11:02:35.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAADgv18AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T10:52:02.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chat.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\Chat\\Chat.cshtml",
+              "RelativeDocumentMoniker": "Views\\Chat\\Chat.cshtml",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\Chat\\Chat.cshtml",
+              "RelativeToolTip": "Views\\Chat\\Chat.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T10:49:20.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Become.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\Coach\\Become.cshtml",
+              "RelativeDocumentMoniker": "Views\\Coach\\Become.cshtml",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\Coach\\Become.cshtml",
+              "RelativeToolTip": "Views\\Coach\\Become.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAADwv14AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T10:47:52.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "All.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\CoachCategory\\All.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoachCategory\\All.cshtml",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\CoachCategory\\All.cshtml",
+              "RelativeToolTip": "Views\\CoachCategory\\All.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvy4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T10:46:27.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\CoachCategory\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoachCategory\\Details.cshtml",
+              "ToolTip": "C:\\Users\\vladi\\Downloads\\BeFit-master\\BeFit\\Views\\CoachCategory\\Details.cshtml",
+              "RelativeToolTip": "Views\\CoachCategory\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADgvxEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T10:45:57.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

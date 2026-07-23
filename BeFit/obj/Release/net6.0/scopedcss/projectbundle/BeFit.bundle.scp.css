@@ -1,4 +1,4 @@
-/* _content/BeFit/Areas/Admin/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+/* /Areas/Admin/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
@@ -47,7 +47,7 @@ button.accept-policy[b-02f24lrme0] {
   white-space: nowrap;
   line-height: 60px;
 }
-/* _content/BeFit/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* /Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
@@ -95,4 +95,30 @@ button.accept-policy[b-e9mejff08s] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+/* --- BeFit Main Layout Enhancements --- */
+
+/* Brand Logo Height Cap */
+.brand-logo[b-e9mejff08s] {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Nav Link Hover States */
+.hover-link[b-e9mejff08s] {
+    color: #495057 !important;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+    .hover-link:hover[b-e9mejff08s] {
+        color: #0d6efd !important;
+        background-color: rgba(13, 110, 253, 0.05);
+    }
+
+/* Ensure Sticky Navbar Shadow */
+header.sticky-top[b-e9mejff08s] {
+    z-index: 1030;
 }

@@ -18,7 +18,7 @@ namespace BeFit
             WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
             string connectionString = 
-                builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+                builder.Configuration.GetConnectionString("BeFitDbContextConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             
             builder.Services.AddDbContext<BeFitDbContext>(options =>
                 options.UseSqlServer(connectionString));

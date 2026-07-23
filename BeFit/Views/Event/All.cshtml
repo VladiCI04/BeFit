@@ -1,104 +1,133 @@
 ﻿@model AllEventsQueryModel
 @{
-	ViewBag.Title = "All Events";
+    ViewBag.Title = "All Events";
 }
 
-<h2 class="text-center">@ViewBag.Title</h2>
-<hr />
-<form method="get">
-	<div class="row">
-		<div class="form-group col-md-3 d-flex justify-content-between">
-			<div class="form-group">
-				<label asp-for="EventCategory"></label>
-				<select asp-for="EventCategory" class="form-control">
-					<option value="">All</option>
-					@foreach (var category in Model.EventCategories)
-					{
-						<option value="@category">@category</option>
-					}
-				</select>
-			</div>
+<div class="container my-4">
+    <div class="text-center mb-4">
+        <span class="brand-badge mb-2">Explore BeFit</span>
+        <h2 class="fw-bold text-dark m-0">@ViewBag.Title</h2>
+        <p class="text-muted small mt-1">Discover, filter, and join sports events happening around you</p>
+        <hr class="w-25 mx-auto opacity-25 mt-3" />
+    </div>
 
-			<div class="form-group">
-				<label asp-for="EventsPerPage"></label>
-				<select asp-for="EventsPerPage" class="form-control">
-					<option value="3">3</option>
-					<option value="6">6</option>
-					<option value="9">9</option>
-					<option value="12">12</option>
-				</select>
-			</div>
-		</div>
+    <div class="card border-0 shadow-sm rounded-4 p-4 mb-5 bg-light">
+        <form method="get">
+            <div class="row g-3 align-items-end">
 
-		<div class="form-group col-md-3">
-			<label asp-for="SearchString"></label>
-			<input asp-for="SearchString" class="form-control" placeholder="...">
-		</div>
-		<div class="form-group col-md-3">
-			<div class="form-group">
-				<label asp-for="EventSorting"></label>
-				<select asp-for="EventSorting" class="form-control">
-					<option value="0">Newest</option>
-					<option value="1">Oldest</option>
-					<option value="2">Tax (Ascending)</option>
-					<option value="3">Tax (Descending)</option>
-				</select>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group mt-4 p-2">
-				<input type="submit" value="Search" class="btn btn-primary" />
-			</div>
-		</div>
-	</div>
-</form>
-@{
-	int previousPage = Model.CurrentPage - 1;
-	if (previousPage < 1)
-	{
-		previousPage = 1;
-	}
-	int maxPage = (int)Math.Ceiling((double)Model.TotalEvents /
-	Model.EventsPerPage);
-}
+                <div class="col-md-3">
+                    <label asp-for="EventCategory" class="form-label fw-semibold text-secondary small mb-1"></label>
+                    <select asp-for="EventCategory" class="form-select shadow-sm">
+                        <option value="">All Categories</option>
+                        @foreach (var category in Model.EventCategories)
+                        {
+                            <option value="@category">@category</option>
+                        }
+                    </select>
+                </div>
 
-@if (!Model.Events.Any())
-{
-	<h2 class="text-center">No events found by the given criteria!</h2>
-}
-else
-{
-	<div class="row">
-		@foreach (var even in Model.Events)
-		{
-			<partial name="_EventPartial" model="@even" />
-		}
-	</div>
-}
+                <div class="col-md-3">
+                    <label asp-for="SearchString" class="form-label fw-semibold text-secondary small mb-1"></label>
+                    <div class="input-group shadow-sm">
+                        <span class="input-group-text bg-white text-muted border-end-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input asp-for="SearchString" class="form-control border-start-0 ps-0" placeholder="Search events...">
+                    </div>
+                </div>
 
-<div class="row mt-5">
-	<div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-start">
-		<a class="btn btn-primary @(Model.CurrentPage == 1 ? "disabled" :
-string.Empty)"
-		   asp-controller="Event"
-		   asp-action="All"
-		   asp-route-currentPage="@previousPage"
-		   asp-route-category="@Model.EventCategory"
-		   asp-route-searchTerm="@Model.SearchString"
-		   asp-route-sorting="@((int)Model.EventSorting)"><<</a>
-	</div>
-	@{
-		bool shouldNextPageBeDisabled = Model.CurrentPage == maxPage ||
-		!Model.Events.Any();
-	}
-	<div class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-end">
-		<a class="btn btn-primary
- @(shouldNextPageBeDisabled ? "disabled" : string.Empty)"
-		   asp-controller="Event"
-		   asp-action="All"
-		   asp-route-currentPage="@(Model.CurrentPage + 1)"
-		   asp-route-category="@Model.EventCategory"
-		   asp-route-searchTerm="@Model.SearchString"
-		   asp-route-sorting="@((int)Model.EventSorting)">>></a>
-	</div>
+                <div class="col-md-2">
+                    <label asp-for="EventSorting" class="form-label fw-semibold text-secondary small mb-1"></label>
+                    <select asp-for="EventSorting" class="form-select shadow-sm">
+                        <option value="0">Newest First</option>
+                        <option value="1">Oldest First</option>
+                        <option value="2">Tax (Ascending)</option>
+                        <option value="3">Tax (Descending)</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <label asp-for="EventsPerPage" class="form-label fw-semibold text-secondary small mb-1">Per Page</label>
+                    <select asp-for="EventsPerPage" class="form-select shadow-sm">
+                        <option value="3">3 Events</option>
+                        <option value="6">6 Events</option>
+                        <option value="9">9 Events</option>
+                        <option value="12">12 Events</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100 fw-bold shadow-sm d-flex justify-content-center align-items-center gap-2" style="height: 38px;">
+                        Filter
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    @{
+        int previousPage = Model.CurrentPage - 1;
+        if (previousPage < 1)
+        {
+            previousPage = 1;
+        }
+        int maxPage = (int)Math.Ceiling((double)Model.TotalEvents / Model.EventsPerPage);
+        bool shouldNextPageBeDisabled = Model.CurrentPage == maxPage || !Model.Events.Any();
+    }
+
+    @if (!Model.Events.Any())
+    {
+        <div class="befit-register-wrapper my-5 mx-auto" style="max-width: 580px;">
+            <div class="befit-card shadow-lg text-center p-4 p-md-5">
+                <div class="mb-3">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle p-4 shadow-sm" style="width: 80px; height: 80px;">
+                        <i class="bi bi-search fs-2"></i>
+                    </div>
+                </div>
+                <h4 class="fw-bold text-dark mb-2">No events found</h4>
+                <p class="text-muted mb-0">We couldn't find any events matching your criteria. Try adjusting your filters or search terms.</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var even in Model.Events)
+            {
+                <partial name="_EventPartial" model="@even" />
+            }
+        </div>
+    }
+
+    @if (Model.Events.Any() || Model.CurrentPage > 1)
+    {
+        <div class="d-flex justify-content-between align-items-center mt-5 pt-3 border-top">
+
+            <a class="btn btn-outline-primary rounded-pill px-4 fw-semibold @(Model.CurrentPage == 1 ? "disabled" : string.Empty)"
+               asp-controller="Event"
+               asp-action="All"
+               asp-route-currentPage="@previousPage"
+               asp-route-category="@Model.EventCategory"
+               asp-route-searchTerm="@Model.SearchString"
+               asp-route-sorting="@((int)Model.EventSorting)">
+                <i class="bi bi-chevron-left me-1 small"></i> Previous
+            </a>
+
+            <span class="text-muted small fw-medium">
+                Page @Model.CurrentPage of @(maxPage == 0 ? 1 : maxPage)
+            </span>
+
+            <a class="btn btn-outline-primary rounded-pill px-4 fw-semibold @(shouldNextPageBeDisabled ? "disabled" : string.Empty)"
+               asp-controller="Event"
+               asp-action="All"
+               asp-route-currentPage="@(Model.CurrentPage + 1)"
+               asp-route-category="@Model.EventCategory"
+               asp-route-searchTerm="@Model.SearchString"
+               asp-route-sorting="@((int)Model.EventSorting)">
+                Next <i class="bi bi-chevron-right ms-1 small"></i>
+            </a>
+
+        </div>
+    }
 </div>

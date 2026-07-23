@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BeFit.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4f2f2e615700a55cafef4be0a7cdb461343cf8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BeFit.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BeFit.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

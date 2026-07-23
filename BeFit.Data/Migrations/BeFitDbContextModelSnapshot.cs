@@ -502,7 +502,7 @@ namespace BeFit.Data.Migrations
                             Description = "Best powerboating event ever!",
                             End = new DateTime(2029, 8, 17, 1, 6, 0, 0, DateTimeKind.Unspecified),
                             EventCategoryId = 3,
-                            ImageUrl = "https://i0.wp.com/397566-www.web.tornado-node.net/wp-content/uploads/2021/11/RAF1074-scaled.jpg?resize=1080%2C720&ssl=1",
+                            ImageUrl = "https://www.willenlake.org.uk/media/qfelrqm0/dr9a4601.jpg?width=2000&height=500&format=webp&quality=80&v=1dd12b3b15cae30",
                             IsActive = true,
                             Start = new DateTime(2023, 8, 6, 1, 6, 0, 0, DateTimeKind.Unspecified),
                             Tax = 45.600000000000001,

@@ -14,3 +14,18 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeF
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeFit.Data.Models\obj\Release\net6.0\refint\BeFit.Data.Models.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeFit.Data.Models\obj\Release\net6.0\ref\BeFit.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\bin\Release\net6.0\BeFit.Data.Models.deps.json
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\bin\Release\net6.0\BeFit.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\bin\Release\net6.0\BeFit.Data.Models.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\bin\Release\net6.0\BeFit.Common.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\bin\Release\net6.0\BeFit.Common.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.csproj.AssemblyReference.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.AssemblyInfoInputs.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.AssemblyInfo.cs
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Da.266CB5B9.Up2Date
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\refint\BeFit.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\BeFit.Data.Models.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Data.Models\obj\Release\net6.0\ref\BeFit.Data.Models.dll

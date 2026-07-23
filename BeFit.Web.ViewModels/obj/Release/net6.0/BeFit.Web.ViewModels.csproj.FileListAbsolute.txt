@@ -16,3 +16,20 @@ C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeF
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeFit.Web.ViewModels\obj\Release\net6.0\refint\BeFit.Web.ViewModels.dll
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.pdb
 C:\Users\Vladi\OneDrive - Software University (SoftUni)\Desktop\GitHub\BeFit\BeFit.Web.ViewModels\obj\Release\net6.0\ref\BeFit.Web.ViewModels.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Web.ViewModels.deps.json
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Web.ViewModels.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Web.ViewModels.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Common.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Data.Models.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Common.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\bin\Release\net6.0\BeFit.Data.Models.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.AssemblyInfo.cs
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.We.12E0BF67.Up2Date
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\refint\BeFit.Web.ViewModels.dll
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\BeFit.Web.ViewModels.pdb
+C:\Users\vladi\Downloads\BeFit-master\BeFit.Web.ViewModels\obj\Release\net6.0\ref\BeFit.Web.ViewModels.dll
