@@ -70,21 +70,34 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 ## 📸 Screenshots
 
 ### 🏠 Home & Discovery
-![Home Page](./screenshots/Screenshot%202026-07-23%141520.jpg)
-![All Events](./screenshots/Screenshot%202026-07-23%141531.jpg)
+![Home Page](./screenshots/Screenshot%20(2).jpg)
+
+![All Events Dashboard](./screenshots/Screenshot%20(3).jpg)
+
+---
 
 ### 🗂️ Categories & Details
-![Event Categories](./screenshots/Screenshot%202026-07-23%141538.jpg)
-![Coach Categories](./screenshots/Screenshot%202026-07-23%141547.jpg)
-![Category Details](./screenshots/Screenshot%202026-07-23%141600.jpg)
+![Event Categories](./screenshots/Screenshot%20(4).jpg)
 
-### 💬 Real-Time Chat & Forms
-![Live Chat](./screenshots/Screenshot%202026-07-23%141621.jpg)
-![Add Event](./screenshots/Screenshot%202026-07-23%141631.jpg)
+![Coach Specializations](./screenshots/Screenshot%20(5).jpg)
+
+![Event Category Details](./screenshots/Screenshot%20(6).jpg)
+
+![Coach Category Details](./screenshots/Screenshot%20(7).jpg)
+
+---
+
+### 💬 Real-Time Chat & Form Management
+![Live Community Chat](./screenshots/Screenshot%20(8).jpg)
+
+![Add Event Form](./screenshots/Screenshot%20(9).jpg)
+
+---
 
 ### 🔐 Authentication
-![Register](./screenshots/Screenshot%202026-07-23%141640.jpg)
-![Login](./screenshots/Screenshot%202026-07-23%141648.jpg)
+![Register Page](./screenshots/Screenshot%20(10).jpg)
+
+![Login Page](./screenshots/Screenshot%20(11).jpg)
 
 ---
 
