@@ -70,34 +70,34 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 ## 📸 Screenshots
 
 ### 🏠 Home & Discovery
-![Home Page](./screenshots/Screenshot.jpg)
+![Home Page](./screenshots/Screenshot.png)
 
-![All Events Dashboard](./screenshots/Screenshot2.jpg)
+![All Events Dashboard](./screenshots/Screenshot2.png)
 
 ---
 
 ### 🗂️ Categories & Details
-![Event Categories](./screenshots/Screenshot4.jpg)
+![Event Categories](./screenshots/Screenshot4.png)
 
-![Coach Specializations](./screenshots/Screenshot5.jpg)
+![Coach Specializations](./screenshots/Screenshot5.png)
 
-![Event Category Details](./screenshots/Screenshot6.jpg)
+![Event Category Details](./screenshots/Screenshot6.png)
 
-![Coach Category Details](./screenshots/Screenshot7.jpg)
+![Coach Category Details](./screenshots/Screenshot7.png)
 
 ---
 
 ### 💬 Real-Time Chat & Form Management
-![Live Community Chat](./screenshots/Screenshot208.jpg)
+![Live Community Chat](./screenshots/Screenshot208.png)
 
-![Add Event Form](./screenshots/Screenshot10.jpg)
+![Add Event Form](./screenshots/Screenshot10.png)
 
 ---
 
 ### 🔐 Authentication
-![Register Page](./screenshots/Screenshot11.jpg)
+![Register Page](./screenshots/Screenshot11.png)
 
-![Login Page](./screenshots/Screenshot12.jpg)
+![Login Page](./screenshots/Screenshot12.png)
 
 ---
 
