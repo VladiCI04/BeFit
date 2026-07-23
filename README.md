@@ -1,88 +1,120 @@
-<img src="https://github.com/VladiCI04/BeFit/blob/master/BeFit/wwwroot/befit-logo.png?raw=true" width="150" height="50px" alt="BeFit">
+<div align="center">
+
+<img src="https://github.com/VladiCI04/BeFit/blob/master/BeFit/wwwroot/befit-logo.png?raw=true" width="180" alt="BeFit Logo">
 
 # BeFit
-Web Application for organizing sports events where all users can be participated. These events are managed by coaches.
+**Connect. Train. Conquer.**
 
+A modern, full-stack ASP.NET Core MVC web application designed for organizing, discovering, and hosting community sports events led by certified coaches.
 
-## Application flow
+[Explore Application](#application-flow) • [Roles](#user-roles) • [Tech Stack](#technologies-used) • [Screenshots](#screenshots)
 
-Participant in events
-* Registers
-* Joins events
-* Leaves events
-* Becomes coach if he/she wants
-* Communicates with other people in the online chat
+---
 
-Coach
-* Registers
-* Adds new events
-* Deletes events
-* Edits events
-* Responds to messages from participants
+</div>
 
-Admin
-* Has access to all information about events, participants and coaches
+## 📌 Overview
 
-## Roles
+**BeFit** bridges the gap between active individuals looking to participate in fitness activities and certified coaches hosting structured sports events. Whether you want to join local runs, attend organized training sessions, or host your own sports events, BeFit provides the full workflow to make community fitness accessible.
 
-* Administrator
-* Coach
-* Participant
+---
 
-## Getting Started
+## ⚡ Key Features & Application Flow
 
-Site guest (**visitor**) 
-* Can only visit shared pages (*Home*, *All Events*, *Event categories*, *Coach categories*, *Register*, *Login*).
+### 🏃 Participant Experience
+* **Discover Events:** Browse and filter sports activities based on categories, search terms, and location.
+* **Join & Leave:** Easily register for upcoming events or manage your attendance schedule.
+* **Real-time Community Chat:** Communicate directly with coaches and fellow participants via integrated live chat.
+* **Level Up:** Apply to become a certified coach directly through the platform.
 
-**Administrator** - seeded automatically
-* Can visit shared pages and (*Online Chat*, *All users*, *My events*, *Create event*, *Event categories*, *Coach categories*)
-* Manage events.
-* Manage coaches.
+### 🏋️ Coach Experience
+* **Event Management:** Create, edit, and manage custom sports events with detailed descriptions, location tags, and entry fees.
+* **Participant Tracking:** Monitor sign-ups and handle event deletion or updates.
+* **Community Guidance:** Connect with attendees through real-time communication tools.
 
-**Coach**
-* Can visit shared pages and (*My events*, *Create event*, *Chat*).
-* Can add new events
-* Can delete events
-* Can edit events
+### 🛡️ Administrator Features
+* **Full Platform Governance:** Access administrative controls over all platform users, events, and coaching profiles.
+* **Category & Role Management:** Manage system-wide event and specialization categories.
 
-**Participant**
-* Can visit shared pages and (*My events*, *Chat*).
-* Can join event.
-* Can leave event.
-* Can become coach if he/she completes the requirements.
+---
 
-## Technologies Used
+## 👥 User Roles
 
-* C#
-* ASP.Net 6
-* Entity Framework 6
-* MS SQL Server
-* Bootstrap 4
-* JavaScript
-* HTML5
-* CSS
-* SignalR
-* Inkscape
+| Role | Access & Capabilities |
+| :--- | :--- |
+| **Guest / Visitor** | Can explore public pages (`Home`, `All Events`, `Event Categories`, `Coach Categories`, `Register`, `Login`). |
+| **Participant** | Can join/leave events, access `My Events`, use `Community Chat`, and apply for coach status. |
+| **Coach** | Can host and manage sports events (`Create Event`, `Edit`, `Delete`), communicate via chat, and view personal events. |
+| **Administrator** | Has overarching administrative privileges over all events, users, coaches, and system categories. |
 
-## Screenshots
-![User_All_Page](https://github.com/VladiCI04/BeFit/assets/140197292/63cb5b3a-43b4-4318-87c7-1c56cc39cba3)
-![Statistics](https://github.com/VladiCI04/BeFit/assets/140197292/dc61f7cc-d3df-4717-9c06-b56580bd7303)
-![Online_Chat_Page](https://github.com/VladiCI04/BeFit/assets/140197292/2d351ec1-98ae-4596-8465-ee2aad3d0804)
-![My_Events_Page](https://github.com/VladiCI04/BeFit/assets/140197292/1d0abe4e-c961-4433-833f-0f138408fc93)
-![Home_Page](https://github.com/VladiCI04/BeFit/assets/140197292/beeb3c88-043e-4f47-8c1a-f6bce2029595)
-![Event_Details_Page](https://github.com/VladiCI04/BeFit/assets/140197292/818d1ed2-9c58-4267-ba11-984db444c7d5)
-![Event_Category_Deatails_Page](https://github.com/VladiCI04/BeFit/assets/140197292/e3af7d58-ed5e-45a2-9776-81afa8c8daf3)
-![All_Users_Admin_Page](https://github.com/VladiCI04/BeFit/assets/140197292/5597f500-43f0-480f-b2b1-86e876b18167)
-![All_NoUser_Page](https://github.com/VladiCI04/BeFit/assets/140197292/e00337dd-9af8-4534-b838-dd277de7de09)
-![All_Events_Page](https://github.com/VladiCI04/BeFit/assets/140197292/4fbc6e17-5462-49b3-9c76-0fd28e5dc83d)
-![Admin_Home_Page](https://github.com/VladiCI04/BeFit/assets/140197292/855dccd5-b7e7-438f-927d-d3c5ff94b5a0)
-![Add_Event_Page](https://github.com/VladiCI04/BeFit/assets/140197292/b71b094e-4956-4ed2-94da-854aaa64b54c)
+---
 
+## 🛠️ Technologies Used
 
-## :v: Show your opinion
+### Backend & Database
+* ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+* ![.NET 8](https://img.shields.io/badge/.NET_8.0-512BD4?style=for-the-badge&logo=.net&logoColor=white)
+* ![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET_Core_MVC-512BD4?style=for-the-badge&logo=.net&logoColor=white)
+* ![Entity Framework Core](https://img.shields.io/badge/EF_Core-68217A?style=for-the-badge&logo=dotnet&logoColor=white)
+* ![MS SQL Server](https://img.shields.io/badge/MS_SQL_Server-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 
-Give a :star: if you like this project!
+### Frontend & Real-Time
+* ![SignalR](https://img.shields.io/badge/SignalR-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+* ![Bootstrap 5](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+* ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Author
+---
 
-- [Vladimir Ivanov](https://github.com/VladiCI04)
+## 📸 Screenshots
+
+### 🏠 Home & Discovery
+> **Home Landing Page**
+> 
+> *Showcases active sports events, platform overview, and account quick actions.*
+
+> **All Events Dashboard**
+> 
+> *Unified search, category filtering, sorting, and pagination for sports events.*
+
+---
+
+### 🗂️ Categories & Specializations
+> **Event Categories & Details**
+> 
+> *Structured categories (Physical, Mind, Motorized, etc.) with category metrics.*
+
+> **Coach Specializations**
+> 
+> *Browse certified trainers based on their coaching disciplines.*
+
+---
+
+### 💬 Real-Time Chat & Form Management
+> **Live Community Chat**
+> 
+> *Real-time messaging platform powered by SignalR.*
+
+> **Add Event Interface**
+> 
+> *Streamlined event creation form for coaches with date pickers and category assignment.*
+
+---
+
+### 🔐 Authentication
+> **User Registration & Login**
+> 
+> *Clean, responsive card interface for identity authentication.*
+
+---
+
+## ⭐️ Show Your Support
+
+If you find this project useful or inspiring, please give it a ⭐️ on GitHub!
+
+---
+
+## 👤 Author
+
+* **Vladimir Ivanov** - [*GitHub Profile*](https://github.com/VladiCI04)
