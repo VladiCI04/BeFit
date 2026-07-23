@@ -88,7 +88,7 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 ---
 
 ### 💬 Real-Time Chat & Form Management
-![Live Community Chat](./screenshots/Screenshot208.png)
+![Live Community Chat](./screenshots/Screenshot8.png)
 
 ![Add Event Form](./screenshots/Screenshot10.png)
 
