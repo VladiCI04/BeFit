@@ -70,42 +70,21 @@ A modern, full-stack ASP.NET Core MVC web application designed for organizing, d
 ## 📸 Screenshots
 
 ### 🏠 Home & Discovery
-> **Home Landing Page**
-> 
-> *Showcases active sports events, platform overview, and account quick actions.*
+![Home Page](./screenshots/Screenshot%202026-07-23%20141520.jpg)
+![All Events](./screenshots/Screenshot%202026-07-23%20141531.jpg)
 
-> **All Events Dashboard**
-> 
-> *Unified search, category filtering, sorting, and pagination for sports events.*
+### 🗂️ Categories & Details
+![Event Categories](./screenshots/Screenshot%202026-07-23%20141538.jpg)
+![Coach Categories](./screenshots/Screenshot%202026-07-23%20141547.jpg)
+![Category Details](./screenshots/Screenshot%202026-07-23%20141600.jpg)
 
----
-
-### 🗂️ Categories & Specializations
-> **Event Categories & Details**
-> 
-> *Structured categories (Physical, Mind, Motorized, etc.) with category metrics.*
-
-> **Coach Specializations**
-> 
-> *Browse certified trainers based on their coaching disciplines.*
-
----
-
-### 💬 Real-Time Chat & Form Management
-> **Live Community Chat**
-> 
-> *Real-time messaging platform powered by SignalR.*
-
-> **Add Event Interface**
-> 
-> *Streamlined event creation form for coaches with date pickers and category assignment.*
-
----
+### 💬 Real-Time Chat & Forms
+![Live Chat](./screenshots/Screenshot%202026-07-23%20141621.jpg)
+![Add Event](./screenshots/Screenshot%202026-07-23%20141631.jpg)
 
 ### 🔐 Authentication
-> **User Registration & Login**
-> 
-> *Clean, responsive card interface for identity authentication.*
+![Register](./screenshots/Screenshot%202026-07-23%20141640.jpg)
+![Login](./screenshots/Screenshot%202026-07-23%20141648.jpg)
 
 ---
 
